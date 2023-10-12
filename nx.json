@@ -8,6 +8,7 @@
       }
     }
   },
+  "defaultProject": "component-snippets",
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
