@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cs/common-ui": ["libs/common/ui/src/index.ts"],
+      "@cs/common/utils": ["libs/common/utils/src/index.ts"],
+      "@cs/components/calendar": ["libs/components/calendar/src/index.ts"],
+      "@cs/components/select-search": [
+        "libs/components/select-search/src/index.ts"
+      ],
+      "@cs/samples/calendar": ["libs/samples/calendar/src/index.ts"],
+      "@cs/samples/select-search": ["libs/samples/select-search/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

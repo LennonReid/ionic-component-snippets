@@ -1,0 +1,51 @@
+{
+  "name": "calendar",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/components/calendar/src",
+  "prefix": "component-snippets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/components/calendar/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/components/calendar/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/components/calendar/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/components/calendar/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/components/calendar/**/*.ts",
+          "libs/components/calendar/**/*.html",
+          "libs/components/calendar/package.json"
+        ]
+      }
+    }
+  }
+}
