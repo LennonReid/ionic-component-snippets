@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, ViewCh
 import { IonContent, IonInfiniteScroll, IonSearchbar, NavParams, IonicModule } from '@ionic/angular';
 import { IonicSelectableComponent } from './ionic-selectable.component';
 import { FormsModule } from '@angular/forms';
-import { NgIf, NgTemplateOutlet, NgFor, NgClass, NgStyle, CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @Component({
