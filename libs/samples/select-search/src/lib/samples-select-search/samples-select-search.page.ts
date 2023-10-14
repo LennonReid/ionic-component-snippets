@@ -3,7 +3,7 @@ import { Component, Injector, OnDestroy, OnInit, signal } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { IonicModule, LoadingController, SelectChangeEventDetail, ToggleChangeEventDetail } from '@ionic/angular'
 import { IonicSelectableComponent } from '@cs/components/select-search'
-import { SelectSearchService } from '../services/energy-report.service';
+import { SelectSearchService } from '../services/select-search.service';
 
 export enum ESelectDataMode {
   'short' = 'short',
