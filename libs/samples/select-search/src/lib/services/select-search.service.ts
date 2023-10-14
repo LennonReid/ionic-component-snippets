@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable, Optional } from '@angular/core';
 import { ESelectDataMode } from '../samples-select-search/samples-select-search.page';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -11,8 +12,7 @@ export class SelectSearchService {
     @Optional() @Inject('APP_ENV') private _appEnv?: string,
   ) { }
 
-  queryLists(countMode: ESelectDataMode) {
-    console.log(countMode);
+  queryListsData(countMode: ESelectDataMode): Observable<[]> {
     let suffix = '';
     switch (countMode) {
       case ESelectDataMode.short:

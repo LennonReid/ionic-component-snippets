@@ -97,7 +97,7 @@ export class SamplesSelectSearchPage implements OnInit, OnDestroy {
     })
 
     await loading.present()
-    this.selectSearchService.queryLists(this.selectDataMode()).subscribe({
+    this.selectSearchService.queryListsData(this.selectDataMode()).subscribe({
       next: (res) => {
         this.largeLists.set(res);
         loading.dismiss();
