@@ -2,7 +2,7 @@
   "name": "samples-calendar",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/samples/calendar/src",
-  "prefix": "component-snippets",
+  "prefix": "ionic-component-snippets",
   "tags": [],
   "projectType": "library",
   "targets": {

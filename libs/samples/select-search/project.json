@@ -2,7 +2,7 @@
   "name": "samples-select-search",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/samples/select-search/src",
-  "prefix": "component-snippets",
+  "prefix": "ionic-component-snippets",
   "tags": [],
   "projectType": "library",
   "targets": {

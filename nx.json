@@ -8,7 +8,7 @@
       }
     }
   },
-  "defaultProject": "component-snippets",
+  "defaultProject": "ionic-component-snippets",
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],

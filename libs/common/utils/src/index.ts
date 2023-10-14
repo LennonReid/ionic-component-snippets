@@ -1,1 +1,1 @@
-export * from './lib/common-utils/common-utils.component';
+export * from './lib/functions/moment-util';
