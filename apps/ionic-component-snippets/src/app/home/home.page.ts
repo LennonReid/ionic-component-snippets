@@ -1,9 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { IonicModule } from '@ionic/angular'
 
+export interface ISampleItem {
+  routerLink: string;
+  label: string;
+}
 @Component({
-  imports: [IonicModule, RouterModule],
+  imports: [CommonModule, IonicModule, RouterModule],
   selector: 'ionic-component-snippets-home',
   template: `
     <ion-header [translucent]="true">
@@ -18,8 +23,8 @@ import { IonicModule } from '@ionic/angular'
         </ion-toolbar>
       </ion-header>
       <ion-list>
-        <ion-item button routerLink="/calendar" detail>
-          <ion-label>Sample Calendar</ion-label>
+        <ion-item *ngFor="let sample of samples" button [routerLink]="sample.routerLink" detail>
+          <ion-label>{{sample.label}}</ion-label>
         </ion-item>
       </ion-list>
     </ion-content>
@@ -29,4 +34,14 @@ import { IonicModule } from '@ionic/angular'
 })
 export class HomePage {
   constructor() { }
+  samples: ISampleItem[] = [
+    {
+      routerLink: '/calendar',
+      label: 'Sample Calendar'
+    },
+    {
+      routerLink: '/select-search',
+      label: 'Sample select-search'
+    },
+  ]
 }

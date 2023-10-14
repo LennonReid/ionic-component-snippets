@@ -1,1 +1,1 @@
-export * from './lib/samples-calendar/samples-calendar.component';
+export * from './lib/samples-calendar/samples-calendar.page';

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SelectSearchComponent } from './select-search.component';
+import { SamplesCalendarPage } from './samples-calendar.page';
 
-describe('SelectSearchComponent', () => {
-  let component: SelectSearchComponent;
-  let fixture: ComponentFixture<SelectSearchComponent>;
+describe('SamplesCalendarPage', () => {
+  let component: SamplesCalendarPage;
+  let fixture: ComponentFixture<SamplesCalendarPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SelectSearchComponent],
+      imports: [SamplesCalendarPage],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SelectSearchComponent);
+    fixture = TestBed.createComponent(SamplesCalendarPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
