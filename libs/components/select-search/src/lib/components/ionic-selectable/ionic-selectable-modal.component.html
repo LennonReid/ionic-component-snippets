@@ -56,9 +56,7 @@
   </div>
 
   <ng-template #noVirtualScrollContainer>
-    <ng-container
-      *ngTemplateOutlet="noVirtualScrollList; context: { $implicit: selectComponent.hasVirtualScroll }"
-    ></ng-container>
+    <ng-container *ngTemplateOutlet="noVirtualScrollList"></ng-container>
   </ng-template>
   <ng-container
     *ngIf="selectComponent.hasVirtualScroll;else noVirtualScrollContainer"
@@ -70,7 +68,7 @@
     >
       <ion-list class="ion-no-margin" *ngIf="selectComponent._hasFilteredItems">
         <ion-item-group
-          *ngFor="let group of selectComponent._filteredGroups;trackBy:selectComponent.trackByFuntion"
+          *ngFor="let group of selectComponent._filteredGroups"
           class="ionic-selectable-group"
         >
           <ion-item-divider
@@ -164,7 +162,7 @@
       </ion-list>
     </cdk-virtual-scroll-viewport>
   </ng-container>
-  <ng-template #noVirtualScrollList let-virtualScroll>
+  <ng-template #noVirtualScrollList>
     <ion-list class="ion-no-margin" *ngIf="selectComponent._hasFilteredItems">
       <ion-item-group
         *ngFor="let group of selectComponent._filteredGroups;trackBy:selectComponent.trackByFuntion"

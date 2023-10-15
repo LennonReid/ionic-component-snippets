@@ -158,7 +158,7 @@ export class SamplesCalendarPage implements OnInit {
     this.date.from = moment(event.time).format('YYYY-MM-DD')
   }
   dateChange() {
-    this.collapse.set(true)
+    // this.collapse.set(true);
     this.handleQuery()
   }
   segmentHandleChange(e: CustomEvent<SelectChangeEventDetail>) {
