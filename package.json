@@ -6,6 +6,12 @@
     "postinstall": "node ./decorate-angular-cli.js"
   },
   "private": true,
+  "engines": {
+    "node": ">=18",
+    "yarn": ">=1.21.1 <2",
+    "npm": ">=9",
+    "pnpm": ">=8"
+  },
   "dependencies": {
     "@angular/animations": "~16.2.0",
     "@angular/cdk": "16.2.0",
@@ -28,6 +34,7 @@
     "@nx/angular": "16.10.0",
     "@nxext/ionic-angular": "^16.2.0",
     "@types/lodash-es": "^4.17.9",
+    "globalthis": "^1.0.3",
     "ionicons": "^7.0.0",
     "lodash-es": "^4.17.21",
     "moment": "^2.29.4",
