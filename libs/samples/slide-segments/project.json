@@ -1,0 +1,51 @@
+{
+  "name": "samples-slide-segments",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/samples/slide-segments/src",
+  "prefix": "ionic-component-snippets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/samples/slide-segments/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/samples/slide-segments/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/samples/slide-segments/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/samples/slide-segments/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/samples/slide-segments/**/*.ts",
+          "libs/samples/slide-segments/**/*.html",
+          "libs/samples/slide-segments/package.json"
+        ]
+      }
+    }
+  }
+}
