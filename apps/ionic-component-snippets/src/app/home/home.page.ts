@@ -43,5 +43,9 @@ export class HomePage {
       routerLink: '/select-search',
       label: 'Sample select-search'
     },
+    {
+      routerLink: '/slide-segments',
+      label: 'Sample slide-segments'
+    },
   ]
 }
