@@ -8,6 +8,10 @@ const SAMPLE_ROUTES = [
   {
     path: 'select-search',
     loadComponent: () => import('@cs/samples/select-search').then((c) => c.SamplesSelectSearchPage),
+  },
+  {
+    path: 'slide-segments',
+    loadComponent: () => import('@cs/samples/slide-segments').then((c) => c.SamplesSlideSegmentsPage),
   }
 ]
 export const appRoutes: Route[] = [

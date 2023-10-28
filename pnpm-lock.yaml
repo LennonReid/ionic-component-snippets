@@ -54,8 +54,8 @@ dependencies:
     specifier: 5.0.2
     version: 5.0.2(@capacitor/core@5.5.0)
   '@ionic/angular':
-    specifier: ^7.4.3
-    version: 7.4.3(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3)
+    specifier: ^7.5.2
+    version: 7.5.2(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3)
   '@ionic/core':
     specifier: ^7.5.0
     version: 7.5.0
@@ -83,6 +83,9 @@ dependencies:
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
+  swiper:
+    specifier: ^10.3.1
+    version: 10.3.1
   tslib:
     specifier: ^2.3.0
     version: 2.6.2
@@ -3420,8 +3423,8 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 
-  /@ionic/angular@7.4.3(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3):
-    resolution: {integrity: sha512-tWq57BqbfMjAfrK7FG8HDFU/UyBSEA7lSnGoTrtk4DCCNl6S/7MPjbpRY/KwxrFuX0gN18UWH4TU3rMkZBkrvQ==}
+  /@ionic/angular@7.5.2(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3):
+    resolution: {integrity: sha512-VFgoFw1+9jbcbh2Pm7RLd/Dsf1u6ZxdLbdWhHKY79Xh6hNKVLms+YCvbs08ppCZ0wpBaogJP/5xPVMJ/yjYtRg==}
     peerDependencies:
       '@angular/core': '>=14.0.0'
       '@angular/forms': '>=14.0.0'
@@ -3432,8 +3435,8 @@ packages:
       '@angular/core': 16.2.8(rxjs@7.8.1)(zone.js@0.13.3)
       '@angular/forms': 16.2.8(@angular/common@16.2.8)(@angular/core@16.2.8)(@angular/platform-browser@16.2.8)(rxjs@7.8.1)
       '@angular/router': 16.2.8(@angular/common@16.2.8)(@angular/core@16.2.8)(@angular/platform-browser@16.2.8)(rxjs@7.8.1)
-      '@ionic/core': 7.4.3
-      ionicons: 7.1.2
+      '@ionic/core': 7.5.2
+      ionicons: 7.2.1
       jsonc-parser: 3.2.0
       rxjs: 7.8.1
       tslib: 2.6.2
@@ -3451,18 +3454,18 @@ packages:
       - supports-color
     dev: false
 
-  /@ionic/core@7.4.3:
-    resolution: {integrity: sha512-JPQLGojKnI/L0UBVshRv86DOSDj61rJRFYQImU4IcgP/rw5ckxwt3iZ5NtdJl0eEDwu91n68aGJdU+TFJjMJgQ==}
-    dependencies:
-      '@stencil/core': 4.4.0
-      ionicons: 7.1.0
-      tslib: 2.6.2
-    dev: false
-
   /@ionic/core@7.5.0:
     resolution: {integrity: sha512-oreRvbKj8VqqO9JraxR/n56GC6MHQtnJEmZf/EFuw5ZvDV8My91uNIzLkb4P9SvPL5NRr/Z0TFem28cgRf5YVA==}
     dependencies:
       '@stencil/core': 4.4.1
+      ionicons: 7.2.1
+      tslib: 2.6.2
+    dev: false
+
+  /@ionic/core@7.5.2:
+    resolution: {integrity: sha512-0O8YgaE7CzrhDLGpnNq2Ia4bR+qFE1uHJHafoNWhoTXkydNnqSMZlxMCvtSetfv9bwLic93lcXYNoZ8I8zV3XA==}
+    dependencies:
+      '@stencil/core': 4.6.0
       ionicons: 7.2.1
       tslib: 2.6.2
     dev: false
@@ -4721,14 +4724,14 @@ packages:
     hasBin: true
     dev: false
 
-  /@stencil/core@4.4.0:
-    resolution: {integrity: sha512-YlLyCqGBsMEuZb3XTO/STT0TX9eSwjoVhCJgtjVfQOF+ebIMVlojTh40CmDveWiWbth687cbr6S2heeussV8Sg==}
+  /@stencil/core@4.4.1:
+    resolution: {integrity: sha512-SirGcrb5yKHCn2BwdM7HGVXuvCdmwiXlVczEj8jJxQIm42CAUQCUECxtZidTzp+oZBZnWLnoAvfanchJsgkQzA==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
     dev: false
 
-  /@stencil/core@4.4.1:
-    resolution: {integrity: sha512-SirGcrb5yKHCn2BwdM7HGVXuvCdmwiXlVczEj8jJxQIm42CAUQCUECxtZidTzp+oZBZnWLnoAvfanchJsgkQzA==}
+  /@stencil/core@4.6.0:
+    resolution: {integrity: sha512-5Y6/fP28aspPDRB+Tz5GuB1jRVGuUEk5/rnyE8ACGcuzEOG+zR0A/IHRJSU3XmCxUlVDKfKoO6St5W84oUCVMA==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
     dev: false
@@ -8314,12 +8317,6 @@ packages:
       has: 1.0.4
       side-channel: 1.0.4
     dev: true
-
-  /ionicons@7.1.0:
-    resolution: {integrity: sha512-iE4GuEdEHARJpp0sWL7WJZCzNCf5VxpNRhAjW0fLnZPnNL5qZOJUcfup2Z2Ty7Jk8Q5hacrHfGEB1lCwOdXqGg==}
-    dependencies:
-      '@stencil/core': 2.22.3
-    dev: false
 
   /ionicons@7.1.2:
     resolution: {integrity: sha512-zZ4njAqSP39H8RRvZhJvkHsv7cBjYE/VfInH218Osf2UVxJITSOutTTd25MW+tAXKN5fheYzclUXUsF55JHUDg==}
@@ -12212,6 +12209,11 @@ packages:
       css-tree: 2.3.1
       csso: 5.0.5
       picocolors: 1.0.0
+    dev: false
+
+  /swiper@10.3.1:
+    resolution: {integrity: sha512-24Wk3YUdZHxjc9faID97GTu6xnLNia+adMt6qMTZG/HgdSUt4fS0REsGUXJOgpTED0Amh/j+gRGQxsLayJUlBQ==}
+    engines: {node: '>= 4.7.0'}
     dev: false
 
   /symbol-observable@4.0.0:

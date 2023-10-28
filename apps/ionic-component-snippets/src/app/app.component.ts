@@ -3,7 +3,9 @@ import { Component, EnvironmentInjector, OnInit } from '@angular/core';
 import { IonicModule, Platform } from '@ionic/angular';
 import { Capacitor } from '@capacitor/core';
 import { App } from '@capacitor/app';
+import { register } from 'swiper/element/bundle';
 
+register();
 @Component({
   imports: [IonicModule, HttpClientModule],
   providers: [],
