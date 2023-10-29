@@ -32,7 +32,7 @@ import {
         <ion-buttons slot="start">
           <ion-back-button defaultHref="/home"></ion-back-button>
         </ion-buttons>
-        <ion-title>Snippets-slide-segments Samples</ion-title>
+        <ion-title>Slide-segments Samples</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
