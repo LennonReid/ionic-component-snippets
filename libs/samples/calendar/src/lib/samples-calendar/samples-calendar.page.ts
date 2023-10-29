@@ -1,12 +1,25 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit, signal } from '@angular/core'
 import {
-  IonicModule,
   ModalController,
   SelectChangeEventDetail,
   NavController,
-  LoadingController
-} from '@ionic/angular'
+  LoadingController,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonButtons,
+  IonButton,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonItem,
+  IonLabel,
+  IonSegment,
+  IonSegmentButton,
+  IonContent,
+  IonBackButton
+} from '@ionic/angular/standalone'
 import * as moment from 'moment'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { Subject } from 'rxjs'
@@ -21,9 +34,6 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils'
   standalone: true,
   styles: [
     `
-      ion-item::part(native) {
-        padding-left: 0;
-      }
     `
   ],
   template: `
@@ -50,6 +60,17 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils'
           >
             <ion-label class="pl-4"><p>Unfold Date Calendar</p></ion-label>
           </ion-item>
+
+          <ion-item
+            *ngIf="!collapse()"
+            (click)="collapse.set(true)"
+            button
+            class="my-4"
+            detail="true"
+            detail-icon="chevron-up"
+          >
+            <ion-label class="pl-4"><p>Collapse Date Calendar</p></ion-label>
+          </ion-item>
           <div [class.hidden]="collapse()" [class.display]="!collapse()">
             <ion-calendar
               [(ngModel)]="date"
@@ -61,20 +82,10 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils'
             >
             </ion-calendar>
           </div>
-          <ion-item
-            *ngIf="!collapse()"
-            (click)="collapse.set(true)"
-            button
-            class="my-4"
-            detail="true"
-            detail-icon="chevron-up"
-          >
-            <ion-label class="pl-4"><p>Collapse Date Calendar</p></ion-label>
-          </ion-item>
           <ion-segment
             scrollable
             (ionChange)="segmentHandleChange($any($event))"
-            [(ngModel)]="dateRange"
+            [value]="dateRange"
             class="mb-5"
           >
             <ion-segment-button
@@ -92,7 +103,20 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils'
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    IonicModule,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonButtons,
+    IonButton,
+    IonCard,
+    IonCardContent,
+    IonCardHeader,
+    IonItem,
+    IonSegment,
+    IonSegmentButton,
+    IonContent,
+    IonBackButton,
+    IonLabel,
     CalendarModule
   ]
 })

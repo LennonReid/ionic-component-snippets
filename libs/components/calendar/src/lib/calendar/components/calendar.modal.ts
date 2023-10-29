@@ -9,10 +9,16 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
-import { IonContent, ModalController, NavParams, ScrollDetail } from '@ionic/angular';
+import { IonContent, ModalController, NavParams, ScrollDetail } from '@ionic/angular/standalone';
 import { CalendarDay, CalendarModalOptions, CalendarMonth, InternalCalendarModalOptions } from '../calendar.model';
 import { CalendarService } from '../services/calendar.service';
 import * as moment from 'moment';
+
+import { addIcons } from 'ionicons';
+import {
+  close, checkmark
+} from 'ionicons/icons';
+
 import { pickModes } from '../config';
 
 const NUM_OF_MONTHS_TO_CREATE = 6;
@@ -124,7 +130,9 @@ export class CalendarModal implements OnInit, AfterViewInit {
     public modalCtrl: ModalController,
     public ref: ChangeDetectorRef,
     public calSvc: CalendarService,
-  ) {}
+  ) {
+    addIcons({ close, checkmark })
+  }
 
   ngOnInit(): void {
     this.init();

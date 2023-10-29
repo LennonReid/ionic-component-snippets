@@ -7,11 +7,15 @@ import {
   throttleTime,
 } from "rxjs";
 import {
+  IonIcon,
+  IonItem,
+  IonLabel,
   IonSegment,
-  IonicModule,
+  IonSegmentButton,
+  IonToggle,
   IonicSlides,
   SelectChangeEventDetail,
-} from "@ionic/angular";
+} from "@ionic/angular/standalone";
 import {
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
@@ -34,7 +38,15 @@ export interface ISegmentButton {
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   selector: "ionic-component-snippets-slide-segments",
   standalone: true,
-  imports: [CommonModule, IonicModule],
+  imports: [
+    CommonModule,
+    IonItem,
+    IonIcon,
+    IonToggle,
+    IonSegment,
+    IonSegmentButton,
+    IonLabel,
+  ],
   template: `
     <ion-segment
       #mySegment
@@ -86,8 +98,8 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
   @Input() scrollable = true;
   @Input() autoHeight = false;
   @Input() lazy = false;
-  @Input() selectedSegment = "";
   @Input() segmentButtons: ISegmentButton[] = [];
+  @Input() selectedSegment = "";
 
   _swiperRef: ElementRef | undefined = undefined;
   @ViewChild("swiperRef")
@@ -141,6 +153,7 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
     if (changes["segmentButtons"].currentValue?.length > 0) {
       if (!this.selectedSegment) {
         this.selectedSegment = this.segmentButtons[0].value;
+        // this.segment.writeValue(this.selectedSegment);
       }
     }
   }
