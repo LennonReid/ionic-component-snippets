@@ -37,6 +37,7 @@ import {
     </ion-header>
     <ion-content>
       <ionic-component-snippets-slide-segments
+        [scrollable]="true"
         [segmentButtons]="segmentButtons"
       ></ionic-component-snippets-slide-segments>
     </ion-content>

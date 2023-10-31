@@ -99,7 +99,7 @@ export interface ISegmentButton {
 })
 export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
   swiperModules = [IonicSlides];
-  @Input() scrollable = true;
+  @Input() scrollable = false;
   @Input() autoHeight = false;
   @Input() lazy = false;
   @Input() segmentButtons: ISegmentButton[] = [];
@@ -122,9 +122,6 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
       });
   }
   ngOnInit() {
-    console.log(this.segmentButtons);
-    this.selectedSegment = this.segmentButtons[0].value;
-    console.log(this.selectedSegment);
     this.zone.onStable
       .asObservable()
       .pipe(take(1))
@@ -160,7 +157,6 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
     if (changes["segmentButtons"].currentValue?.length > 0) {
       if (!this.selectedSegment) {
         this.selectedSegment = this.segmentButtons[0].value;
-        this.segment.writeValue(this.selectedSegment);
       }
     }
   }
