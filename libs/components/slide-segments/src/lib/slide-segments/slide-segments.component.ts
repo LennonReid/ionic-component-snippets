@@ -7,6 +7,7 @@ import {
   throttleTime,
 } from "rxjs";
 import {
+  IonContent,
   IonIcon,
   IonItem,
   IonLabel,
@@ -40,6 +41,7 @@ export interface ISegmentButton {
   standalone: true,
   imports: [
     CommonModule,
+    IonContent,
     IonItem,
     IonIcon,
     IonToggle,
@@ -48,6 +50,7 @@ export interface ISegmentButton {
     IonLabel,
   ],
   template: `
+  <ion-content>
     <ion-segment
       #mySegment
       (ionChange)="segmentHandleChange($any($event))"
@@ -77,6 +80,7 @@ export interface ISegmentButton {
         </swiper-slide>
       </ng-container>
     </swiper-container>
+  </ion-content>
   `,
   styles: [
     `
@@ -118,6 +122,9 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
       });
   }
   ngOnInit() {
+    console.log(this.segmentButtons);
+    this.selectedSegment = this.segmentButtons[0].value;
+    console.log(this.selectedSegment);
     this.zone.onStable
       .asObservable()
       .pipe(take(1))
@@ -153,7 +160,7 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
     if (changes["segmentButtons"].currentValue?.length > 0) {
       if (!this.selectedSegment) {
         this.selectedSegment = this.segmentButtons[0].value;
-        // this.segment.writeValue(this.selectedSegment);
+        this.segment.writeValue(this.selectedSegment);
       }
     }
   }
