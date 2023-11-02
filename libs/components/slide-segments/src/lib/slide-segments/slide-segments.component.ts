@@ -135,7 +135,7 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
   segmentHandleChange(e: CustomEvent<SelectChangeEventDetail>) {
     this.selectedSegment = e.detail.value;
     this.swiperInstance.slideTo(
-      this.segmentButtons.findIndex((d) => d.value === e.detail.value)
+      this.segmentButtons.findIndex((d) => d.value === e.detail.value), 0, false
     );
   }
   slideWillChange() {
