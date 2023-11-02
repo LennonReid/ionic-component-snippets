@@ -13,6 +13,18 @@ import { CalendarService } from '../services/calendar.service';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 import * as moment from 'moment';
+import { addIcons } from 'ionicons';
+import {
+  caretDown,
+  caretDownOutline,
+  caretUp,
+  caretUpOutline,
+  chevronBack,
+  chevronBackOutline,
+  chevronForward,
+  chevronForwardOutline
+} from 'ionicons/icons';
+
 import { defaults, pickModes } from '../config';
 import { isIonIconsV4 } from '../utils/icons';
 
@@ -155,8 +167,19 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   readonly MONTH_DATE_FORMAT = 'MMMM yyyy';
-
+  readonly iconMaps: any = {
+    'chevron-back': chevronBack,
+    'chevron-forward': chevronForward,
+    'caret-down': caretDown,
+    'caret-up': caretUp,
+    'chevron-back-outline': chevronBackOutline,
+    'chevron-forward-outline': chevronForwardOutline,
+    'caret-down-outline': caretDownOutline,
+    'caret-up-outline': caretUpOutline,
+  };
   constructor(public calSvc: CalendarService) {
+
+    addIcons(this.iconMaps);
     if (isIonIconsV4()) {
       this._compatibleIcons = {
         caretDown: 'md-arrow-dropdown',
@@ -304,9 +327,9 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     }
   }
 
-  _onChanged: Function = () => {};
+  _onChanged: Function = () => { };
 
-  _onTouched: Function = () => {};
+  _onTouched: Function = () => { };
 
   _payloadToTimeNumber(value: CalendarComponentPayloadTypes): number {
     let date;

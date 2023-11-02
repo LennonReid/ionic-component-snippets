@@ -7,11 +7,16 @@ import {
   throttleTime,
 } from "rxjs";
 import {
+  IonContent,
+  IonIcon,
+  IonItem,
+  IonLabel,
   IonSegment,
-  IonicModule,
+  IonSegmentButton,
+  IonToggle,
   IonicSlides,
   SelectChangeEventDetail,
-} from "@ionic/angular";
+} from "@ionic/angular/standalone";
 import {
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
@@ -34,8 +39,18 @@ export interface ISegmentButton {
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   selector: "ionic-component-snippets-slide-segments",
   standalone: true,
-  imports: [CommonModule, IonicModule],
+  imports: [
+    CommonModule,
+    IonContent,
+    IonItem,
+    IonIcon,
+    IonToggle,
+    IonSegment,
+    IonSegmentButton,
+    IonLabel,
+  ],
   template: `
+  <ion-content>
     <ion-segment
       #mySegment
       (ionChange)="segmentHandleChange($any($event))"
@@ -65,6 +80,7 @@ export interface ISegmentButton {
         </swiper-slide>
       </ng-container>
     </swiper-container>
+  </ion-content>
   `,
   styles: [
     `
@@ -83,11 +99,11 @@ export interface ISegmentButton {
 })
 export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
   swiperModules = [IonicSlides];
-  @Input() scrollable = true;
+  @Input() scrollable = false;
   @Input() autoHeight = false;
   @Input() lazy = false;
-  @Input() selectedSegment = "";
   @Input() segmentButtons: ISegmentButton[] = [];
+  @Input() selectedSegment = "";
 
   _swiperRef: ElementRef | undefined = undefined;
   @ViewChild("swiperRef")
@@ -119,7 +135,7 @@ export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
   segmentHandleChange(e: CustomEvent<SelectChangeEventDetail>) {
     this.selectedSegment = e.detail.value;
     this.swiperInstance.slideTo(
-      this.segmentButtons.findIndex((d) => d.value === e.detail.value)
+      this.segmentButtons.findIndex((d) => d.value === e.detail.value), 0, false
     );
   }
   slideWillChange() {

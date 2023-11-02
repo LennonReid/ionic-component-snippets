@@ -1,9 +1,11 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, Injector, OnDestroy, OnInit, signal } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { IonicModule, LoadingController, SelectChangeEventDetail, ToggleChangeEventDetail } from '@ionic/angular'
+import { IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, LoadingController, SelectChangeEventDetail, ToggleChangeEventDetail, IonContent, IonCard, IonCardHeader, IonCardContent, IonItem, IonToggle, IonSelect, IonLabel, IonSelectOption } from '@ionic/angular/standalone'
 import { IonicSelectableComponent } from '@cs/components/select-search'
 import { SelectSearchService } from '../services/select-search.service';
+import { checkmarkCircle, radioButtonOff } from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 
 export enum ESelectDataMode {
   'short' = 'short',
@@ -13,7 +15,25 @@ export enum ESelectDataMode {
 @Component({
   selector: 'ionic-component-snippets-samples-select-search',
   standalone: true,
-  imports: [CommonModule, IonicModule, IonicSelectableComponent, HttpClientModule],
+  imports: [
+    CommonModule,
+    IonHeader,
+    IonToolbar,
+    IonButtons,
+    IonBackButton,
+    IonTitle,
+    IonContent,
+    IonCard,
+    IonCardHeader,
+    IonCardContent,
+    IonItem,
+    IonToggle,
+    IonSelect,
+    IonSelectOption,
+    IonLabel,
+    IonicSelectableComponent,
+    HttpClientModule
+  ],
   template: `
     <ion-header>
       <ion-toolbar color="primary">
@@ -67,7 +87,13 @@ export class SamplesSelectSearchPage implements OnInit, OnDestroy {
   largeLists = signal([]);
   hasVirtualScroll = signal(false);
   openLoading?: HTMLIonLoadingElement;
+
+  readonly iconMaps: any = {
+    'checkmark-circle': checkmarkCircle,
+    'radio-button-off': radioButtonOff,
+  };
   constructor(private injector: Injector) {
+    addIcons(this.iconMaps);
   }
   ngOnInit() {
     this.query();

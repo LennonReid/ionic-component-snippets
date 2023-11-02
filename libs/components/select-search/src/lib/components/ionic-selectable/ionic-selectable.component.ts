@@ -18,7 +18,7 @@ import {
   forwardRef,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { IonItem, ModalController, Platform } from '@ionic/angular';
+import { IonItem, ModalController, Platform } from '@ionic/angular/standalone';
 import { AnimationBuilder, ModalOptions } from '@ionic/core';
 import { Subscription } from 'rxjs';
 import { IonicSelectableAddItemTemplateDirective } from './ionic-selectable-add-item-template.directive';

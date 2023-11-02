@@ -1,30 +1,46 @@
 import { HttpClientModule } from '@angular/common/http';
-import { Component, EnvironmentInjector, OnInit } from '@angular/core';
-import { IonicModule, Platform } from '@ionic/angular';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, EnvironmentInjector, OnInit, inject } from '@angular/core';
+import { IonApp, IonContent, IonRouterOutlet, Platform } from '@ionic/angular/standalone';
 import { Capacitor } from '@capacitor/core';
 import { App } from '@capacitor/app';
 import { register } from 'swiper/element/bundle';
 
+import { addIcons } from 'ionicons';
+import {
+  chevronDown,
+  chevronUp
+} from 'ionicons/icons';
+
 register();
 @Component({
-  imports: [IonicModule, HttpClientModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [
+    HttpClientModule,
+    IonApp,
+    IonContent,
+    IonRouterOutlet
+  ],
   providers: [],
   selector: 'ionic-component-snippets-root',
   standalone: true,
   template: `
     <ion-app>
-      <ion-content>
-        <ion-router-outlet></ion-router-outlet>
-      </ion-content>
+        <ion-router-outlet [environmentInjector]="environmentInjector"></ion-router-outlet>
     </ion-app>
   `,
 })
 export class AppComponent implements OnInit {
+  public environmentInjector = inject(EnvironmentInjector);
+
+  readonly iconMaps: any = {
+    'chevron-down': chevronDown,
+    'chevron-up': chevronUp,
+  };
   constructor(
-    public environmentInjector: EnvironmentInjector,
     private platform: Platform,
   ) {
     this.initializeApp();
+    addIcons(this.iconMaps)
   }
   ngOnInit(): void {
     if (Capacitor.getPlatform() === 'android') {

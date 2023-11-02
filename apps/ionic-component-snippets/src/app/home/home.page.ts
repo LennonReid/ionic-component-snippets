@@ -1,14 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core'
 import { RouterModule } from '@angular/router'
-import { IonicModule } from '@ionic/angular'
+import { IonContent, IonHeader, IonLabel, IonList, IonTitle, IonToolbar } from '@ionic/angular/standalone'
 
 export interface ISampleItem {
   routerLink: string;
   label: string;
 }
 @Component({
-  imports: [CommonModule, IonicModule, RouterModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonList,
+    IonLabel
+  ],
   selector: 'ionic-component-snippets-home',
   template: `
     <ion-header [translucent]="true">

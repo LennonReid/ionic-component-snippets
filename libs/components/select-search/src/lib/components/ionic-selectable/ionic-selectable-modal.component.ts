@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, ViewChild } from '@angular/core';
-import { IonContent, IonInfiniteScroll, IonSearchbar, NavParams, IonicModule } from '@ionic/angular';
+import { IonButton, IonButtons, IonHeader, IonInfiniteScroll, IonSearchbar, IonTitle, IonToolbar, NavParams, IonContent, IonSpinner, IonList, IonListHeader, IonItemGroup, IonItemDivider, IonLabel, IonIcon, IonItem, IonInfiniteScrollContent, IonRow, IonCol } from '@ionic/angular/standalone';
 import { IonicSelectableComponent } from './ionic-selectable.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -17,7 +17,30 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     `,
   ],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, ScrollingModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ScrollingModule,
+    IonHeader,
+    IonToolbar,
+    IonButtons,
+    IonButton,
+    IonTitle,
+    IonContent,
+    IonSpinner,
+    IonList,
+    IonItemGroup,
+    IonItemDivider,
+    IonLabel,
+    IonIcon,
+    IonItem,
+    IonRow,
+    IonCol,
+    IonInfiniteScroll,
+    IonInfiniteScrollContent,
+    IonSearchbar,
+
+  ],
 })
 export class IonicSelectableModalComponent implements AfterViewInit {
   @ViewChild(IonContent)
