@@ -10,17 +10,13 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "allowedCommonJsDependencies": [
-           "moment"
-        ],
+        "allowedCommonJsDependencies": ["moment"],
         "outputPath": "dist/apps/ionic-component-snippets",
         "index": "apps/ionic-component-snippets/src/index.html",
         "main": "apps/ionic-component-snippets/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/ionic-component-snippets/tsconfig.app.json",
-        "assets": [
-          "apps/ionic-component-snippets/src/assets"
-        ],
+        "assets": ["apps/ionic-component-snippets/src/assets"],
         "styles": [
           "apps/ionic-component-snippets/src/styles.scss",
           {
@@ -75,7 +71,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
