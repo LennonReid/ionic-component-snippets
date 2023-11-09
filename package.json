@@ -59,6 +59,7 @@
     "@capacitor/android": "^5.0.3",
     "@capacitor/cli": "^5.5.1",
     "@capacitor/ios": "^5.0.3",
+    "@ionic/cli": "7.1.1",
     "@nx/cypress": "16.10.0",
     "@nx/eslint-plugin": "16.10.0",
     "@nx/jest": "16.10.0",

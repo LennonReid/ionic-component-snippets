@@ -13,7 +13,7 @@ def capacitor_pods
   pod 'CapacitorCordova', :path => '../../../../node_modules/.pnpm/@capacitor+ios@5.5.0_@capacitor+core@5.5.0/node_modules/@capacitor/ios'
   pod 'CapacitorCommunityBarcodeScanner', :path => '../../../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@5.5.0/node_modules/@capacitor-community/barcode-scanner'
   pod 'CapacitorApp', :path => '../../../../node_modules/.pnpm/@capacitor+app@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/app'
-  pod 'CapacitorCamera', :path => '../../../../node_modules/.pnpm/@capacitor+camera@5.0.7_@capacitor+core@5.5.0/node_modules/@capacitor/camera'
+  pod 'CapacitorCamera', :path => '../../../../node_modules/.pnpm/@capacitor+camera@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/camera'
   pod 'CapacitorHaptics', :path => '../../../../node_modules/.pnpm/@capacitor+haptics@5.0.2_@capacitor+core@5.5.0/node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../../../node_modules/.pnpm/@capacitor+keyboard@5.0.2_@capacitor+core@5.5.0/node_modules/@capacitor/keyboard'
   pod 'CapacitorSplashScreen', :path => '../../../../node_modules/.pnpm/@capacitor+splash-screen@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/splash-screen'

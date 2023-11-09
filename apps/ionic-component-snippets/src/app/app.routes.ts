@@ -12,6 +12,14 @@ const SAMPLE_ROUTES = [
   {
     path: 'slide-segments',
     loadComponent: () => import('@cs/samples/slide-segments').then((c) => c.SamplesSlideSegmentsPage),
+  },
+  {
+    path: 'code-scanner',
+    loadComponent: () => import('@cs/samples/code-scanner').then((c) => c.SamplesCodeScannerPage),
+  },
+  {
+    path: 'image-picker',
+    loadComponent: () => import('@cs/samples/image-picker').then((c) => c.SamplesImagePickerPage),
   }
 ]
 export const appRoutes: Route[] = [

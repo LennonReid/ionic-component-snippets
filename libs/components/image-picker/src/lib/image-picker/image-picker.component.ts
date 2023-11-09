@@ -44,7 +44,7 @@ export class ImagePickerComponent implements OnInit {
     image,
   };
   @Input() isDebugging = false;
-  @Output() importImageResult: EventEmitter<string> = new EventEmitter();
+  @Output() imagePickResult: EventEmitter<string> = new EventEmitter();
 
   constructor(
     private alertController: AlertController,
@@ -143,7 +143,7 @@ export class ImagePickerComponent implements OnInit {
   }
 
   async processQrCode(scannedData: string, loading: HTMLIonLoadingElement): Promise<void> {
-    this.importImageResult.emit(scannedData);
+    this.imagePickResult.emit(scannedData);
     loading.dismiss();
   }
 

@@ -30,6 +30,8 @@
       "@cs/components/slide-segments": [
         "libs/components/slide-segments/src/index.ts"
       ],
+      "@cs/samples/code-scanner": ["libs/samples/code-scanner/src/index.ts"],
+      "@cs/samples/image-picker": ["libs/samples/image-picker/src/index.ts"],
       "@cs/samples/calendar": ["libs/samples/calendar/src/index.ts"],
       "@cs/samples/select-search": ["libs/samples/select-search/src/index.ts"],
       "@cs/samples/slide-segments": ["libs/samples/slide-segments/src/index.ts"]

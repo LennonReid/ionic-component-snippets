@@ -3,7 +3,7 @@ PODS:
     - CapacitorCordova
   - CapacitorApp (5.0.6):
     - Capacitor
-  - CapacitorCamera (5.0.7):
+  - CapacitorCamera (5.0.6):
     - Capacitor
   - CapacitorCommunityBarcodeScanner (4.0.1):
     - Capacitor
@@ -22,7 +22,7 @@ PODS:
 DEPENDENCIES:
   - "Capacitor (from `../../../../node_modules/.pnpm/@capacitor+ios@5.5.0_@capacitor+core@5.5.0/node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../../../node_modules/.pnpm/@capacitor+app@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/app`)"
-  - "CapacitorCamera (from `../../../../node_modules/.pnpm/@capacitor+camera@5.0.7_@capacitor+core@5.5.0/node_modules/@capacitor/camera`)"
+  - "CapacitorCamera (from `../../../../node_modules/.pnpm/@capacitor+camera@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/camera`)"
   - "CapacitorCommunityBarcodeScanner (from `../../../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@5.5.0/node_modules/@capacitor-community/barcode-scanner`)"
   - "CapacitorCordova (from `../../../../node_modules/.pnpm/@capacitor+ios@5.5.0_@capacitor+core@5.5.0/node_modules/@capacitor/ios`)"
   - "CapacitorHaptics (from `../../../../node_modules/.pnpm/@capacitor+haptics@5.0.2_@capacitor+core@5.5.0/node_modules/@capacitor/haptics`)"
@@ -37,7 +37,7 @@ EXTERNAL SOURCES:
   CapacitorApp:
     :path: "../../../../node_modules/.pnpm/@capacitor+app@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/app"
   CapacitorCamera:
-    :path: "../../../../node_modules/.pnpm/@capacitor+camera@5.0.7_@capacitor+core@5.5.0/node_modules/@capacitor/camera"
+    :path: "../../../../node_modules/.pnpm/@capacitor+camera@5.0.6_@capacitor+core@5.5.0/node_modules/@capacitor/camera"
   CapacitorCommunityBarcodeScanner:
     :path: "../../../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@5.5.0/node_modules/@capacitor-community/barcode-scanner"
   CapacitorCordova:
@@ -56,7 +56,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Capacitor: 57890b363df14d5d2d5d8461aa23e886cb34da2a
   CapacitorApp: 024e1b1bea5f883d79f6330d309bc441c88ad04a
-  CapacitorCamera: 084b0b228bba7d00587910337b1c89e93b1d32ab
+  CapacitorCamera: 4a95204d13a05b0b726bf9086b44124349ab1952
   CapacitorCommunityBarcodeScanner: 7feb206489c8555a8ca0c74c57ddf49ead774eb8
   CapacitorCordova: 3d3908a3d208a11a75f9df3b18c4405c4de76e1d
   CapacitorHaptics: 864585542a435bd41eaabf7f30d9ff5ec03024d3
@@ -65,6 +65,6 @@ SPEC CHECKSUMS:
   CapacitorStatusBar: 48f2899f6846cc7d8431b251ebfc58e1c10e3d58
   CapacitorToast: bb0d79b78d9c27c0199b57f735dd50b8fc363489
 
-PODFILE CHECKSUM: 0f889e521dc4db223d6e4d1c6bb7b18ece293d54
+PODFILE CHECKSUM: 42be050b253db6adf5a635bc87a489f57489cf8d
 
 COCOAPODS: 1.12.1
