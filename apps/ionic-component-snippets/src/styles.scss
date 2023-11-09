@@ -29,3 +29,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+// custom css for code scanner
+body.scanner-active {
+  --background: transparent;
+  --ion-background-color: transparent;
+  background: none transparent;
+}
+.scanner-active {
+  --background: transparent;
+  --ion-background-color: transparent;
+  background: none transparent;
+}

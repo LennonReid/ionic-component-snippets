@@ -18,6 +18,12 @@
       "@cs/common-ui": ["libs/common/ui/src/index.ts"],
       "@cs/common/utils": ["libs/common/utils/src/index.ts"],
       "@cs/components/calendar": ["libs/components/calendar/src/index.ts"],
+      "@cs/components/code-scanner": [
+        "libs/components/code-scanner/src/index.ts"
+      ],
+      "@cs/components/image-picker": [
+        "libs/components/image-picker/src/index.ts"
+      ],
       "@cs/components/select-search": [
         "libs/components/select-search/src/index.ts"
       ],
