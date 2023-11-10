@@ -42,7 +42,7 @@ dependencies:
     specifier: ^5.0.6
     version: 5.0.6(@capacitor/core@5.5.0)
   '@capacitor/core':
-    specifier: ^5.0.3
+    specifier: ^5.5.0
     version: 5.5.0
   '@capacitor/haptics':
     specifier: 5.0.2
@@ -60,8 +60,8 @@ dependencies:
     specifier: ^5.0.6
     version: 5.0.6(@capacitor/core@5.5.0)
   '@ionic/angular':
-    specifier: ^7.5.3
-    version: 7.5.3(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3)
+    specifier: 7.5.4
+    version: 7.5.4(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3)
   '@ionic/core':
     specifier: ^7.5.2
     version: 7.5.2
@@ -3464,8 +3464,8 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 
-  /@ionic/angular@7.5.3(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3):
-    resolution: {integrity: sha512-LgTF8nNFj0B71E98gPEAP4cbSAnNfpDG82l/FGtozG83nto60wp13rWPtVuqG+xLSZqHgV6vN6d9W+2NfE46SQ==}
+  /@ionic/angular@7.5.4(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3):
+    resolution: {integrity: sha512-TmySfb2HgFoZZaIvIyRKXhH68rHg8TMcrtVP/cTPv3NJiGDH3TGvbIdQmUtdjQ+WUqlgwCsuk7rNgSHtrC5F0w==}
     peerDependencies:
       '@angular/core': '>=14.0.0'
       '@angular/forms': '>=14.0.0'
@@ -3476,7 +3476,7 @@ packages:
       '@angular/core': 16.2.8(rxjs@7.8.1)(zone.js@0.13.3)
       '@angular/forms': 16.2.8(@angular/common@16.2.8)(@angular/core@16.2.8)(@angular/platform-browser@16.2.8)(rxjs@7.8.1)
       '@angular/router': 16.2.8(@angular/common@16.2.8)(@angular/core@16.2.8)(@angular/platform-browser@16.2.8)(rxjs@7.8.1)
-      '@ionic/core': 7.5.3
+      '@ionic/core': 7.5.4
       ionicons: 7.2.1
       jsonc-parser: 3.2.0
       rxjs: 7.8.1
@@ -3573,10 +3573,10 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@ionic/core@7.5.3:
-    resolution: {integrity: sha512-nd4NV6gSgohLvKHGmf+jAcgzI1387eKq3enjBfE574FK/ikl5CeIltv0MBVJr9lz0pNSL/y9m1tdaFg+syASuA==}
+  /@ionic/core@7.5.4:
+    resolution: {integrity: sha512-rZbKlcVucRTDOK2Woh4CWPePlsXiUt3G9dCUniduKD7WeiuAk0GzfmoM3WXBvcUpkVTUIOrvKHaqd3JJSWEIzg==}
     dependencies:
-      '@stencil/core': 4.6.0
+      '@stencil/core': 4.7.1
       ionicons: 7.2.1
       tslib: 2.6.2
     dev: false
@@ -4841,6 +4841,12 @@ packages:
 
   /@stencil/core@4.6.0:
     resolution: {integrity: sha512-5Y6/fP28aspPDRB+Tz5GuB1jRVGuUEk5/rnyE8ACGcuzEOG+zR0A/IHRJSU3XmCxUlVDKfKoO6St5W84oUCVMA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: false
+
+  /@stencil/core@4.7.1:
+    resolution: {integrity: sha512-KDWA/3qDiABA5LqtHCmTVwORuzgu/YdC0FpSBwVmwlw6K8jUjbTA5JB6Q03da2F+EQlDHOVgbW0TNtHCm54uXQ==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
     dev: false

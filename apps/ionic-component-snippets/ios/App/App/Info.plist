@@ -51,5 +51,12 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+    
+    <key>NSCameraUsageDescription</key>
+    <string>To be able to scan barcodes</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Photo Library Access Warning</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Photo Library Access Warning</string>
 </dict>
 </plist>

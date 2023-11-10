@@ -13,7 +13,8 @@
       ],
       "options": {
         "allowedCommonJsDependencies": [
-          "moment"
+          "moment",
+          "jsqr"
         ],
         "outputPath": "dist/apps/ionic-component-snippets",
         "index": "apps/ionic-component-snippets/src/index.html",

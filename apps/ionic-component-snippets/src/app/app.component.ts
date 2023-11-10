@@ -1,9 +1,10 @@
 import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, Component, EnvironmentInjector, OnInit, inject } from '@angular/core';
-import { IonApp, IonContent, IonRouterOutlet, Platform } from '@ionic/angular/standalone';
+import { IonApp, IonButton, IonContent, IonRouterOutlet, Platform } from '@ionic/angular/standalone';
 import { Capacitor } from '@capacitor/core';
 import { App } from '@capacitor/app';
 import { register } from 'swiper/element/bundle';
+import { defineCustomElement as defineLoading } from '@ionic/core/components/ion-loading';
 
 import { addIcons } from 'ionicons';
 import {
@@ -18,7 +19,8 @@ register();
     HttpClientModule,
     IonApp,
     IonContent,
-    IonRouterOutlet
+    IonRouterOutlet,
+    IonButton
   ],
   providers: [],
   selector: 'ionic-component-snippets-root',
@@ -39,6 +41,7 @@ export class AppComponent implements OnInit {
   constructor(
     private platform: Platform,
   ) {
+    defineLoading();
     this.initializeApp();
     addIcons(this.iconMaps)
   }
@@ -62,4 +65,5 @@ export class AppComponent implements OnInit {
       else App.exitApp();
     });
   }
+
 }

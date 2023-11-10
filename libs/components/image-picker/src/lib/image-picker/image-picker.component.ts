@@ -1,7 +1,5 @@
 import { addIcons } from 'ionicons';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { AlertController, LoadingController } from '@ionic/angular';
-import { Camera, CameraResultType, CameraSource, ImageOptions, Photo } from '@capacitor/camera';
 import jsQR from 'jsqr';
 import { Toast } from '@capacitor/toast';
 import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
@@ -9,6 +7,7 @@ import { SplashScreen } from '@capacitor/splash-screen';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
+  AlertController,
   IonButton,
   IonContent,
   IonHeader,
@@ -18,8 +17,10 @@ import {
   IonText,
   IonTitle,
   IonToolbar,
+  LoadingController,
 } from '@ionic/angular/standalone';
 import { image } from 'ionicons/icons';
+import { Camera, CameraResultType, CameraSource, ImageOptions, Photo } from '@capacitor/camera';
 
 @Component({
   imports: [
@@ -58,6 +59,7 @@ export class ImagePickerComponent implements OnInit {
 
   async pickImage() {
     const getPictureLoading = await this.presentLoading('Please wait');
+
     const options = {
       quality: 50,
       allowEditing: true,
