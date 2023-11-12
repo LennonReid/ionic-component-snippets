@@ -32,7 +32,7 @@
     "@capacitor/status-bar": "5.0.2",
     "@capacitor/toast": "^5.0.6",
     "@ionic/angular": "7.5.4",
-    "@ionic/core": "^7.5.2",
+    "@ionic/core": "^7.5.4",
     "@nx/angular": "16.10.0",
     "@nxext/ionic-angular": "^16.2.0",
     "@types/lodash-es": "^4.17.9",

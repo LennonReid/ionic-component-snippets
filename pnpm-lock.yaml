@@ -63,8 +63,8 @@ dependencies:
     specifier: 7.5.4
     version: 7.5.4(@angular/core@16.2.8)(@angular/forms@16.2.8)(@angular/router@16.2.8)(rxjs@7.8.1)(zone.js@0.13.3)
   '@ionic/core':
-    specifier: ^7.5.2
-    version: 7.5.2
+    specifier: ^7.5.4
+    version: 7.5.4
   '@nx/angular':
     specifier: 16.10.0
     version: 16.10.0(@angular-devkit/build-angular@16.2.5)(@angular-devkit/core@16.2.5)(@angular-devkit/schematics@16.2.5)(@schematics/angular@16.2.5)(@types/node@16.11.7)(cypress@13.3.0)(eslint@8.46.0)(nx@16.10.0)(rxjs@7.8.1)(ts-node@10.9.1)(typescript@5.1.6)
@@ -3564,14 +3564,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /@ionic/core@7.5.2:
-    resolution: {integrity: sha512-0O8YgaE7CzrhDLGpnNq2Ia4bR+qFE1uHJHafoNWhoTXkydNnqSMZlxMCvtSetfv9bwLic93lcXYNoZ8I8zV3XA==}
-    dependencies:
-      '@stencil/core': 4.6.0
-      ionicons: 7.2.1
-      tslib: 2.6.2
-    dev: false
 
   /@ionic/core@7.5.4:
     resolution: {integrity: sha512-rZbKlcVucRTDOK2Woh4CWPePlsXiUt3G9dCUniduKD7WeiuAk0GzfmoM3WXBvcUpkVTUIOrvKHaqd3JJSWEIzg==}

@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { ScanResult } from '@capacitor-community/barcode-scanner';
-import { LoadingController } from '@ionic/angular';
 import { Toast } from '@capacitor/toast';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +13,7 @@ import {
   IonHeader,
   IonIcon,
   IonTitle,
-  IonToolbar,
+  IonToolbar
 } from '@ionic/angular/standalone';
 import { CodeScannerComponent } from '@cs/components/code-scanner';
 
@@ -65,7 +64,7 @@ export class SamplesCodeScannerPage {
 
   permissionAlert?: HTMLIonAlertElement;
 
-  constructor(public loadingController: LoadingController) { }
+  constructor() { }
   scannedResult(event: ScanResult) {
     this.presentToast(event.content!, 'short', 'center');
     this.codeScannerEle.scanQr();

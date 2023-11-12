@@ -5,6 +5,7 @@ import { Capacitor } from '@capacitor/core';
 import { App } from '@capacitor/app';
 import { register } from 'swiper/element/bundle';
 import { defineCustomElement as defineLoading } from '@ionic/core/components/ion-loading';
+import { defineCustomElement as defineAlert } from '@ionic/core/components/ion-alert';
 
 import { addIcons } from 'ionicons';
 import {
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit {
     private platform: Platform,
   ) {
     defineLoading();
+    defineAlert();
     this.initializeApp();
     addIcons(this.iconMaps)
   }
