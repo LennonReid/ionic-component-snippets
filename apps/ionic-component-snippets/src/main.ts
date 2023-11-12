@@ -20,7 +20,6 @@ bootstrapApplication(AppComponent, {
     provideIonicAngular(),
     // provideStore(APP_REDUCERS, storeConfig),
     // provideEffects(APP_EFFECTS),
-
     {
       provide: 'APP_ENV',
       useValue: environment.production ? 'prod' : 'dev',

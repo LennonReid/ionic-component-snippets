@@ -40,5 +40,4 @@ Thumbs.db
 
 .angular
 
-**/android
-**/ios
+.nx/cache

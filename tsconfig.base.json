@@ -18,12 +18,20 @@
       "@cs/common-ui": ["libs/common/ui/src/index.ts"],
       "@cs/common/utils": ["libs/common/utils/src/index.ts"],
       "@cs/components/calendar": ["libs/components/calendar/src/index.ts"],
+      "@cs/components/code-scanner": [
+        "libs/components/code-scanner/src/index.ts"
+      ],
+      "@cs/components/image-picker": [
+        "libs/components/image-picker/src/index.ts"
+      ],
       "@cs/components/select-search": [
         "libs/components/select-search/src/index.ts"
       ],
       "@cs/components/slide-segments": [
         "libs/components/slide-segments/src/index.ts"
       ],
+      "@cs/samples/code-scanner": ["libs/samples/code-scanner/src/index.ts"],
+      "@cs/samples/image-picker": ["libs/samples/image-picker/src/index.ts"],
       "@cs/samples/calendar": ["libs/samples/calendar/src/index.ts"],
       "@cs/samples/select-search": ["libs/samples/select-search/src/index.ts"],
       "@cs/samples/slide-segments": ["libs/samples/slide-segments/src/index.ts"]

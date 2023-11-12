@@ -1,0 +1,57 @@
+{
+  "name": "samples-code-scanner",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/samples/code-scanner/src",
+  "prefix": "ionic-component-snippets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
+      "options": {
+        "project": "libs/samples/code-scanner/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/samples/code-scanner/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/samples/code-scanner/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "libs/samples/code-scanner/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/samples/code-scanner/**/*.ts",
+          "libs/samples/code-scanner/**/*.html",
+          "libs/samples/code-scanner/package.json"
+        ]
+      }
+    }
+  }
+}
