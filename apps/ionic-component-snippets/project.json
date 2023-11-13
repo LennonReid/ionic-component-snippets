@@ -56,23 +56,23 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "ionic-component-snippets:build:production"
+          "buildTarget": "ionic-component-snippets:build:production"
         },
         "development": {
-          "browserTarget": "ionic-component-snippets:build:development"
+          "buildTarget": "ionic-component-snippets:build:development"
         }
       },
       "defaultConfiguration": "development",
       "options": {
-        "browserTarget": "ionic-component-snippets:build",
         "disableHostCheck": true,
-        "host": "0.0.0.0"
+        "host": "0.0.0.0",
+        "buildTarget": "ionic-component-snippets:build"
       }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ionic-component-snippets:build"
+        "buildTarget": "ionic-component-snippets:build"
       }
     },
     "lint": {
