@@ -8,15 +8,24 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
-        "allowedCommonJsDependencies": ["moment"],
+        "allowedCommonJsDependencies": [
+          "moment",
+          "jsqr"
+        ],
         "outputPath": "dist/apps/ionic-component-snippets",
         "index": "apps/ionic-component-snippets/src/index.html",
         "main": "apps/ionic-component-snippets/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/ionic-component-snippets/tsconfig.app.json",
-        "assets": ["apps/ionic-component-snippets/src/assets"],
+        "assets": [
+          "apps/ionic-component-snippets/src/assets"
+        ],
         "styles": [
           "apps/ionic-component-snippets/src/styles.scss",
           {
@@ -62,7 +71,12 @@
           "browserTarget": "ionic-component-snippets:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "browserTarget": "ionic-component-snippets:build",
+        "disableHostCheck": true,
+        "host": "0.0.0.0"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -71,8 +85,10 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "apps/ionic-component-snippets/**/*.ts",
@@ -82,7 +98,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/ionic-component-snippets/jest.config.ts",
         "passWithNoTests": true

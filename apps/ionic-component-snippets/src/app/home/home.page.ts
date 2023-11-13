@@ -56,5 +56,13 @@ export class HomePage {
       routerLink: '/slide-segments',
       label: 'Sample slide-segments'
     },
+    {
+      routerLink: '/code-scanner',
+      label: 'Sample code-scanner'
+    },
+    {
+      routerLink: '/image-picker',
+      label: 'Sample image-picker'
+    },
   ]
 }

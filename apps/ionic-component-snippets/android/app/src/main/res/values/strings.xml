@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic-component-snippets</string>
+    <string name="title_activity_main">ionic-component-snippets</string>
+    <string name="package_name">com.ionic.componentSnippets</string>
+    <string name="custom_url_scheme">com.ionic.componentSnippets</string>
+</resources>

@@ -1,0 +1,51 @@
+{
+  "name": "image-picker",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/components/image-picker/src",
+  "prefix": "ionic-component-snippets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/components/image-picker/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/components/image-picker/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/components/image-picker/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/components/image-picker/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/components/image-picker/**/*.ts",
+          "libs/components/image-picker/**/*.html",
+          "libs/components/image-picker/package.json"
+        ]
+      }
+    }
+  }
+}
