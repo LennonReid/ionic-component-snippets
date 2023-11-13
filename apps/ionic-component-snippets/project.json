@@ -8,24 +8,15 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "allowedCommonJsDependencies": [
-          "moment",
-          "jsqr"
-        ],
+        "allowedCommonJsDependencies": ["moment", "jsqr"],
         "outputPath": "dist/apps/ionic-component-snippets",
         "index": "apps/ionic-component-snippets/src/index.html",
         "main": "apps/ionic-component-snippets/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/ionic-component-snippets/tsconfig.app.json",
-        "assets": [
-          "apps/ionic-component-snippets/src/assets"
-        ],
+        "assets": ["apps/ionic-component-snippets/src/assets"],
         "styles": [
           "apps/ionic-component-snippets/src/styles.scss",
           {
@@ -86,9 +77,7 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
           "apps/ionic-component-snippets/**/*.ts",
@@ -98,18 +87,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/ionic-component-snippets/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/ionic-component-snippets/jest.config.ts"
       }
     },
     "serve-static": {
