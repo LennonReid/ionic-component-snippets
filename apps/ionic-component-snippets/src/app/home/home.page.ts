@@ -41,8 +41,7 @@ export interface ISampleItem {
   styles: [``],
   standalone: true
 })
-export class HomePage {
-  constructor() { }
+export default class HomePage {
   samples: ISampleItem[] = [
     {
       routerLink: '/calendar',

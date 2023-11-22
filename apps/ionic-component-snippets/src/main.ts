@@ -1,8 +1,8 @@
 import { environment } from './environments/environment';
-import { enableProdMode } from '@angular/core';
+import { enableProdMode, provideZoneChangeDetection } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { PreloadAllModules, RouteReuseStrategy, provideRouter, withComponentInputBinding, withPreloading } from '@angular/router';
+import { PreloadAllModules, RouteReuseStrategy, provideRouter, withComponentInputBinding, withPreloading, withRouterConfig } from '@angular/router';
 import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalone';
 import { appRoutes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
@@ -14,10 +14,21 @@ if (environment.production) {
 }
 bootstrapApplication(AppComponent, {
   providers: [
-    provideHttpClient(),
-    provideRouter(appRoutes, withComponentInputBinding(), withPreloading(PreloadAllModules)),
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    {
+      provide: RouteReuseStrategy,
+      useClass: IonicRouteStrategy
+    },
+    provideRouter(appRoutes,
+      withPreloading(PreloadAllModules),
+      withRouterConfig({
+        paramsInheritanceStrategy: 'always'
+      }),
+      withComponentInputBinding()
+    ),
     provideIonicAngular(),
+    provideZoneChangeDetection({
+      eventCoalescing: true
+    }),
     // provideStore(APP_REDUCERS, storeConfig),
     // provideEffects(APP_EFFECTS),
     {
@@ -25,6 +36,7 @@ bootstrapApplication(AppComponent, {
       useValue: environment.production ? 'prod' : 'dev',
     },
     { provide: Document, useExisting: DOCUMENT },
+
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimations()
   ],

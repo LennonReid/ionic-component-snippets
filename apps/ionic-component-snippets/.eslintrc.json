@@ -9,6 +9,10 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-explicit-any": "off",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -30,9 +34,7 @@
           {
             "suffixes": ["Page", "Component"]
           }
-        ],
-        "@angular-eslint/no-empty-lifecycle-method": 0,
-        "@typescript-eslint/no-empty-function": 0
+        ]
       }
     },
     {

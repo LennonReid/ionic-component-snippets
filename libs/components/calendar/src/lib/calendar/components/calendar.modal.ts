@@ -12,7 +12,7 @@ import {
 import { IonContent, ModalController, NavParams, ScrollDetail } from '@ionic/angular/standalone';
 import { CalendarDay, CalendarModalOptions, CalendarMonth, InternalCalendarModalOptions } from '../calendar.model';
 import { CalendarService } from '../services/calendar.service';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { addIcons } from 'ionicons';
 import {

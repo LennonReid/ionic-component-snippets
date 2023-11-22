@@ -20,7 +20,7 @@ import {
   IonContent,
   IonBackButton
 } from '@ionic/angular/standalone'
-import * as moment from 'moment'
+import moment from 'moment'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { Subject } from 'rxjs'
 import {
@@ -120,7 +120,7 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils'
     CalendarModule
   ]
 })
-export class SamplesCalendarPage implements OnInit {
+export default class SamplesCalendarPage implements OnInit {
   startDate = moment().subtract(4, 'day').format('YYYY-MM-DD')
   endDate = moment().add(1, 'days').format('YYYY-MM-DD')
   maxDate = moment().subtract(1, 'day').format('YYYY-MM-DD')

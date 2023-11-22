@@ -54,7 +54,7 @@ import { ImagePickerComponent } from '@cs/components/image-picker';
   `,
   standalone: true,
 })
-export class SamplesImagePickerPage {
+export default class SamplesImagePickerPage {
   readonly iconMaps: any = {
     image,
   };

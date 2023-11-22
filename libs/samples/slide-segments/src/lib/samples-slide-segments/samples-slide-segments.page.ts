@@ -44,7 +44,7 @@ import {
   `,
   styles: [],
 })
-export class SamplesSlideSegmentsPage {
+export default class SamplesSlideSegmentsPage {
   segmentButtons: ISegmentButton[] = [];
   constructor() {
     for (let index = 1; index < 6; index++) {

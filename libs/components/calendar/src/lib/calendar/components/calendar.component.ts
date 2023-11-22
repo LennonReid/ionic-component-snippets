@@ -12,7 +12,7 @@ import {
 import { CalendarService } from '../services/calendar.service';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
-import * as moment from 'moment';
+import moment from 'moment';
 import { addIcons } from 'ionicons';
 import {
   caretDown,

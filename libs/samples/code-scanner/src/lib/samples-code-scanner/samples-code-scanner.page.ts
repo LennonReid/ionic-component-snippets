@@ -55,7 +55,7 @@ enum CameraChoice {
   `,
   standalone: true,
 })
-export class SamplesCodeScannerPage {
+export default class SamplesCodeScannerPage {
   @ViewChild('codeScannerEle') codeScannerEle!: CodeScannerComponent;
 
   cameraChoice: CameraChoice = CameraChoice.BACK;

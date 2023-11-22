@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import moment from 'moment';
 
 export const getRecentDay = (n: number, endDate: string) => {
   return moment(new Date(endDate)).subtract(n, 'day').format('YYYY-MM-DD');

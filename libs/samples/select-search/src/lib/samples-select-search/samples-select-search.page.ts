@@ -79,7 +79,7 @@ export enum ESelectDataMode {
   `,
   styles: [``]
 })
-export class SamplesSelectSearchPage implements OnInit, OnDestroy {
+export default class SamplesSelectSearchPage implements OnInit, OnDestroy {
   selectSearchService = this.injector.get(SelectSearchService);
   loadingController = this.injector.get(LoadingController)
   selectDataMode = signal(ESelectDataMode.short);
