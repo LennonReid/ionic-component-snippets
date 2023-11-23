@@ -1,13 +1,13 @@
 .container {
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .square {
-    --background: blue;
+  --background: blue;
 
-    width: 100px;
-    height: 100px;
-    background: rgba(0, 0, 255, 0.5);
-    margin: 10px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 255, 0.5);
+  margin: 10px;
 }

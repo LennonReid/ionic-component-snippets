@@ -20,7 +20,11 @@ export class CalendarService {
 
   public static readonly DEFAULT_DATE: Date = new Date(1971, 0, 1);
 
-  constructor(@Optional() @Inject(DEFAULT_CALENDAR_OPTIONS) defaultOpts: InternalCalendarModalOptions) {
+  constructor(
+    @Optional()
+    @Inject(DEFAULT_CALENDAR_OPTIONS)
+    defaultOpts: InternalCalendarModalOptions
+  ) {
     this.defaultOpts = defaultOpts;
   }
 
@@ -84,7 +88,8 @@ export class CalendarService {
       showYearPicker,
       defaultTitle,
       defaultSubtitle,
-      defaultScrollTo: calendarOptions.defaultScrollTo || calendarOptions.defaultDate,
+      defaultScrollTo:
+        calendarOptions.defaultScrollTo || calendarOptions.defaultDate,
       defaultDate: calendarOptions.defaultDate || null,
       defaultDates: calendarOptions.defaultDates || null,
       defaultDateRange: calendarOptions.defaultDateRange || null,
@@ -118,7 +123,11 @@ export class CalendarService {
     return opt.daysConfig.find((n) => day.isSame(n.date, 'day'));
   }
 
-  createCalendarDay(time: number, opt: InternalCalendarModalOptions, month?: number): CalendarDay {
+  createCalendarDay(
+    time: number,
+    opt: InternalCalendarModalOptions,
+    month?: number
+  ): CalendarDay {
     let _time = moment(time);
     let date = moment(time);
     let isToday = moment().isSame(_time, 'days');
@@ -181,11 +190,18 @@ export class CalendarService {
     };
   }
 
-  createCalendarMonth(original: CalendarOriginal, opt: InternalCalendarModalOptions): CalendarMonth {
+  createCalendarMonth(
+    original: CalendarOriginal,
+    opt: InternalCalendarModalOptions
+  ): CalendarMonth {
     const days: Array<CalendarDay> = new Array(6).fill(null);
     const len = original.howManyDays;
     for (let i = original.firstWeek; i < len + original.firstWeek; i++) {
-      const itemTime = new Date(original.year, original.month, i - original.firstWeek + 1).getTime();
+      const itemTime = new Date(
+        original.year,
+        original.month,
+        i - original.firstWeek + 1
+      ).getTime();
       days[i] = this.createCalendarDay(itemTime, opt);
     }
 
@@ -208,15 +224,29 @@ export class CalendarService {
         const dayBefore = moment(days[startOffsetIndex + 1].time)
           .clone()
           .subtract(1, 'd');
-        days[startOffsetIndex] = this.createCalendarDay(dayBefore.valueOf(), opt, thisMonth);
+        days[startOffsetIndex] = this.createCalendarDay(
+          dayBefore.valueOf(),
+          opt,
+          thisMonth
+        );
       }
 
-      if (!(_booleanMap.length % 7 === 0 && _booleanMap[_booleanMap.length - 1])) {
-        for (endOffsetIndex; endOffsetIndex < days.length + (endOffsetIndex % 7); endOffsetIndex++) {
+      if (
+        !(_booleanMap.length % 7 === 0 && _booleanMap[_booleanMap.length - 1])
+      ) {
+        for (
+          endOffsetIndex;
+          endOffsetIndex < days.length + (endOffsetIndex % 7);
+          endOffsetIndex++
+        ) {
           const dayAfter = moment(days[endOffsetIndex - 1].time)
             .clone()
             .add(1, 'd');
-          days[endOffsetIndex] = this.createCalendarDay(dayAfter.valueOf(), opt, thisMonth);
+          days[endOffsetIndex] = this.createCalendarDay(
+            dayAfter.valueOf(),
+            opt,
+            thisMonth
+          );
         }
       }
     }
@@ -227,11 +257,19 @@ export class CalendarService {
     };
   }
 
-  createMonthsByPeriod(startTime: number, monthsNum: number, opt: InternalCalendarModalOptions): Array<CalendarMonth> {
+  createMonthsByPeriod(
+    startTime: number,
+    monthsNum: number,
+    opt: InternalCalendarModalOptions
+  ): Array<CalendarMonth> {
     let _array: Array<CalendarMonth> = [];
 
     let _start = new Date(startTime);
-    let _startMonth = new Date(_start.getFullYear(), _start.getMonth(), 1).getTime();
+    let _startMonth = new Date(
+      _start.getFullYear(),
+      _start.getMonth(),
+      1
+    ).getTime();
 
     for (let i = 0; i < monthsNum; i++) {
       let time = moment(_startMonth).add(i, 'M').valueOf();
@@ -245,12 +283,16 @@ export class CalendarService {
   createSubsctractMonthsByPeriod(
     startTime: number,
     monthsNum: number,
-    opt: InternalCalendarModalOptions,
+    opt: InternalCalendarModalOptions
   ): Array<CalendarMonth> {
     let _array: Array<CalendarMonth> = [];
 
     let _start = new Date(startTime);
-    let _startMonth = new Date(_start.getFullYear(), _start.getMonth(), 1).getTime();
+    let _startMonth = new Date(
+      _start.getFullYear(),
+      _start.getMonth(),
+      1
+    ).getTime();
 
     for (let i = 0; i < monthsNum; i++) {
       let time = moment(_startMonth).subtract(i, 'M').valueOf();

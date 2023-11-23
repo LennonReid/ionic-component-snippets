@@ -1,4 +1,10 @@
-import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  inject,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import {
   AlertController,
   AnimationController,
@@ -29,8 +35,10 @@ import {
   IonProgressBar,
   IonTitle,
   IonToggle,
-  IonToolbar, ModalController, NavController,
-  ToastController
+  IonToolbar,
+  ModalController,
+  NavController,
+  ToastController,
 } from '@ionic/angular/standalone';
 import type { OverlayEventDetail } from '@ionic/core/components';
 import { FormsModule } from '@angular/forms';
@@ -70,11 +78,10 @@ import { ModalExampleComponent } from './modal-example/modal-example.component';
     IonBadge,
     IonLabel,
     IonAccordionGroup,
-    IonAccordion
-  ]
+    IonAccordion,
+  ],
 })
 export default class ComponentTestPage implements OnInit {
-
   @ViewChild(IonModal)
   modal!: IonModal;
   name!: string;
@@ -89,14 +96,15 @@ export default class ComponentTestPage implements OnInit {
   private readonly navController = inject(NavController);
 
   ngOnInit() {
-    const animation = this.animationController.create()
+    const animation = this.animationController
+      .create()
       .addElement(this.squareElRef.nativeElement)
       .duration(3000)
       .iterations(Infinity)
       .keyframes([
         { offset: 0, background: 'orange' },
         { offset: 0.72, background: 'var(--background)' },
-        { offset: 1, background: 'green' }
+        { offset: 1, background: 'green' },
       ]);
     animation.play();
   }
@@ -113,7 +121,7 @@ export default class ComponentTestPage implements OnInit {
     const alert = await this.alertController.create({
       header: 'Some Header',
       message: 'Some message',
-      buttons: ['OK']
+      buttons: ['OK'],
     });
 
     await alert.present();
@@ -124,11 +132,13 @@ export default class ComponentTestPage implements OnInit {
     if (ev.detail.role === 'confirm') {
       const toast = await this.toastController.create({
         header: `Hello, ${ev.detail.data}!`,
-        buttons: [{
-          icon: 'close-circle',
-          role: 'cancel',
-          side: 'end'
-        }]
+        buttons: [
+          {
+            icon: 'close-circle',
+            role: 'cancel',
+            side: 'end',
+          },
+        ],
       });
       await toast.present();
     }
@@ -145,11 +155,13 @@ export default class ComponentTestPage implements OnInit {
     if (role === 'confirm') {
       const toast = await this.toastController.create({
         header: `Hello, ${data}!`,
-        buttons: [{
-          icon: 'close-circle',
-          role: 'cancel',
-          side: 'end'
-        }]
+        buttons: [
+          {
+            icon: 'close-circle',
+            role: 'cancel',
+            side: 'end',
+          },
+        ],
       });
       await toast.present();
     }
@@ -158,5 +170,4 @@ export default class ComponentTestPage implements OnInit {
   goToInbox() {
     this.navController.navigateForward('/folder/inbox');
   }
-
 }

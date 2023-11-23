@@ -9,15 +9,23 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
-import { IonContent, ModalController, NavParams, ScrollDetail } from '@ionic/angular/standalone';
-import { CalendarDay, CalendarModalOptions, CalendarMonth, InternalCalendarModalOptions } from '../calendar.model';
+import {
+  IonContent,
+  ModalController,
+  NavParams,
+  ScrollDetail,
+} from '@ionic/angular/standalone';
+import {
+  CalendarDay,
+  CalendarModalOptions,
+  CalendarMonth,
+  InternalCalendarModalOptions,
+} from '../calendar.model';
 import { CalendarService } from '../services/calendar.service';
 import moment from 'moment';
 
 import { addIcons } from 'ionicons';
-import {
-  close, checkmark
-} from 'ionicons/icons';
+import { close, checkmark } from 'ionicons/icons';
 
 import { pickModes } from '../config';
 
@@ -31,8 +39,15 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
     <ion-header>
       <ion-toolbar [color]="_d.color || ''">
         <ion-buttons slot="start">
-          <ion-button type="button" slot="icon-only" fill="clear" (click)="onCancel()">
-            <span *ngIf="_d.closeLabel !== '' && !_d.closeIcon">{{ _d.closeLabel }}</span>
+          <ion-button
+            type="button"
+            slot="icon-only"
+            fill="clear"
+            (click)="onCancel()"
+          >
+            <span *ngIf="_d.closeLabel !== '' && !_d.closeIcon">{{
+              _d.closeLabel
+            }}</span>
             <ion-icon *ngIf="_d.closeIcon" name="close"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -40,7 +55,13 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
         <ion-title>{{ _d.title }}</ion-title>
 
         <ion-buttons slot="end">
-          <ion-button type="button" *ngIf="!!_d.clearLabel" fill="clear" [disabled]="!canClear()" (click)="clear()">
+          <ion-button
+            type="button"
+            *ngIf="!!_d.clearLabel"
+            fill="clear"
+            [disabled]="!canClear()"
+            (click)="clear()"
+          >
             <span *ngIf="_d.clearLabel !== ''">{{ _d.clearLabel }}</span>
           </ion-button>
           <ion-button
@@ -51,7 +72,9 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
             [disabled]="!canDone()"
             (click)="done()"
           >
-            <span *ngIf="_d.doneLabel !== '' && !_d.doneIcon">{{ _d.doneLabel }}</span>
+            <span *ngIf="_d.doneLabel !== '' && !_d.doneIcon">{{
+              _d.doneLabel
+            }}</span>
             <ion-icon *ngIf="_d.doneIcon" name="checkmark"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -59,7 +82,11 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
 
       <ng-content select="[sub-header]"></ng-content>
 
-      <ion-calendar-week [color]="_d.color || ''" [weekArray]="_d.weekdays || []" [weekStart]="_d.weekStart || 1">
+      <ion-calendar-week
+        [color]="_d.color || ''"
+        [weekArray]="_d.weekdays || []"
+        [weekStart]="_d.weekStart || 1"
+      >
       </ion-calendar-week>
     </ion-header>
 
@@ -70,14 +97,22 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
       [ngClass]="{ 'multi-selection': _d.pickMode === 'multi' }"
     >
       <div #months>
-        <ng-template ngFor let-month [ngForOf]="calendarMonths" [ngForTrackBy]="trackByIndex" let-i="index">
+        <ng-template
+          ngFor
+          let-month
+          [ngForOf]="calendarMonths"
+          [ngForTrackBy]="trackByIndex"
+          let-i="index"
+        >
           <div
             class="month-box"
             [class.month-invisible]="!scrolledToInitialPosition"
             [attr.data-month]="_monthFormatYYYYMM(month.original.date)"
             [attr.id]="'month-' + i"
           >
-            <h4 class="text-center month-title">{{ _monthFormat(month.original.date) }}</h4>
+            <h4 class="text-center month-title">
+              {{ _monthFormat(month.original.date) }}
+            </h4>
             <ion-calendar-month
               [month]="month"
               [pickMode]="_d.pickMode || ''"
@@ -92,7 +127,11 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
         </ng-template>
       </div>
 
-      <ion-infinite-scroll threshold="25%" (ionInfinite)="nextMonth($event)" position="bottom">
+      <ion-infinite-scroll
+        threshold="25%"
+        (ionInfinite)="nextMonth($event)"
+        position="bottom"
+      >
         <ion-infinite-scroll-content></ion-infinite-scroll-content>
       </ion-infinite-scroll>
     </ion-content>
@@ -129,9 +168,9 @@ export class CalendarModal implements OnInit, AfterViewInit {
     public params: NavParams,
     public modalCtrl: ModalController,
     public ref: ChangeDetectorRef,
-    public calSvc: CalendarService,
+    public calSvc: CalendarService
   ) {
-    addIcons({ close, checkmark })
+    addIcons({ close, checkmark });
   }
 
   ngOnInit(): void {
@@ -160,7 +199,7 @@ export class CalendarModal implements OnInit, AfterViewInit {
     this.calendarMonths = this.calSvc.createMonthsByPeriod(
       moment(dateToUse).startOf('month').subtract(2, 'months').valueOf(),
       this.findInitMonthNumber(this._d.defaultScrollTo, dateToUse) + this.step,
-      this._d,
+      this._d
     );
   }
 
@@ -168,20 +207,31 @@ export class CalendarModal implements OnInit, AfterViewInit {
     const { pickMode, defaultDate, defaultDateRange, defaultDates } = this._d;
     if (pickMode === pickModes.SINGLE) {
       if (defaultDate) {
-        this.datesTemp[0] = this.calSvc.createCalendarDay(this._getDayTime(defaultDate), this._d);
+        this.datesTemp[0] = this.calSvc.createCalendarDay(
+          this._getDayTime(defaultDate),
+          this._d
+        );
       }
     } else if (pickMode === pickModes.RANGE) {
       if (defaultDateRange) {
         if (defaultDateRange.from) {
-          this.datesTemp[0] = this.calSvc.createCalendarDay(this._getDayTime(defaultDateRange.from), this._d);
+          this.datesTemp[0] = this.calSvc.createCalendarDay(
+            this._getDayTime(defaultDateRange.from),
+            this._d
+          );
         }
         if (defaultDateRange.to) {
-          this.datesTemp[1] = this.calSvc.createCalendarDay(this._getDayTime(defaultDateRange.to), this._d);
+          this.datesTemp[1] = this.calSvc.createCalendarDay(
+            this._getDayTime(defaultDateRange.to),
+            this._d
+          );
         }
       }
     } else if (pickMode === pickModes.MULTI) {
       if (defaultDates && defaultDates.length) {
-        this.datesTemp = defaultDates.map((e) => this.calSvc.createCalendarDay(this._getDayTime(e), this._d));
+        this.datesTemp = defaultDates.map((e) =>
+          this.calSvc.createCalendarDay(this._getDayTime(e), this._d)
+        );
       }
     } else {
       this.datesTemp = [];
@@ -192,7 +242,8 @@ export class CalendarModal implements OnInit, AfterViewInit {
     const { cssClass } = this._d;
     if (cssClass) {
       cssClass.split(' ').forEach((_class: string) => {
-        if (_class.trim() !== '') this._renderer.addClass(this._elementRef.nativeElement, _class);
+        if (_class.trim() !== '')
+          this._renderer.addClass(this._elementRef.nativeElement, _class);
       });
     }
   }
@@ -217,7 +268,10 @@ export class CalendarModal implements OnInit, AfterViewInit {
   done(): void {
     const { pickMode } = this._d;
 
-    this.modalCtrl.dismiss(this.calSvc.wrapResult(this.datesTemp, pickMode), 'done');
+    this.modalCtrl.dismiss(
+      this.calSvc.wrapResult(this.datesTemp, pickMode),
+      'done'
+    );
   }
 
   canDone(): boolean {
@@ -232,9 +286,15 @@ export class CalendarModal implements OnInit, AfterViewInit {
       if (defaultEndDateToStartDate) {
         return !!(this.datesTemp[0] && this.datesTemp[0].time);
       }
-      return !!(this.datesTemp[0] && this.datesTemp[1]) && !!(this.datesTemp[0].time && this.datesTemp[1].time);
+      return (
+        !!(this.datesTemp[0] && this.datesTemp[1]) &&
+        !!(this.datesTemp[0].time && this.datesTemp[1].time)
+      );
     } else if (pickMode === pickModes.MULTI) {
-      return this.datesTemp.length > 0 && this.datesTemp.every((e) => !!e && !!e.time);
+      return (
+        this.datesTemp.length > 0 &&
+        this.datesTemp.every((e) => !!e && !!e.time)
+      );
     } else {
       return false;
     }
@@ -259,12 +319,21 @@ export class CalendarModal implements OnInit, AfterViewInit {
     const nextTime = moment(final.original.time).add(1, 'M').valueOf();
     const rangeEnd = this._d.to ? moment(this._d.to).subtract(1, 'M') : 0;
 
-    if (len <= 0 || (rangeEnd !== 0 && moment(final.original.time).isAfter(rangeEnd))) {
+    if (
+      len <= 0 ||
+      (rangeEnd !== 0 && moment(final.original.time).isAfter(rangeEnd))
+    ) {
       event.target.disabled = true;
       return;
     }
 
-    this.calendarMonths.push(...this.calSvc.createMonthsByPeriod(nextTime, NUM_OF_MONTHS_TO_CREATE, this._d));
+    this.calendarMonths.push(
+      ...this.calSvc.createMonthsByPeriod(
+        nextTime,
+        NUM_OF_MONTHS_TO_CREATE,
+        this._d
+      )
+    );
     event.target.complete();
     this.repaintDOM();
   }
@@ -281,7 +350,13 @@ export class CalendarModal implements OnInit, AfterViewInit {
       .subtract(NUM_OF_MONTHS_TO_CREATE, 'M')
       .valueOf());
 
-    this.calendarMonths.unshift(...this.calSvc.createMonthsByPeriod(firstTime, NUM_OF_MONTHS_TO_CREATE, this._d));
+    this.calendarMonths.unshift(
+      ...this.calSvc.createMonthsByPeriod(
+        firstTime,
+        NUM_OF_MONTHS_TO_CREATE,
+        this._d
+      )
+    );
     this.ref.detectChanges();
     await this.repaintDOM();
   }
@@ -289,7 +364,9 @@ export class CalendarModal implements OnInit, AfterViewInit {
   async scrollToDate(date: Date): Promise<void> {
     const dateToUse = this.getDateToUse();
     const monthSelector = moment(dateToUse).format('YYYY-MM');
-    const element = document.querySelector(`[data-month="${monthSelector}"]`) as HTMLElement;
+    const element = document.querySelector(
+      `[data-month="${monthSelector}"]`
+    ) as HTMLElement;
     if (!element) {
       return;
     }
@@ -378,7 +455,9 @@ export class CalendarModal implements OnInit, AfterViewInit {
   }
 
   findInitMonthNumber(date: Date, fromDate = this._d.from): number {
-    let startDate = this.actualFirstTime ? moment(this.actualFirstTime) : moment(fromDate);
+    let startDate = this.actualFirstTime
+      ? moment(this.actualFirstTime)
+      : moment(fromDate);
     const defaultScrollTo = moment(date);
     const isAfter: boolean = defaultScrollTo.isAfter(startDate);
     if (!isAfter) return -1;

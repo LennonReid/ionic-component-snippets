@@ -34,7 +34,7 @@ import { ImagePickerComponent } from '@cs/components/image-picker';
     IonButton,
     IonButtons,
     IonBackButton,
-    ImagePickerComponent
+    ImagePickerComponent,
   ],
   selector: 'ionic-component-snippets-samlpes-image-picker',
   template: `
@@ -48,8 +48,14 @@ import { ImagePickerComponent } from '@cs/components/image-picker';
     </ion-header>
 
     <ion-content>
-    <ion-button class="mt-3" (click)="tapHaptic(); pickImage()">Pick Image From gallery</ion-button>
-    <ionic-component-snippets-image-picker [isDebugging]="isDebugging" #imagePickerEle (imagePickResult)="imagePickResult($event)"></ionic-component-snippets-image-picker>
+      <ion-button class="mt-3" (click)="tapHaptic(); pickImage()"
+        >Pick Image From gallery</ion-button
+      >
+      <ionic-component-snippets-image-picker
+        [isDebugging]="isDebugging"
+        #imagePickerEle
+        (imagePickResult)="imagePickResult($event)"
+      ></ionic-component-snippets-image-picker>
     </ion-content>
   `,
   standalone: true,
@@ -78,7 +84,11 @@ export default class SamplesImagePickerPage {
       });
     }
   }
-  async presentToast(msg: string, duration: 'short' | 'long', pos: 'top' | 'center' | 'bottom') {
+  async presentToast(
+    msg: string,
+    duration: 'short' | 'long',
+    pos: 'top' | 'center' | 'bottom'
+  ) {
     await Toast.show({
       text: msg,
       duration: duration,
