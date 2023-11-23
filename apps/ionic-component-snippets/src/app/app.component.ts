@@ -29,9 +29,7 @@ register();
   standalone: true,
   template: `
     <ion-app>
-      <ion-router-outlet
-        [environmentInjector]="environmentInjector"
-      ></ion-router-outlet>
+      <ion-router-outlet id="main-content"></ion-router-outlet>
     </ion-app>
   `,
 })

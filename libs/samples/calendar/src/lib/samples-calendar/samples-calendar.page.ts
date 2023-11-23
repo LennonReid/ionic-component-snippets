@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common'
-import { Component, OnInit, signal } from '@angular/core'
+import { CommonModule } from '@angular/common';
+import { Component, OnInit, signal } from '@angular/core';
 import {
   ModalController,
   SelectChangeEventDetail,
@@ -18,24 +18,21 @@ import {
   IonSegment,
   IonSegmentButton,
   IonContent,
-  IonBackButton
-} from '@ionic/angular/standalone'
-import * as moment from 'moment'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { Subject } from 'rxjs'
+  IonBackButton,
+} from '@ionic/angular/standalone';
+import moment from 'moment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Subject } from 'rxjs';
 import {
   CalendarComponentOptions,
-  CalendarModule
-} from '@cs/components/calendar'
-import { getRecentDay, getRecentMonth } from '@cs/common/utils'
+  CalendarModule,
+} from '@cs/components/calendar';
+import { getRecentDay, getRecentMonth } from '@cs/common/utils';
 
 @Component({
   selector: 'ionic-component-snippets-samples-calendar',
   standalone: true,
-  styles: [
-    `
-    `
-  ],
+  styles: [``],
   template: `
     <ion-header>
       <ion-toolbar color="primary">
@@ -117,136 +114,136 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils'
     IonContent,
     IonBackButton,
     IonLabel,
-    CalendarModule
-  ]
+    CalendarModule,
+  ],
 })
-export class SamplesCalendarPage implements OnInit {
-  startDate = moment().subtract(4, 'day').format('YYYY-MM-DD')
-  endDate = moment().add(1, 'days').format('YYYY-MM-DD')
-  maxDate = moment().subtract(1, 'day').format('YYYY-MM-DD')
-  costChartData: any[] = []
-  selectedSegment = signal('electricity')
-  costCategories: any = []
-  title = ''
-  height = 600
+export default class SamplesCalendarPage implements OnInit {
+  startDate = moment().subtract(4, 'day').format('YYYY-MM-DD');
+  endDate = moment().add(1, 'days').format('YYYY-MM-DD');
+  maxDate = moment().subtract(1, 'day').format('YYYY-MM-DD');
+  costChartData: any[] = [];
+  selectedSegment = signal('electricity');
+  costCategories: any = [];
+  title = '';
+  height = 600;
 
   dateRangeSelectionOptions = [
     {
       title: 'Past 3 days',
-      value: 'pastThreeDays'
+      value: 'pastThreeDays',
     },
     {
       title: 'Past week',
-      value: 'pastOneWeek'
+      value: 'pastOneWeek',
     },
     {
       title: 'Past 2 weeks',
-      value: 'pastHalfMonth'
+      value: 'pastHalfMonth',
     },
     {
       title: 'Past month',
-      value: 'pastOneMonth'
+      value: 'pastOneMonth',
     },
     {
       title: 'Past 6 months',
-      value: 'pastSixMonths'
+      value: 'pastSixMonths',
     },
     {
       title: 'Past year',
-      value: 'pastOneYear'
-    }
-  ]
+      value: 'pastOneYear',
+    },
+  ];
 
   options: CalendarComponentOptions = {
     pickMode: 'range',
-    weekStart: 1
-  }
-  collapse = signal(false)
+    weekStart: 1,
+  };
+  collapse = signal(false);
 
-  destroy$ = new Subject<boolean>()
-  dateRange = 'pastOneWeek'
+  destroy$ = new Subject<boolean>();
+  dateRange = 'pastOneWeek';
   date: {
-    from: string
-    to: string
+    from: string;
+    to: string;
   } = {
-      from: moment().subtract(7, 'day').format('YYYY-MM-DD'),
-      to: moment().add(1, 'days').format('YYYY-MM-DD')
-    }
+    from: moment().subtract(7, 'day').format('YYYY-MM-DD'),
+    to: moment().add(1, 'days').format('YYYY-MM-DD'),
+  };
 
   constructor(
     public modalCtrl: ModalController,
     public navController: NavController,
     private loadingController: LoadingController
-  ) { }
+  ) {}
   dateSelectStart(event: any) {
-    this.date.from = moment(event.time).format('YYYY-MM-DD')
+    this.date.from = moment(event.time).format('YYYY-MM-DD');
   }
   dateChange() {
     // this.collapse.set(true);
-    this.handleQuery()
+    this.handleQuery();
   }
   segmentHandleChange(e: CustomEvent<SelectChangeEventDetail>) {
     switch (e.detail.value) {
       case 'pastThreeDays':
         this.date = {
           from: getRecentDay(3, this.endDate),
-          to: this.endDate
-        }
-        break
+          to: this.endDate,
+        };
+        break;
 
       case 'pastOneWeek':
         this.date = {
           from: getRecentDay(7, this.endDate),
-          to: this.endDate
-        }
-        break
+          to: this.endDate,
+        };
+        break;
       case 'pastHalfMonth':
         this.date = {
           from: getRecentDay(14, this.endDate),
-          to: this.endDate
-        }
-        break
+          to: this.endDate,
+        };
+        break;
       case 'pastOneMonth':
         this.date = {
           from: getRecentMonth(1, this.endDate),
-          to: this.endDate
-        }
-        break
+          to: this.endDate,
+        };
+        break;
       case 'pastSixMonths':
         this.date = {
           from: getRecentMonth(6, this.endDate),
-          to: this.endDate
-        }
-        break
+          to: this.endDate,
+        };
+        break;
       case 'pastOneYear':
         this.date = {
           from: getRecentMonth(12, this.endDate),
-          to: this.endDate
-        }
-        break
+          to: this.endDate,
+        };
+        break;
     }
-    this.handleQuery()
+    this.handleQuery();
   }
   ngOnInit(): void {
-    this.handleQuery()
+    this.handleQuery();
   }
 
   async handleQuery(): Promise<void> {
     const loading = await this.loadingController.create({
       spinner: 'crescent',
       showBackdrop: true,
-      backdropDismiss: true
-    })
+      backdropDismiss: true,
+    });
 
-    await loading.present()
+    await loading.present();
     const query = {
       start: this.date.from,
-      end: this.date.to
-    }
+      end: this.date.to,
+    };
     // CALL API
-    console.log(query)
+    console.log(query);
     setTimeout(() => {
-      loading.dismiss()
-    }, 200)
+      loading.dismiss();
+    }, 200);
   }
 }

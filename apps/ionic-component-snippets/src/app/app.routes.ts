@@ -1,37 +1,36 @@
-import { Route } from '@angular/router';
+import { Routes } from '@angular/router';
 
-const SAMPLE_ROUTES = [
+const SAMPLE_ROUTES: Routes = [
   {
     path: 'calendar',
-    loadComponent: () => import('@cs/samples/calendar').then((c) => c.SamplesCalendarPage),
+    loadComponent: () => import('@cs/samples/calendar'),
   },
   {
     path: 'select-search',
-    loadComponent: () => import('@cs/samples/select-search').then((c) => c.SamplesSelectSearchPage),
+    loadComponent: () => import('@cs/samples/select-search'),
   },
   {
     path: 'slide-segments',
-    loadComponent: () => import('@cs/samples/slide-segments').then((c) => c.SamplesSlideSegmentsPage),
+    loadComponent: () => import('@cs/samples/slide-segments'),
   },
   {
     path: 'code-scanner',
-    loadComponent: () => import('@cs/samples/code-scanner').then((c) => c.SamplesCodeScannerPage),
+    loadComponent: () => import('@cs/samples/code-scanner'),
   },
   {
     path: 'image-picker',
-    loadComponent: () => import('@cs/samples/image-picker').then((c) => c.SamplesImagePickerPage),
-  }
-]
-export const appRoutes: Route[] = [
-
+    loadComponent: () => import('@cs/samples/image-picker'),
+  },
+];
+export const appRoutes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    loadComponent: () => import('./home/home.page').then((c) => c.HomePage),
+    loadComponent: () => import('./home/home.page'),
   },
-  ...SAMPLE_ROUTES
+  ...SAMPLE_ROUTES,
 ];

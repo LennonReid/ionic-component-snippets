@@ -1,4 +1,12 @@
-import { Component, EventEmitter, forwardRef, Input, OnInit, Output, Provider } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  forwardRef,
+  Input,
+  OnInit,
+  Output,
+  Provider,
+} from '@angular/core';
 
 import {
   CalendarComponentMonthChange,
@@ -12,7 +20,7 @@ import {
 import { CalendarService } from '../services/calendar.service';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
-import * as moment from 'moment';
+import moment from 'moment';
 import { addIcons } from 'ionicons';
 import {
   caretDown,
@@ -22,7 +30,7 @@ import {
   chevronBack,
   chevronBackOutline,
   chevronForward,
-  chevronForwardOutline
+  chevronForwardOutline,
 } from 'ionicons/icons';
 
 import { defaults, pickModes } from '../config';
@@ -53,32 +61,67 @@ interface CompatibleIcons {
           type="button"
           fill="clear"
           class="switch-btn"
-          [attr.aria-label]="getDate(monthOpt.original.time) | date: MONTH_DATE_FORMAT"
+          [attr.aria-label]="
+            getDate(monthOpt.original.time) | date : MONTH_DATE_FORMAT
+          "
           (click)="switchView()"
         >
           {{ _monthFormat(monthOpt.original.time) }}
           <ion-icon
             class="arrow-dropdown"
-            [name]="_view === 'days' ? _compatibleIcons.caretDown : _compatibleIcons.caretUp"
+            [name]="
+              _view === 'days'
+                ? _compatibleIcons.caretDown
+                : _compatibleIcons.caretUp
+            "
           ></ion-icon>
         </ion-button>
       </ng-template>
       <ng-template #title>
-        <div class="switch-btn" [attr.aria-label]="getDate(monthOpt.original.time) | date: MONTH_DATE_FORMAT">
+        <div
+          class="switch-btn"
+          [attr.aria-label]="
+            getDate(monthOpt.original.time) | date : MONTH_DATE_FORMAT
+          "
+        >
           {{ _monthFormat(monthOpt.original.time) }}
         </div>
       </ng-template>
       <ng-template [ngIf]="_showToggleButtons">
-        <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
-          <ion-icon slot="icon-only" size="small" [name]="_compatibleIcons.chevronBack"></ion-icon>
+        <ion-button
+          type="button"
+          fill="clear"
+          class="back"
+          [disabled]="!canBack()"
+          (click)="prev()"
+        >
+          <ion-icon
+            slot="icon-only"
+            size="small"
+            [name]="_compatibleIcons.chevronBack"
+          ></ion-icon>
         </ion-button>
-        <ion-button type="button" fill="clear" class="forward" [disabled]="!canNext()" (click)="next()">
-          <ion-icon slot="icon-only" size="small" [name]="_compatibleIcons.chevronForward"></ion-icon>
+        <ion-button
+          type="button"
+          fill="clear"
+          class="forward"
+          [disabled]="!canNext()"
+          (click)="next()"
+        >
+          <ion-icon
+            slot="icon-only"
+            size="small"
+            [name]="_compatibleIcons.chevronForward"
+          ></ion-icon>
         </ion-button>
       </ng-template>
     </div>
     <ng-template [ngIf]="_view === 'days'" [ngIfElse]="monthPicker">
-      <ion-calendar-week color="transparent" [weekArray]="_d.weekdays || []" [weekStart]="_d.weekStart || 1">
+      <ion-calendar-week
+        color="transparent"
+        [weekArray]="_d.weekdays || []"
+        [weekStart]="_d.weekStart || 1"
+      >
       </ion-calendar-week>
 
       <ion-calendar-month
@@ -142,9 +185,11 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   public readonly = false;
   @Output()
   // eslint-disable-next-line @angular-eslint/no-output-native
-  public change: EventEmitter<CalendarComponentPayloadTypes> = new EventEmitter();
+  public change: EventEmitter<CalendarComponentPayloadTypes> =
+    new EventEmitter();
   @Output()
-  public monthChange: EventEmitter<CalendarComponentMonthChange> = new EventEmitter();
+  public monthChange: EventEmitter<CalendarComponentMonthChange> =
+    new EventEmitter();
   @Output()
   // eslint-disable-next-line @angular-eslint/no-output-native
   public select: EventEmitter<CalendarDay> = new EventEmitter();
@@ -178,7 +223,6 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     'caret-up-outline': caretUpOutline,
   };
   constructor(public calSvc: CalendarService) {
-
     addIcons(this.iconMaps);
     if (isIonIconsV4()) {
       this._compatibleIcons = {
@@ -238,17 +282,23 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     if (moment(this.monthOpt.original.time).year() === 1970) {
       return;
     }
-    const backTime = moment(this.monthOpt.original.time).subtract(1, 'year').valueOf();
+    const backTime = moment(this.monthOpt.original.time)
+      .subtract(1, 'year')
+      .valueOf();
     this.monthOpt = this.createMonth(backTime);
   }
 
   nextYear(): void {
-    const nextTime = moment(this.monthOpt.original.time).add(1, 'year').valueOf();
+    const nextTime = moment(this.monthOpt.original.time)
+      .add(1, 'year')
+      .valueOf();
     this.monthOpt = this.createMonth(nextTime);
   }
 
   nextMonth(): void {
-    const nextTime = moment(this.monthOpt.original.time).add(1, 'months').valueOf();
+    const nextTime = moment(this.monthOpt.original.time)
+      .add(1, 'months')
+      .valueOf();
     this.monthChange.emit({
       oldMonth: this.calSvc.multiFormat(this.monthOpt.original.time),
       newMonth: this.calSvc.multiFormat(nextTime),
@@ -264,7 +314,9 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   backMonth(): void {
-    const backTime = moment(this.monthOpt.original.time).subtract(1, 'months').valueOf();
+    const backTime = moment(this.monthOpt.original.time)
+      .subtract(1, 'months')
+      .valueOf();
     this.monthChange.emit({
       oldMonth: this.calSvc.multiFormat(this.monthOpt.original.time),
       newMonth: this.calSvc.multiFormat(backTime),
@@ -327,9 +379,9 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     }
   }
 
-  _onChanged: Function = () => { };
+  _onChanged: Function = () => {};
 
-  _onTouched: Function = () => { };
+  _onTouched: Function = () => {};
 
   _payloadToTimeNumber(value: CalendarComponentPayloadTypes): number {
     let date;
@@ -344,7 +396,12 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   _monthFormat(date: number): string {
     return moment(date)
       .format(this._d.monthFormat?.replace(/y/g, 'Y'))
-      .replace(moment.locale() === 'en' ? moment(date).format('D') : moment(date).format('Do'), '');
+      .replace(
+        moment.locale() === 'en'
+          ? moment(date).format('D')
+          : moment(date).format('Do'),
+        ''
+      );
   }
 
   private initOpt(): void {
@@ -365,7 +422,10 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   _createCalendarDay(value: CalendarComponentPayloadTypes): CalendarDay {
-    return this.calSvc.createCalendarDay(this._payloadToTimeNumber(value), this._d);
+    return this.calSvc.createCalendarDay(
+      this._payloadToTimeNumber(value),
+      this._d
+    );
   }
 
   _handleType(value: number): CalendarComponentPayloadTypes {

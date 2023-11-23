@@ -7,14 +7,13 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular-devkit/build-angular:browser-esbuild",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "allowedCommonJsDependencies": ["moment", "jsqr"],
         "outputPath": "dist/apps/ionic-component-snippets",
         "index": "apps/ionic-component-snippets/src/index.html",
         "main": "apps/ionic-component-snippets/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": "apps/ionic-component-snippets/src/polyfills.ts",
         "tsConfig": "apps/ionic-component-snippets/tsconfig.app.json",
         "assets": ["apps/ionic-component-snippets/src/assets"],
         "styles": [
@@ -36,7 +35,7 @@
             {
               "type": "anyComponentStyle",
               "maximumWarning": "2kb",
-              "maximumError": "15kb"
+              "maximumError": "20kb"
             }
           ],
           "outputHashing": "all"

@@ -13,7 +13,7 @@ import {
   IonHeader,
   IonIcon,
   IonTitle,
-  IonToolbar
+  IonToolbar,
 } from '@ionic/angular/standalone';
 import { CodeScannerComponent } from '@cs/components/code-scanner';
 
@@ -36,7 +36,7 @@ enum CameraChoice {
     IonButton,
     IonButtons,
     IonBackButton,
-    CodeScannerComponent
+    CodeScannerComponent,
   ],
   selector: 'ionic-component-snippets-samples-code-scanner',
   template: `
@@ -49,13 +49,18 @@ enum CameraChoice {
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-button (click)="handleScan()">{{ codeScannerEle?.cameraActive ? 'Close' : 'Open' }}Camera</ion-button>
-      <ionic-component-snippets-code-scanner #codeScannerEle (scannedResult)="scannedResult($event)"></ionic-component-snippets-code-scanner>
+      <ion-button (click)="handleScan()"
+        >{{ codeScannerEle?.cameraActive ? 'Close' : 'Open' }}Camera</ion-button
+      >
+      <ionic-component-snippets-code-scanner
+        #codeScannerEle
+        (scannedResult)="scannedResult($event)"
+      ></ionic-component-snippets-code-scanner>
     </ion-content>
   `,
   standalone: true,
 })
-export class SamplesCodeScannerPage {
+export default class SamplesCodeScannerPage {
   @ViewChild('codeScannerEle') codeScannerEle!: CodeScannerComponent;
 
   cameraChoice: CameraChoice = CameraChoice.BACK;
@@ -64,7 +69,7 @@ export class SamplesCodeScannerPage {
 
   permissionAlert?: HTMLIonAlertElement;
 
-  constructor() { }
+  constructor() {}
   scannedResult(event: ScanResult) {
     this.presentToast(event.content!, 'short', 'center');
     this.codeScannerEle.scanQr();
@@ -76,7 +81,11 @@ export class SamplesCodeScannerPage {
       await this.codeScannerEle.prepareScanner();
     }
   }
-  async presentToast(msg: string, duration: 'short' | 'long', pos: 'top' | 'center' | 'bottom') {
+  async presentToast(
+    msg: string,
+    duration: 'short' | 'long',
+    pos: 'top' | 'center' | 'bottom'
+  ) {
     await Toast.show({
       text: msg,
       duration: duration,

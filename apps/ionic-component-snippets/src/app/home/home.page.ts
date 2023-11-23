@@ -1,7 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core'
-import { RouterModule } from '@angular/router'
-import { IonContent, IonHeader, IonLabel, IonList, IonTitle, IonToolbar } from '@ionic/angular/standalone'
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import {
+  IonContent,
+  IonHeader,
+  IonLabel,
+  IonList,
+  IonTitle,
+  IonToolbar,
+} from '@ionic/angular/standalone';
 
 export interface ISampleItem {
   routerLink: string;
@@ -16,7 +23,7 @@ export interface ISampleItem {
     IonTitle,
     IonContent,
     IonList,
-    IonLabel
+    IonLabel,
   ],
   selector: 'ionic-component-snippets-home',
   template: `
@@ -32,37 +39,41 @@ export interface ISampleItem {
         </ion-toolbar>
       </ion-header>
       <ion-list>
-        <ion-item *ngFor="let sample of samples" button [routerLink]="sample.routerLink" detail>
-          <ion-label>{{sample.label}}</ion-label>
+        <ion-item
+          *ngFor="let sample of samples"
+          button
+          [routerLink]="sample.routerLink"
+          detail
+        >
+          <ion-label>{{ sample.label }}</ion-label>
         </ion-item>
       </ion-list>
     </ion-content>
   `,
   styles: [``],
-  standalone: true
+  standalone: true,
 })
-export class HomePage {
-  constructor() { }
+export default class HomePage {
   samples: ISampleItem[] = [
     {
       routerLink: '/calendar',
-      label: 'Sample Calendar'
+      label: 'Sample Calendar',
     },
     {
       routerLink: '/select-search',
-      label: 'Sample select-search'
+      label: 'Sample select-search',
     },
     {
       routerLink: '/slide-segments',
-      label: 'Sample slide-segments'
+      label: 'Sample slide-segments',
     },
     {
       routerLink: '/code-scanner',
-      label: 'Sample code-scanner'
+      label: 'Sample code-scanner',
     },
     {
       routerLink: '/image-picker',
-      label: 'Sample image-picker'
+      label: 'Sample image-picker',
     },
-  ]
+  ];
 }

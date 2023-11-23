@@ -8,11 +8,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "esModuleInterop": true,
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "useDefineForClassFields": false,
     "baseUrl": ".",
     "paths": {
       "@cs/common-ui": ["libs/common/ui/src/index.ts"],
