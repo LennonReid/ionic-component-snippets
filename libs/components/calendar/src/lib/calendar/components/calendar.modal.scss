@@ -3,21 +3,21 @@
 }
 :host ion-select .select-icon > .select-icon-inner,
 :host ion-select .select-text {
-  color: #fff !important;
+  color: var(--ion-text-color) !important;
 }
 :host ion-select.select-ios {
   max-width: unset;
 }
 
 :host .calendar-page {
-  background-color: #fbfbfb;
+  background-color: var(--ion-background-color);
 }
 
 :host .month-box {
   display: inline-block;
   width: 100%;
   padding-bottom: 1em;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid rgba(var(--ion-text-color-rgb), 0.75);
 }
 
 :host h4 {
@@ -26,7 +26,7 @@
   display: block;
   text-align: center;
   margin: 1rem 0 0;
-  color: #929292;
+  color: var(--ion-color-medium);
 }
 
 :host .month-invisible {

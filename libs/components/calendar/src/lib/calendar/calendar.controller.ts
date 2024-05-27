@@ -10,8 +10,8 @@ import { CalendarService } from './services/calendar.service';
 export class CalendarController {
   constructor(
     public modalCtrl: ModalController,
-    public calSvc: CalendarService,
-  ) { }
+    public calSvc: CalendarService
+  ) {}
 
   /**
    * @deprecated
@@ -19,7 +19,10 @@ export class CalendarController {
    * @param {ModalOptions} modalOptions
    * @returns {any}
    */
-  openCalendar(calendarOptions: CalendarModalOptions, modalOptions: ModalOptions = {}): Promise<{}> {
+  openCalendar(
+    calendarOptions: CalendarModalOptions,
+    modalOptions: ModalOptions = {}
+  ): Promise<{}> {
     const options = this.calSvc.safeOpt(calendarOptions);
 
     return this.modalCtrl
@@ -33,9 +36,13 @@ export class CalendarController {
       .then((calendarModal: HTMLIonModalElement) => {
         calendarModal.present();
 
-        return calendarModal.onDidDismiss().then((event: OverlayEventDetail) => {
-          return event.data ? Promise.resolve(event.data) : Promise.reject('cancelled');
-        });
+        return calendarModal
+          .onDidDismiss()
+          .then((event: OverlayEventDetail) => {
+            return event.data
+              ? Promise.resolve(event.data)
+              : Promise.reject('cancelled');
+          });
       });
   }
 }

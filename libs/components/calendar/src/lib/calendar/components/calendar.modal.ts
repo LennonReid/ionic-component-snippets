@@ -10,7 +10,15 @@ import {
   ViewChild,
 } from '@angular/core';
 import {
+  IonButton,
+  IonButtons,
   IonContent,
+  IonHeader,
+  IonIcon,
+  IonInfiniteScroll,
+  IonInfiniteScrollContent,
+  IonTitle,
+  IonToolbar,
   ModalController,
   NavParams,
   ScrollDetail,
@@ -23,16 +31,31 @@ import {
 } from '../calendar.model';
 import { CalendarService } from '../services/calendar.service';
 import moment from 'moment';
-
-import { addIcons } from 'ionicons';
-import { close, checkmark } from 'ionicons/icons';
-
 import { pickModes } from '../config';
+import { CommonModule } from '@angular/common';
+import { CalendarWeekComponent } from './calendar-week.component';
+import { MonthComponent } from './month.component';
+import { FormsModule } from '@angular/forms';
 
 const NUM_OF_MONTHS_TO_CREATE = 6;
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonButtons,
+    IonButton,
+    IonIcon,
+    IonContent,
+    IonInfiniteScroll,
+    IonInfiniteScrollContent,
+    CalendarWeekComponent,
+    MonthComponent,
+  ],
+  providers: [CalendarService],
   selector: 'ion-calendar-modal',
   styleUrls: ['./calendar.modal.scss'],
   template: `
@@ -136,6 +159,7 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
       </ion-infinite-scroll>
     </ion-content>
   `,
+  standalone: true,
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class CalendarModal implements OnInit, AfterViewInit {
@@ -169,9 +193,7 @@ export class CalendarModal implements OnInit, AfterViewInit {
     public modalCtrl: ModalController,
     public ref: ChangeDetectorRef,
     public calSvc: CalendarService
-  ) {
-    addIcons({ close, checkmark });
-  }
+  ) {}
 
   ngOnInit(): void {
     this.init();

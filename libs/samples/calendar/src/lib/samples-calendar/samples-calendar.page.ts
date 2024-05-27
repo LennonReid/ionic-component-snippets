@@ -23,11 +23,18 @@ import {
 import moment from 'moment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Subject } from 'rxjs';
-import {
-  CalendarComponentOptions,
-  CalendarModule,
-} from '@cs/components/calendar';
 import { getRecentDay, getRecentMonth } from '@cs/common/utils';
+import {
+  CalendarComponent,
+  CalendarComponentOptions,
+} from '@cs/components/calendar';
+import {
+  caretDownOutline,
+  caretUpOutline,
+  chevronBackOutline,
+  chevronForwardOutline,
+} from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 
 @Component({
   selector: 'ionic-component-snippets-samples-calendar',
@@ -114,7 +121,7 @@ import { getRecentDay, getRecentMonth } from '@cs/common/utils';
     IonContent,
     IonBackButton,
     IonLabel,
-    CalendarModule,
+    CalendarComponent,
   ],
 })
 export default class SamplesCalendarPage implements OnInit {
@@ -127,6 +134,12 @@ export default class SamplesCalendarPage implements OnInit {
   title = '';
   height = 600;
 
+  readonly iconMaps: any = {
+    'caret-down-outline': caretDownOutline,
+    'caret-up-outline': caretUpOutline,
+    'chevron-back-outline': chevronBackOutline,
+    'chevron-forward-outline': chevronForwardOutline,
+  };
   dateRangeSelectionOptions = [
     {
       title: 'Past 3 days',
@@ -174,7 +187,9 @@ export default class SamplesCalendarPage implements OnInit {
     public modalCtrl: ModalController,
     public navController: NavController,
     private loadingController: LoadingController
-  ) {}
+  ) {
+    addIcons(this.iconMaps);
+  }
   dateSelectStart(event: any) {
     this.date.from = moment(event.time).format('YYYY-MM-DD');
   }

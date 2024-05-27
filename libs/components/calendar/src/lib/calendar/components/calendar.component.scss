@@ -1,12 +1,12 @@
 :host {
-  padding: 10px 20px;
+  padding: 0.625rem 1.5rem;
   box-sizing: border-box;
   display: inline-block;
-  background-color: #fff;
+  background-color: var(--ion-background-color);
   width: 100%;
 }
 :host .title {
-  padding: 0 40px 0 40px;
+  padding: 0 2.5rem 0 2.5rem;
   overflow: hidden;
 }
 :host .title .back,
@@ -20,21 +20,23 @@
   padding: 0;
   --padding-start: 0;
   --padding-end: 0;
-  font-size: 15px;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  width: 100%;
 }
 :host .title .back,
 :host .title .forward {
-  color: #757575;
+  color: var(--ion-color-medium);
 }
 :host .title .back {
   margin-left: -100%;
-  left: -40px;
-  width: 40px;
+  left: -2.5rem;
+  width: 2.5rem;
 }
 :host .title .forward {
-  margin-left: -40px;
-  right: -40px;
-  width: 40px;
+  margin-left: -2.5rem;
+  right: -2.5rem;
+  width: 2.5rem;
 }
 :host .title .switch-btn {
   --margin-top: 0;
@@ -43,9 +45,13 @@
   --margin-end: auto;
   width: 100%;
   text-align: center;
-  line-height: 32px;
-  color: #757575;
+  line-height: 2rem;
+  color: var(--ion-color-medium);
 }
 :host .title .switch-btn .arrow-dropdown {
-  margin-left: 5px;
+  margin-left: 0.375rem;
+}
+.switch-btn {
+  width: 100%;
+  font-size: 0.875rem;
 }

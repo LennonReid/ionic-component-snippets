@@ -1,20 +1,24 @@
 import { Component, Input } from '@angular/core';
 import { defaults } from '../config';
-
+import { IonToolbar } from '@ionic/angular/standalone';
+import moment from 'moment';
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
+  imports: [IonToolbar],
   selector: 'ion-calendar-week',
   styleUrls: ['./calendar-week.component.scss'],
   template: `
     <ion-toolbar [class]="'week-toolbar ' + color" no-border-top>
       <ul [class]="'week-title ' + color">
-        <li *ngFor="let w of _displayWeekArray">{{ w }}</li>
+        @for (w of _displayWeekArray; track $index) {
+        <li>{{ w }}</li>
+        }
       </ul>
     </ion-toolbar>
   `,
+  standalone: true,
 })
 export class CalendarWeekComponent {
-  _weekArray: string[] = defaults.WEEKS_FORMAT;
+  _weekArray: string[] = moment.weekdaysShort() || defaults.WEEKS_FORMAT;
   _displayWeekArray: string[] = this._weekArray;
   _weekStart = 0;
   @Input()
