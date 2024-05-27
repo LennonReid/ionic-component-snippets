@@ -16,7 +16,10 @@ import {
 } from '@ionic/angular/standalone';
 import { appRoutes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { DOCUMENT } from '@angular/common';
 
 if (environment.production) {
