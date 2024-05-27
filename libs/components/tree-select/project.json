@@ -1,0 +1,44 @@
+{
+  "name": "tree-select",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/components/tree-select/src",
+  "prefix": "ionic-component-snippets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/components/tree-select/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/components/tree-select/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/components/tree-select/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/components/tree-select/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/components/tree-select/**/*.ts",
+          "libs/components/tree-select/**/*.html",
+          "libs/components/tree-select/package.json"
+        ]
+      }
+    }
+  }
+}

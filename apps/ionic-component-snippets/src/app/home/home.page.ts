@@ -75,5 +75,9 @@ export default class HomePage {
       routerLink: '/image-picker',
       label: 'Sample image-picker',
     },
+    {
+      routerLink: '/tree-select',
+      label: 'Sample tree-select',
+    },
   ];
 }

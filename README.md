@@ -1,4 +1,3 @@
-
 ## Ionic Component Snippets
 
 This repository showcases demos and libraries that aren't officially supported by Ionic yet, but can be useful for developers and their apps. Feel free to explore and use the featured components!
@@ -22,7 +21,7 @@ This repository is categorized into two sections:
 
 ## Third-Party Components
 
-- **@ion-tree-view(work in progress):** [Link to ionic-tree-view on GitHub](https://github.com/heyligengregory/ionic-tree-view) - Provides a tree view component for hierarchical data visualization.
+- **@ion-tree-view:** [Link to ionic-tree-view on GitHub](https://github.com/heyligengregory/ionic-tree-view) - Provides a tree view component for hierarchical data visualization.
 
 * **@ionic-calendar ([Link to ion2-calendar on GitHub](https://github.com/HsuanXyz/ion2-calendar)):** Provides a feature-rich calendar component for date and time selection.
 

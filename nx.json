@@ -1,6 +1,9 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "cli": {
+    "packageManager": "pnpm"
+  },
   "defaultProject": "ionic-component-snippets",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
@@ -9,15 +12,6 @@
     },
     "e2e": {
       "inputs": ["default", "^production"],
-      "cache": true
-    },
-    "lint": {
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json",
-        "{workspaceRoot}/.eslintignore",
-        "{workspaceRoot}/eslint.config.js"
-      ],
       "cache": true
     },
     "@nx/jest:jest": {
@@ -41,6 +35,16 @@
         "{workspaceRoot}/eslint.config.js"
       ],
       "cache": true
+    },
+    "@angular-devkit/build-angular:application": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "@angular-devkit/build-angular:browser": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "namedInputs": {
@@ -59,10 +63,11 @@
   },
   "generators": {
     "@nx/angular:application": {
-      "style": "scss",
+      "e2eTestRunner": "cypress",
       "linter": "eslint",
+      "style": "scss",
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "strict": true
     },
     "@nx/angular:library": {
       "linter": "eslint",
@@ -72,5 +77,7 @@
       "style": "scss"
     }
   },
-  "useInferencePlugins": false
+  "pluginsConfig": {},
+  "useInferencePlugins": false,
+  "defaultBase": "main"
 }

@@ -21,7 +21,15 @@ import { App } from '@capacitor/app';
 import { register } from 'swiper/element/bundle';
 
 import { addIcons } from 'ionicons';
-import { chevronDown, chevronUp } from 'ionicons/icons';
+import {
+  arrowBackOutline,
+  arrowDownOutline,
+  arrowForwardOutline,
+  chevronDown,
+  chevronDownOutline,
+  chevronForwardOutline,
+  chevronUp,
+} from 'ionicons/icons';
 
 register();
 @Component({
@@ -41,6 +49,8 @@ export class AppComponent implements OnInit {
   readonly iconMaps: any = {
     'chevron-down': chevronDown,
     'chevron-up': chevronUp,
+    'chevron-forward-outline': chevronForwardOutline,
+    'chevron-down-outline': chevronDownOutline,
   };
   constructor(private platform: Platform) {
     this.initializeApp();

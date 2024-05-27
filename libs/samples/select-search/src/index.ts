@@ -1,1 +1,1 @@
-export { default } from './lib/samples-select-search/samples-select-search.page';
+export * from './lib/samples-select-search/samples-select-search.page';
