@@ -3,8 +3,8 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/common/ui/src",
   "prefix": "ionic-component-snippets",
-  "tags": [],
   "projectType": "library",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:package",
@@ -31,14 +31,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "libs/common/ui/**/*.ts",
-          "libs/common/ui/**/*.html",
-          "libs/common/ui/package.json"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   }
 }
