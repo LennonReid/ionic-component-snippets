@@ -74,7 +74,7 @@
     "@angular-eslint/eslint-plugin": "17.3.0",
     "@angular-eslint/eslint-plugin-template": "17.3.0",
     "@angular-eslint/template-parser": "17.3.0",
-    "@angular/cli": "~17.2.0",
+    "@angular/cli": "~17.3.0",
     "@angular/compiler-cli": "18.0.0",
     "@angular/language-service": "18.0.0",
     "@capacitor/android": "^5.0.3",
