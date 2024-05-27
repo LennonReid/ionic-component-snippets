@@ -1,1 +1,1 @@
-export { default } from './lib/samples-image-picker/samples-image-picker.page';
+export * from './lib/samples-image-picker/samples-image-picker.page';

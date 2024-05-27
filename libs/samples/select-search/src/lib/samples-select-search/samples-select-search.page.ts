@@ -1,7 +1,3 @@
-import {
-  provideHttpClient,
-  withInterceptorsFromDi,
-} from '@angular/common/http';
 import { Component, Injector, OnDestroy, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -114,7 +110,7 @@ export enum ESelectDataMode {
     IonicSelectableComponent,
   ],
 })
-export default class SamplesSelectSearchPage implements OnInit, OnDestroy {
+export class SamplesSelectSearchPage implements OnInit, OnDestroy {
   selectSearchService = this.injector.get(SelectSearchService);
   loadingController = this.injector.get(LoadingController);
   selectDataMode = signal(ESelectDataMode.short);

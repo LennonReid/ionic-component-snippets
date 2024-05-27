@@ -124,7 +124,7 @@ import { addIcons } from 'ionicons';
     CalendarComponent,
   ],
 })
-export default class SamplesCalendarPage implements OnInit {
+export class SamplesCalendarPage implements OnInit {
   startDate = moment().subtract(4, 'day').format('YYYY-MM-DD');
   endDate = moment().add(1, 'days').format('YYYY-MM-DD');
   maxDate = moment().subtract(1, 'day').format('YYYY-MM-DD');
