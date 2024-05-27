@@ -113,7 +113,6 @@ export enum ESelectDataMode {
     IonLabel,
     IonicSelectableComponent,
   ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
 })
 export default class SamplesSelectSearchPage implements OnInit, OnDestroy {
   selectSearchService = this.injector.get(SelectSearchService);

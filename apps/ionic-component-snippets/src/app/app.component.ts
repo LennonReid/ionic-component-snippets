@@ -34,7 +34,6 @@ register();
     </ion-app>
   `,
   imports: [IonApp, IonContent, IonRouterOutlet, IonButton],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
 })
 export class AppComponent implements OnInit {
   public environmentInjector = inject(EnvironmentInjector);
