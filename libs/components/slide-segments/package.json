@@ -1,5 +1,5 @@
 {
-  "name": "@cs/components/slide-segments",
+  "name": "slide-segments",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
