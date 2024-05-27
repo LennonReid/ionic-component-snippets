@@ -31,17 +31,22 @@ import { NgClass } from '@angular/common';
     @if (item) {
     <ion-grid class="ion-no-padding">
       <ion-row class="tree-item-row">
-        <div class="icon" (click)="collapseItem(item)">
+        <div class="icon">
           @if (couldBeCollapse(item)) { @if (item.items.collapsed) {
-          <ion-button fill="clear" color="dark">
+          <ion-button fill="clear" color="dark" (click)="collapseItem(item)">
             <ion-icon
+              [size]="iconSize"
               slot="icon-only"
               name="chevron-forward-outline"
             ></ion-icon>
           </ion-button>
           }@else {
-          <ion-button fill="clear" color="dark">
-            <ion-icon slot="icon-only" name="chevron-down-outline"></ion-icon>
+          <ion-button fill="clear" color="dark" (click)="collapseItem(item)">
+            <ion-icon
+              [size]="iconSize"
+              slot="icon-only"
+              name="chevron-down-outline"
+            ></ion-icon>
           </ion-button>
           } }
         </div>
@@ -101,6 +106,8 @@ export class TreeSelectItemComponent implements OnInit {
   @Input() public persistedName = '';
   @Input() public treeViewName = '';
   @Input() public childCheked = false;
+  @Input() public iconSize: 'default' | 'large' | 'small' | undefined =
+    'default';
 
   @Output() itemCheckedEvent = new EventEmitter<ITreeItemChecked>();
 

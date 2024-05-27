@@ -29,6 +29,8 @@ export class TreeSelectComponent implements OnInit {
   @Input() public items: any;
   @Input() public persistedName = '';
   @Input() public treeViewName = '';
+  @Input() public iconSize: 'default' | 'large' | 'small' | undefined =
+    'default';
 
   @Output() public itemCheckedEvent = new EventEmitter<ITreeItemChecked>();
 
