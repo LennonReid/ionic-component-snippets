@@ -8,8 +8,14 @@ import {
   AfterViewInit,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { CalendarDay, CalendarMonth, CalendarOriginal, PickMode } from '../calendar.model';
+import {
+  CalendarDay,
+  CalendarMonth,
+  CalendarOriginal,
+  PickMode,
+} from '../calendar.model';
 import { defaults, pickModes } from '../config';
+import { CommonModule } from '@angular/common';
 
 export const MONTH_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
@@ -18,11 +24,10 @@ export const MONTH_VALUE_ACCESSOR: any = {
 };
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
+  imports: [CommonModule],
   selector: 'ion-calendar-month',
   providers: [MONTH_VALUE_ACCESSOR],
   styleUrls: ['./month.component.scss'],
-  // eslint-disable-next-line @angular-eslint/no-host-metadata-property
   host: {
     '[class.component-mode]': 'componentMode',
   },
@@ -43,7 +48,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
                   [class.next-month-day]="day.isNextMonth"
                   [class.on-selected]="isSelected(day.time)"
                   [disabled]="day.disable"
-                  [attr.aria-label]="getDayLabel(day) | date: DAY_DATE_FORMAT"
+                  [attr.aria-label]="getDayLabel(day) | date : DAY_DATE_FORMAT"
                 >
                   <p>{{ day.title }}</p>
                   <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
@@ -89,6 +94,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
       </ng-template>
     </div>
   `,
+  standalone: true,
 })
 export class MonthComponent implements ControlValueAccessor, AfterViewInit {
   @Input() componentMode = false;
@@ -127,7 +133,7 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
     return this.pickMode === pickModes.RANGE;
   }
 
-  constructor(public ref: ChangeDetectorRef) { }
+  constructor(public ref: ChangeDetectorRef) {}
 
   ngAfterViewInit(): void {
     this._isInit = true;
@@ -255,7 +261,9 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
     }
 
     if (this.pickMode === pickModes.MULTI) {
-      const index = this._date.findIndex((e) => e !== null && e.time === item.time);
+      const index = this._date.findIndex(
+        (e) => e !== null && e.time === item.time
+      );
 
       if (index === -1) {
         this._date.push(item);

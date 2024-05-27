@@ -18,23 +18,25 @@ import {
   InternalCalendarModalOptions,
 } from '../calendar.model';
 import { CalendarService } from '../services/calendar.service';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import {
+  ControlValueAccessor,
+  FormsModule,
+  NG_VALUE_ACCESSOR,
+} from '@angular/forms';
 
 import moment from 'moment';
-import { addIcons } from 'ionicons';
-import {
-  caretDown,
-  caretDownOutline,
-  caretUp,
-  caretUpOutline,
-  chevronBack,
-  chevronBackOutline,
-  chevronForward,
-  chevronForwardOutline,
-} from 'ionicons/icons';
-
 import { defaults, pickModes } from '../config';
 import { isIonIconsV4 } from '../utils/icons';
+import { CommonModule } from '@angular/common';
+import {
+  IonButton,
+  IonIcon,
+  IonItem,
+  IonLabel,
+} from '@ionic/angular/standalone';
+import { CalendarWeekComponent } from './calendar-week.component';
+import { MonthComponent } from './month.component';
+import { MonthPickerComponent } from './month-picker.component';
 
 export const ION_CAL_VALUE_ACCESSOR: Provider = {
   provide: NG_VALUE_ACCESSOR,
@@ -50,12 +52,11 @@ interface CompatibleIcons {
 }
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'ion-calendar',
-  providers: [ION_CAL_VALUE_ACCESSOR],
+  providers: [ION_CAL_VALUE_ACCESSOR, CalendarService],
   styleUrls: ['./calendar.component.scss'],
   template: `
-    <div class="title">
+    <ion-item>
       <ng-template [ngIf]="_showMonthPicker" [ngIfElse]="title">
         <ion-button
           type="button"
@@ -89,6 +90,7 @@ interface CompatibleIcons {
       </ng-template>
       <ng-template [ngIf]="_showToggleButtons">
         <ion-button
+          slot="start"
           type="button"
           fill="clear"
           class="back"
@@ -102,6 +104,7 @@ interface CompatibleIcons {
           ></ion-icon>
         </ion-button>
         <ion-button
+          slot="end"
           type="button"
           fill="clear"
           class="forward"
@@ -115,7 +118,7 @@ interface CompatibleIcons {
           ></ion-icon>
         </ion-button>
       </ng-template>
-    </div>
+    </ion-item>
     <ng-template [ngIf]="_view === 'days'" [ngIfElse]="monthPicker">
       <ion-calendar-week
         color="transparent"
@@ -150,6 +153,18 @@ interface CompatibleIcons {
       </ion-calendar-month-picker>
     </ng-template>
   `,
+  standalone: true,
+  imports: [
+    CommonModule,
+    IonItem,
+    IonLabel,
+    IonButton,
+    IonIcon,
+    FormsModule,
+    CalendarWeekComponent,
+    MonthComponent,
+    MonthPickerComponent,
+  ],
 })
 export class CalendarComponent implements ControlValueAccessor, OnInit {
   _d!: InternalCalendarModalOptions;
@@ -212,18 +227,8 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   readonly MONTH_DATE_FORMAT = 'MMMM yyyy';
-  readonly iconMaps: any = {
-    'chevron-back': chevronBack,
-    'chevron-forward': chevronForward,
-    'caret-down': caretDown,
-    'caret-up': caretUp,
-    'chevron-back-outline': chevronBackOutline,
-    'chevron-forward-outline': chevronForwardOutline,
-    'caret-down-outline': caretDownOutline,
-    'caret-up-outline': caretUpOutline,
-  };
+
   constructor(public calSvc: CalendarService) {
-    addIcons(this.iconMaps);
     if (isIonIconsV4()) {
       this._compatibleIcons = {
         caretDown: 'md-arrow-dropdown',
@@ -367,6 +372,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
       this._onChanged(dates);
       this.change.emit(dates);
     } else {
+      // TOOD: do something
     }
   }
 
@@ -379,9 +385,13 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     }
   }
 
-  _onChanged: Function = () => {};
+  _onChanged: (date: any) => void = () => {
+    // TOOD: do something
+  };
 
-  _onTouched: Function = () => {};
+  _onTouched: (date: any) => void = () => {
+    // TOOD: do something
+  };
 
   _payloadToTimeNumber(value: CalendarComponentPayloadTypes): number {
     let date;
@@ -455,11 +465,11 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     }
   }
 
-  registerOnChange(fn: () => {}): void {
+  registerOnChange(fn: () => void): void {
     this._onChanged = fn;
   }
 
-  registerOnTouched(fn: () => {}): void {
+  registerOnTouched(fn: () => void): void {
     this._onTouched = fn;
   }
 
@@ -487,6 +497,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
         this._calendarMonthValue = [];
       }
     } else {
+      // TODO: do something
     }
   }
 }
