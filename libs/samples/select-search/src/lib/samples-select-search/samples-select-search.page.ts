@@ -1,4 +1,7 @@
-import { HttpClientModule } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { Component, Injector, OnDestroy, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -33,25 +36,6 @@ export enum ESelectDataMode {
 @Component({
   selector: 'ionic-component-snippets-samples-select-search',
   standalone: true,
-  imports: [
-    CommonModule,
-    IonHeader,
-    IonToolbar,
-    IonButtons,
-    IonBackButton,
-    IonTitle,
-    IonContent,
-    IonCard,
-    IonCardHeader,
-    IonCardContent,
-    IonItem,
-    IonToggle,
-    IonSelect,
-    IonSelectOption,
-    IonLabel,
-    IonicSelectableComponent,
-    HttpClientModule,
-  ],
   template: `
     <ion-header>
       <ion-toolbar color="primary">
@@ -111,6 +95,24 @@ export enum ESelectDataMode {
     </ion-content>
   `,
   styles: [``],
+  imports: [
+    CommonModule,
+    IonHeader,
+    IonToolbar,
+    IonButtons,
+    IonBackButton,
+    IonTitle,
+    IonContent,
+    IonCard,
+    IonCardHeader,
+    IonCardContent,
+    IonItem,
+    IonToggle,
+    IonSelect,
+    IonSelectOption,
+    IonLabel,
+    IonicSelectableComponent,
+  ],
 })
 export default class SamplesSelectSearchPage implements OnInit, OnDestroy {
   selectSearchService = this.injector.get(SelectSearchService);

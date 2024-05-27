@@ -65,6 +65,7 @@
       "options": {
         "disableHostCheck": true,
         "host": "0.0.0.0",
+        "open": true,
         "buildTarget": "ionic-component-snippets:build"
       }
     },
