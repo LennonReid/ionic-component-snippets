@@ -16,13 +16,13 @@ This repository is categorized into two sections:
 - **Officially Supported Components:** These components are part of the Ionic framework and receive ongoing maintenance from the Ionic team.
 - **Third-Party Components:** These components are developed by the community and offer additional features beyond the core Ionic framework.
 
-## Officially Supported Components(working in progress)
+## Officially Supported Components(work in progress)
 
 - **@ionic-team/capacitor-barcode-scanner ([Link to ion2-calendar on GitHub](https://github.com/ionic-team/capacitor-barcode-scanner)):** Capacitor plugin using Outsystems Barcode libs.
 
 ## Third-Party Components
 
-- **@ion-tree-view(working in progress):** [Link to ionic-tree-view on GitHub](https://github.com/heyligengregory/ionic-tree-view) - Provides a tree view component for hierarchical data visualization.
+- **@ion-tree-view(work in progress):** [Link to ionic-tree-view on GitHub](https://github.com/heyligengregory/ionic-tree-view) - Provides a tree view component for hierarchical data visualization.
 
 * **@ionic-calendar ([Link to ion2-calendar on GitHub](https://github.com/HsuanXyz/ion2-calendar)):** Provides a feature-rich calendar component for date and time selection.
 
