@@ -1,40 +1,29 @@
-# ionic-component-snippets
+## Ionic Component Snippets
 
-## Start the app
+This repository showcases demos and libraries that aren't officially supported by Ionic yet, but can be useful for developers and their apps. Feel free to explore and use the featured components!
 
-To start the development server run `nx serve ionic-component-snippets or npx nx serve`. Open your browser and navigate to http://localhost:4200/. Happy coding!
+**Note:** Third-party components may not be actively maintained and could introduce compatibility issues in future Ionic releases. Use them with caution and consider potential upgrade challenges.
 
+## Component Categories
 
-### build app first
+This repository is categorized into two sections:
 
-`npx nx run build --prod` or `yarn nx run build --prod`
+- **Officially Supported Components:** These components are part of the Ionic framework and receive ongoing maintenance from the Ionic team.
+- **Third-Party Components:** These components are developed by the community and offer additional features beyond the core Ionic framework.
 
-### create android/ios folder
+## Officially Supported Components(working in progress)
 
-`npx nx run ionic-component-snippets:add:android` or `yarn nx run ionic-component-snippets:add:android` (Android)  
-`npx nx run ionic-component-snippets:add:ios` or `yarn nx run ionic-component-snippets:add:ios` (IOS)
+- **@ionic-team/capacitor-barcode-scanner ([Link to ion2-calendar on GitHub](https://github.com/ionic-team/capacitor-barcode-scanner)):** Capacitor plugin using Outsystems Barcode libs.
 
-### capacitor sync native files
+## Third-Party Components
 
-`cd apps/ionic-component-snippets`
-`npx cap sync android` or
-`npx cap sync ios`
+- **@ion-tree-view(working in progress):** [Link to ionic-tree-view on GitHub](https://github.com/heyligengregory/ionic-tree-view) - Provides a tree view component for hierarchical data visualization.
 
-### open in android studio
+* **@ionic-calendar ([Link to ion2-calendar on GitHub](https://github.com/HsuanXyz/ion2-calendar)):** Provides a feature-rich calendar component for date and time selection.
 
-`npx nx run ionic-component-snippets:open:android --preserveProjectNodeModules=true
-`
+* **@ionic-selectable ([Link to ionic-selectable on GitHub](https://github.com/eakoriakin/ionic-selectable)):** Enhances Ionic's native select component with additional functionalities.
 
-### run on emulator
+* **@robingenz/ionic-capacitor-barcode-scanner ([Link to ionic-capacitor-barcode-scanner on GitHub](https://github.com/robingenz/ionic-capacitor-barcode-scanner)):** Integrates barcode scanning functionality into your Ionic app.
+* **Swiper Segment (Custom):** A custom component combining Swiper and Ion-Segment, offering features like height adaptation and on-demand loading.
 
-`npx nx run ionic-component-snippets:run:android` or `yarn nx run ionic-component-snippets:run:android` (Android)  
-`npx nx run ionic-component-snippets:run:ios` or `yarn nx run ionic-component-snippets:run:ios` (IOS)
-
-<p>
-  <i>To run on mobile please check Ionic website for prior installation</i>
-</p>
-
-### run on live-reload mode
-
-`cd apps/ionic-component-snippets`
-`npx ionic capacitor run android --livereload --external --project=ionic-component-snippets`
+**We welcome contributions!** If you've found a useful component that isn't listed here, feel free to submit a pull request to add it.
