@@ -12,6 +12,7 @@ import { TreeSelectItemComponent } from '../tree-select-item/tree-select-item.co
     <ion-item [lines]="'none'" class="{{ 'itemLevel-' + item.itemLevel }}">
       <tree-select-item
         [item]="item"
+        [iconSize]="iconSize"
         [treeViewName]="treeViewName"
         [persistedName]="persistedName"
         [childCheked]="anyChildChecked(item)"
@@ -22,6 +23,7 @@ import { TreeSelectItemComponent } from '../tree-select-item/tree-select-item.co
     <ion-list class="ion-no-padding" [hidden]="loopItem.collapsed">
       <tree-select-items
         [item]="loopItem"
+        [iconSize]="iconSize"
         [treeViewName]="treeViewName"
         [persistedName]="persistedName"
         (itemCheckedEvent)="itemChecked($event)"
@@ -73,6 +75,8 @@ export class TreeSelectItemsComponent {
   @Input() public item?: ITreeItem;
   @Input() public persistedName = '';
   @Input() public treeViewName = '';
+  @Input() public iconSize: 'default' | 'large' | 'small' | undefined =
+    'default';
 
   @Output() public itemCheckedEvent = new EventEmitter<ITreeItemChecked>();
 
