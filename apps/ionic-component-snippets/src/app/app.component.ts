@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import {
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
@@ -21,18 +21,14 @@ import { addIcons } from 'ionicons';
 import { chevronDown, chevronUp } from 'ionicons/icons';
 
 register();
-@Component({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [HttpClientModule, IonApp, IonContent, IonRouterOutlet, IonButton],
-  providers: [],
-  selector: 'ionic-component-snippets-root',
-  standalone: true,
-  template: `
+@Component({ schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    selector: 'ionic-component-snippets-root',
+    standalone: true,
+    template: `
     <ion-app>
       <ion-router-outlet id="main-content"></ion-router-outlet>
     </ion-app>
-  `,
-})
+  `, imports: [IonApp, IonContent, IonRouterOutlet, IonButton], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppComponent implements OnInit {
   public environmentInjector = inject(EnvironmentInjector);
 
