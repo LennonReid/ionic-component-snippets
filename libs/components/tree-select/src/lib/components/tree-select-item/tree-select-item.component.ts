@@ -42,7 +42,7 @@ import { Color } from '@ionic/core';
           [color]="buttonColor"
           (click)="collapseItem(item)"
         >
-          <ion-icon slot="icon-only" name="caret-forward-outline"></ion-icon>
+          <ion-icon slot="icon-only" name="caret-down-outline"></ion-icon>
         </ion-button>
         } @else {
         <ion-button
@@ -52,7 +52,7 @@ import { Color } from '@ionic/core';
           [color]="buttonColor"
           (click)="collapseItem(item)"
         >
-          <ion-icon slot="icon-only" name="caret-down-outline"></ion-icon>
+          <ion-icon slot="icon-only" name="caret-forward-outline"></ion-icon>
         </ion-button>
         } } @else {
         <ion-button
@@ -63,7 +63,7 @@ import { Color } from '@ionic/core';
           [color]="buttonColor"
           (click)="collapseItem(item)"
         >
-          <ion-icon slot="icon-only" name="caret-forward-outline"></ion-icon>
+          <ion-icon slot="icon-only" name="caret-down-outline"></ion-icon>
         </ion-button>
         }
         <ion-checkbox
