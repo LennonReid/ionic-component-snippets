@@ -53,9 +53,7 @@ import { NgClass } from '@angular/common';
         <ion-item [lines]="'none'">
           <ion-checkbox
             id="check-bh-{{ item.id }}"
-            [ngClass]="{
-              'child-checked': hasCheckedChild(item)
-            }"
+            [indeterminate]="hasCheckedChild(item)"
             slot="start"
             class="checkbox checked"
             [(ngModel)]="item.checked"
@@ -81,22 +79,6 @@ import { NgClass } from '@angular/common';
     display: flex;
     align-items: center !important;
     flex-wrap:nowrap;
-}
-
-.child-checked::before {
-    content: '';
-    background-color: #3880ff;
-    -webkit-transform: scale(1) translate(-50%, -50%);
-    -ms-transform: scale(1) translate(-50%, -50%);
-    transform: scale(1) translate(-50%, -50%);
-    width: 0.625rem; /* 10px */
-    height: 0.625rem; /* 10px */
-    font-size: 0.75rem; /* 12px */
-    line-height: 1rem; /* 16px */
-    position: absolute;
-    top: 50%;
-    left: 2.1em;
-    z-index: 999;
 }
     `,
   standalone: true,
