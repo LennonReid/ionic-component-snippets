@@ -496,12 +496,10 @@ export class CalendarModal implements OnInit, AfterViewInit {
   }
 
   _monthFormat(date: any): string {
-    // @ts-ignore
-    return moment(date).format(this._d.monthFormat.replace(/y/g, 'Y'));
+    return moment(date).format(this._d.monthFormat?.replace(/y/g, 'Y'));
   }
 
   _monthFormatYYYYMM(date: any): string {
-    // @ts-ignore
     return moment(date).format('YYYY-MM');
   }
 

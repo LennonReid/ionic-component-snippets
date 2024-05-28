@@ -35,7 +35,7 @@ export class CalendarService {
   safeOpt(calendarOptions: any = {}): InternalCalendarModalOptions {
     const _disableWeeks: number[] = [];
     const _daysConfig: DayConfig[] = [];
-    let {
+    const {
       from = CalendarService.DEFAULT_DATE,
       to = 0,
       weekStart = 0,
@@ -128,14 +128,15 @@ export class CalendarService {
     opt: InternalCalendarModalOptions,
     month?: number
   ): CalendarDay {
-    let _time = moment(time);
-    let date = moment(time);
-    let isToday = moment().isSame(_time, 'days');
-    let dayConfig = this.findDayConfig(_time, opt);
-    let _rangeBeg = moment(opt.from).valueOf();
-    let _rangeEnd = moment(opt.to).valueOf();
+    const _time = moment(time);
+    const date = moment(time);
+    const isToday = moment().isSame(_time, 'days');
+    const dayConfig = this.findDayConfig(_time, opt);
+    const _rangeBeg = moment(opt.from).valueOf();
+    const _rangeEnd = moment(opt.to).valueOf();
     let isBetween = true;
-    let disableWee = opt.disableWeeks?.indexOf(_time.toDate().getDay()) !== -1;
+    const disableWee =
+      opt.disableWeeks?.indexOf(_time.toDate().getDay()) !== -1;
     if (_rangeBeg > 0 && _rangeEnd > 0) {
       if (!opt.canBackwardsSelected) {
         isBetween = !_time.isBetween(_rangeBeg, _rangeEnd, 'days', '[]');
@@ -144,7 +145,7 @@ export class CalendarService {
       }
     } else if (_rangeBeg > 0 && _rangeEnd === 0) {
       if (!opt.canBackwardsSelected) {
-        let _addTime = _time.add(1, 'day');
+        const _addTime = _time.add(1, 'day');
         isBetween = !_addTime.isAfter(_rangeBeg);
       } else {
         isBetween = false;
@@ -178,10 +179,8 @@ export class CalendarService {
       title,
       subTitle,
       selected: false,
-      // @ts-ignore
-      isLastMonth: date.month() < month,
-      // @ts-ignore
-      isNextMonth: date.month() > month,
+      isLastMonth: month ? date.month() < month : false,
+      isNextMonth: month ? date.month() > month : false,
       marked: dayConfig ? dayConfig.marked || false : false,
       cssClass: dayConfig ? dayConfig.cssClass || '' : '',
       disable: _disable,
@@ -262,18 +261,18 @@ export class CalendarService {
     monthsNum: number,
     opt: InternalCalendarModalOptions
   ): Array<CalendarMonth> {
-    let _array: Array<CalendarMonth> = [];
+    const _array: Array<CalendarMonth> = [];
 
-    let _start = new Date(startTime);
-    let _startMonth = new Date(
+    const _start = new Date(startTime);
+    const _startMonth = new Date(
       _start.getFullYear(),
       _start.getMonth(),
       1
     ).getTime();
 
     for (let i = 0; i < monthsNum; i++) {
-      let time = moment(_startMonth).add(i, 'M').valueOf();
-      let originalCalendar = this.createOriginalCalendar(time);
+      const time = moment(_startMonth).add(i, 'M').valueOf();
+      const originalCalendar = this.createOriginalCalendar(time);
       _array.push(this.createCalendarMonth(originalCalendar, opt));
     }
 
@@ -285,18 +284,18 @@ export class CalendarService {
     monthsNum: number,
     opt: InternalCalendarModalOptions
   ): Array<CalendarMonth> {
-    let _array: Array<CalendarMonth> = [];
+    const _array: Array<CalendarMonth> = [];
 
-    let _start = new Date(startTime);
-    let _startMonth = new Date(
+    const _start = new Date(startTime);
+    const _startMonth = new Date(
       _start.getFullYear(),
       _start.getMonth(),
       1
     ).getTime();
 
     for (let i = 0; i < monthsNum; i++) {
-      let time = moment(_startMonth).subtract(i, 'M').valueOf();
-      let originalCalendar = this.createOriginalCalendar(time);
+      const time = moment(_startMonth).subtract(i, 'M').valueOf();
+      const originalCalendar = this.createOriginalCalendar(time);
       _array.unshift(this.createCalendarMonth(originalCalendar, opt));
     }
 
@@ -305,19 +304,15 @@ export class CalendarService {
 
   wrapResult(original: Array<CalendarDay>, pickMode: string | undefined) {
     if (pickMode === pickModes.SINGLE) {
-      // @ts-ignore
       return this.multiFormat(original[0].time);
     }
     if (pickMode === pickModes.RANGE) {
       return {
-        // @ts-ignore
         from: this.multiFormat(original[0].time),
-        // @ts-ignore
         to: this.multiFormat((original[1] || original[0]).time),
       };
     }
     if (pickMode === pickModes.MULTI) {
-      // @ts-ignore
       return original.map((e) => this.multiFormat(e.time));
     }
 
