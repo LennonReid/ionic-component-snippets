@@ -6,6 +6,8 @@ This repository showcases demos and libraries that aren't officially supported b
 
 ## Preivew
 
+### Online Preview
+
 [Preview URL](ionic-component-snippets.vercel.app)
 
 ## Component Categories
@@ -17,17 +19,27 @@ This repository is categorized into two sections:
 
 ## Officially Supported Components(work in progress)
 
-- **@ionic-team/capacitor-barcode-scanner ([Link to ion2-calendar on GitHub](https://github.com/ionic-team/capacitor-barcode-scanner)):** Capacitor plugin using Outsystems Barcode libs.
+- **@ionic-team/capacitor-barcode-scanner:** Capacitor plugin using Outsystems Barcode libs.
+  [The original repository](https://github.com/ionic-team/capacitor-barcode-scanner)
 
 ## Third-Party Components
 
-- **@ion-tree-view:** [Link to ionic-tree-view on GitHub](https://github.com/heyligengregory/ionic-tree-view) - Provides a tree view component for hierarchical data visualization.
+- **@calendar ([Library](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/components/calendar) | [Sample](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/samples/calendar)):** Provides a feature-rich calendar component for date and time selection.
+  ![alt text](docs/screenshots/calendar.png)
+  [The original repository](https://github.com/HsuanXyz/ion2-calendar)
 
-* **@ionic-calendar ([Link to ion2-calendar on GitHub](https://github.com/HsuanXyz/ion2-calendar)):** Provides a feature-rich calendar component for date and time selection.
+- **@select-search ([Library](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/components/select-search) | [Sample](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/samples/select-search)):** Enhances Ionic's native select component with additional functionalities.
+  [The original repository](https://github.com/eakoriakin/ionic-selectable)
+  ![alt text](docs/screenshots/select-search.png)
 
-* **@ionic-selectable ([Link to ionic-selectable on GitHub](https://github.com/eakoriakin/ionic-selectable)):** Enhances Ionic's native select component with additional functionalities.
+- **@code-scanner ([Library](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/components/code-scanner) | [Sample](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/samples/code-scanner)):** Integrates barcode scanning functionality into your Ionic app.
+  [The original repository](https://github.com/robingenz/ionic-capacitor-barcode-scanner)
 
-* **@robingenz/ionic-capacitor-barcode-scanner ([Link to ionic-capacitor-barcode-scanner on GitHub](https://github.com/robingenz/ionic-capacitor-barcode-scanner)):** Integrates barcode scanning functionality into your Ionic app.
-* **Swiper Segment (Custom):** A custom component combining Swiper and Ion-Segment, offering features like height adaptation and on-demand loading.
+- **@slide-segments ([Library](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/components/slide-segments) | [Sample](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/samples/slide-segments)):** A custom component combining Swiper and Ion-Segment, offering features like height adaptation and on-demand loading.
+  ![alt text](docs/screenshots/slide-segments.png)
+
+* **@tree-select ([Library](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/components/tree-select) | [Sample](https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/samples/tree-select)):** - Provides a tree view component for hierarchical data visualization.
+  ![alt text](docs/screenshots/tree-select.png)
+  [The original repository](https://github.com/heyligengregory/ionic-tree-view)
 
 **We welcome contributions!** If you've found a useful component that isn't listed here, feel free to submit a pull request to add it.

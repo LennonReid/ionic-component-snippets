@@ -90,9 +90,7 @@ export enum ESelectDataMode {
       </ion-card>
     </ion-content>
   `,
-  styles: [``],
   imports: [
-    CommonModule,
     IonHeader,
     IonToolbar,
     IonButtons,

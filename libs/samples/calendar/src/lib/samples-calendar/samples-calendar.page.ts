@@ -1,8 +1,6 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit, signal } from '@angular/core';
 import {
   ModalController,
-  SelectChangeEventDetail,
   NavController,
   LoadingController,
   IonHeader,
@@ -15,15 +13,12 @@ import {
   IonCardHeader,
   IonItem,
   IonLabel,
-  IonSegment,
-  IonSegmentButton,
   IonContent,
   IonBackButton,
 } from '@ionic/angular/standalone';
 import moment from 'moment';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { Subject } from 'rxjs';
-import { getRecentDay, getRecentMonth } from '@cs/common/utils';
 import {
   CalendarComponent,
   CalendarComponentOptions,
@@ -39,7 +34,6 @@ import { addIcons } from 'ionicons';
 @Component({
   selector: 'ionic-component-snippets-samples-calendar',
   standalone: true,
-  styles: [``],
   template: `
     <ion-header>
       <ion-toolbar color="primary">
@@ -55,8 +49,8 @@ import { addIcons } from 'ionicons';
           <ion-title class="text-center pb-2">Calendar Range</ion-title>
         </ion-card-header>
         <ion-card-content class="px-0">
+          @if (collapse()) {
           <ion-item
-            *ngIf="collapse()"
             (click)="collapse.set(false)"
             button
             detail="true"
@@ -64,9 +58,8 @@ import { addIcons } from 'ionicons';
           >
             <ion-label class="pl-4"><p>Unfold Date Calendar</p></ion-label>
           </ion-item>
-
+          }@else {
           <ion-item
-            *ngIf="!collapse()"
             (click)="collapse.set(true)"
             button
             class="my-4"
@@ -75,6 +68,7 @@ import { addIcons } from 'ionicons';
           >
             <ion-label class="pl-4"><p>Collapse Date Calendar</p></ion-label>
           </ion-item>
+          }
           <div [class.hidden]="collapse()" [class.display]="!collapse()">
             <ion-calendar
               [(ngModel)]="date"
@@ -86,27 +80,12 @@ import { addIcons } from 'ionicons';
             >
             </ion-calendar>
           </div>
-          <ion-segment
-            scrollable
-            (ionChange)="segmentHandleChange($any($event))"
-            [value]="dateRange"
-            class="mb-5"
-          >
-            <ion-segment-button
-              *ngFor="let dateRangeSelectionOption of dateRangeSelectionOptions"
-              [value]="dateRangeSelectionOption.value"
-            >
-              <ion-label>{{ dateRangeSelectionOption.title }}</ion-label>
-            </ion-segment-button>
-          </ion-segment>
         </ion-card-content>
       </ion-card>
     </ion-content>
   `,
   imports: [
-    CommonModule,
     FormsModule,
-    ReactiveFormsModule,
     IonHeader,
     IonToolbar,
     IonTitle,
@@ -116,8 +95,6 @@ import { addIcons } from 'ionicons';
     IonCardContent,
     IonCardHeader,
     IonItem,
-    IonSegment,
-    IonSegmentButton,
     IonContent,
     IonBackButton,
     IonLabel,
@@ -140,32 +117,6 @@ export class SamplesCalendarPage implements OnInit {
     'chevron-back-outline': chevronBackOutline,
     'chevron-forward-outline': chevronForwardOutline,
   };
-  dateRangeSelectionOptions = [
-    {
-      title: 'Past 3 days',
-      value: 'pastThreeDays',
-    },
-    {
-      title: 'Past week',
-      value: 'pastOneWeek',
-    },
-    {
-      title: 'Past 2 weeks',
-      value: 'pastHalfMonth',
-    },
-    {
-      title: 'Past month',
-      value: 'pastOneMonth',
-    },
-    {
-      title: 'Past 6 months',
-      value: 'pastSixMonths',
-    },
-    {
-      title: 'Past year',
-      value: 'pastOneYear',
-    },
-  ];
 
   options: CalendarComponentOptions = {
     pickMode: 'range',
@@ -195,48 +146,6 @@ export class SamplesCalendarPage implements OnInit {
   }
   dateChange() {
     // this.collapse.set(true);
-    this.handleQuery();
-  }
-  segmentHandleChange(e: CustomEvent<SelectChangeEventDetail>) {
-    switch (e.detail.value) {
-      case 'pastThreeDays':
-        this.date = {
-          from: getRecentDay(3, this.endDate),
-          to: this.endDate,
-        };
-        break;
-
-      case 'pastOneWeek':
-        this.date = {
-          from: getRecentDay(7, this.endDate),
-          to: this.endDate,
-        };
-        break;
-      case 'pastHalfMonth':
-        this.date = {
-          from: getRecentDay(14, this.endDate),
-          to: this.endDate,
-        };
-        break;
-      case 'pastOneMonth':
-        this.date = {
-          from: getRecentMonth(1, this.endDate),
-          to: this.endDate,
-        };
-        break;
-      case 'pastSixMonths':
-        this.date = {
-          from: getRecentMonth(6, this.endDate),
-          to: this.endDate,
-        };
-        break;
-      case 'pastOneYear':
-        this.date = {
-          from: getRecentMonth(12, this.endDate),
-          to: this.endDate,
-        };
-        break;
-    }
     this.handleQuery();
   }
   ngOnInit(): void {
