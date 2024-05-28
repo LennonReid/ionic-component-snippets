@@ -1,3 +1,4 @@
+import { addIcons } from 'ionicons';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreeSelectComponent } from '@cs/components/tree-select';
@@ -9,6 +10,8 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/angular/standalone';
+
+import { caretDownOutline, caretUpOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'ionic-component-snippets-samples-tree-select',
@@ -60,7 +63,13 @@ export class SamplesTreeSelectPage {
     { id: 8, name: 'Outdoor' },
   ];
 
-  constructor() {}
+  readonly iconMaps: any = {
+    'caret-down-outline': caretDownOutline,
+    'caret-up-outline': caretUpOutline,
+  };
+  constructor() {
+    addIcons(this.iconMaps);
+  }
 
   itemChecked(e: any) {
     console.log(e);
