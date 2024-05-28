@@ -24,8 +24,6 @@ export class CalendarWeekComponent {
   @Input()
   public color: string = defaults.COLOR;
 
-  constructor() {}
-
   @Input()
   set weekArray(value: string[]) {
     if (value && value.length === 7) {
@@ -42,13 +40,25 @@ export class CalendarWeekComponent {
     }
   }
 
+  /**
+   * Adjusts the display order of the week array based on the configured week start day.
+   */
   adjustSort(): void {
+    // Check the configured week start day
     if (this._weekStart === 1) {
-      const cacheWeekArray = [...this._weekArray];
-      // @ts-ignore
-      cacheWeekArray.push(cacheWeekArray.shift());
-      this._displayWeekArray = [...cacheWeekArray];
+      // Week starts on Monday
+      // Rotate the week array by one day, putting Sunday at the end
+      const firstDay = this._weekArray.shift();
+      if (firstDay) {
+        this._weekArray.push(firstDay);
+      }
+      this._displayWeekArray = [...this._weekArray];
     } else if (this._weekStart === 0) {
+      // Week starts on Sunday
+      // Use the original week array as-is
+      this._displayWeekArray = [...this._weekArray];
+    } else {
+      // Unsupported week start day, use the original week array
       this._displayWeekArray = [...this._weekArray];
     }
   }
