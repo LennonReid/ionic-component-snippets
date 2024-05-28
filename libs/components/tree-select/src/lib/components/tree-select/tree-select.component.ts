@@ -3,24 +3,22 @@ import { TreeViewService } from '../../services/tree-view.service';
 import { TreeViewDataService } from '../../services/tree-view-data.service';
 import { ITreeItemChecked, ITreeItem } from '../../models/tree-item.interfaces';
 import { TreeSelectItemsComponent } from '../tree-select-items/tree-select-items.component';
+import { Color } from '@ionic/core';
 
 @Component({
   selector: 'tree-select',
   template: `
-    @if (items && items.length > 0) {
-
-    <div class="list">
-      @for (item of treeViewItems; track $index) {
-
-      <tree-select-items
-        [treeViewName]="treeViewName"
-        [persistedName]="persistedName"
-        [item]="item"
-        (itemCheckedEvent)="itemChecked($event)"
-      ></tree-select-items>
-      }
-    </div>
-    }
+    @if (items && items.length > 0) { @for (item of treeViewItems; track $index)
+    {
+    <tree-select-items
+      [buttonSize]="buttonSize"
+      [buttonColor]="buttonColor"
+      [treeViewName]="treeViewName"
+      [persistedName]="persistedName"
+      [item]="item"
+      (itemCheckedEvent)="itemChecked($event)"
+    ></tree-select-items>
+    } }
   `,
   standalone: true,
   imports: [TreeSelectItemsComponent],
@@ -29,9 +27,10 @@ export class TreeSelectComponent implements OnInit {
   @Input() public items: any;
   @Input() public persistedName = '';
   @Input() public treeViewName = '';
-  @Input() public iconSize: 'default' | 'large' | 'small' | undefined =
-    'default';
 
+  @Input() public buttonSize: 'default' | 'large' | 'small' | undefined =
+    'default';
+  @Input() public buttonColor: Color = 'medium';
   @Output() public itemCheckedEvent = new EventEmitter<ITreeItemChecked>();
 
   public treeViewItems?: ITreeItem[];

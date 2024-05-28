@@ -13,6 +13,7 @@ import {
 } from '@ionic/angular/standalone';
 import { FormsModule } from '@angular/forms';
 import { NgClass } from '@angular/common';
+import { Color } from '@ionic/core';
 
 @Component({
   imports: [
@@ -30,57 +31,75 @@ import { NgClass } from '@angular/common';
   template: `
     @if (item) {
     <ion-grid class="ion-no-padding">
-      <ion-row class="tree-item-row">
-        <div class="icon">
-          @if (couldBeCollapse(item)) { @if (item.items.collapsed) {
-          <ion-button fill="clear" color="dark" (click)="collapseItem(item)">
-            <ion-icon
-              [size]="iconSize"
-              slot="icon-only"
-              name="chevron-forward-outline"
-            ></ion-icon>
-          </ion-button>
-          }@else {
-          <ion-button fill="clear" color="dark" (click)="collapseItem(item)">
-            <ion-icon
-              [size]="iconSize"
-              slot="icon-only"
-              name="chevron-down-outline"
-            ></ion-icon>
-          </ion-button>
-          } }
-        </div>
-        <ion-item [lines]="'none'">
-          <ion-checkbox
-            id="check-bh-{{ item.id }}"
-            [indeterminate]="hasCheckedChild(item)"
-            slot="start"
-            class="checkbox checked"
-            [(ngModel)]="item.checked"
-            (ngModelChange)="checkChanged()"
-          ></ion-checkbox>
-          <ion-label>{{ item.text }}</ion-label>
-        </ion-item>
-      </ion-row>
+      <!-- <div class="icon">
+          </div> -->
+      <ion-item [lines]="'none'">
+        @if (couldBeCollapse(item)) { @if (item.items.collapsed) {
+        <ion-button
+          [size]="buttonSize"
+          slot="start"
+          fill="clear"
+          [color]="buttonColor"
+          (click)="collapseItem(item)"
+        >
+          <ion-icon slot="icon-only" name="caret-forward-outline"></ion-icon>
+        </ion-button>
+        } @else {
+        <ion-button
+          [size]="buttonSize"
+          slot="start"
+          fill="clear"
+          [color]="buttonColor"
+          (click)="collapseItem(item)"
+        >
+          <ion-icon slot="icon-only" name="caret-down-outline"></ion-icon>
+        </ion-button>
+        } } @else {
+        <ion-button
+          class="noVisibility"
+          [size]="buttonSize"
+          slot="start"
+          fill="clear"
+          [color]="buttonColor"
+          (click)="collapseItem(item)"
+        >
+          <ion-icon slot="icon-only" name="caret-forward-outline"></ion-icon>
+        </ion-button>
+        }
+        <ion-checkbox
+          id="check-bh-{{ item.id }}"
+          [indeterminate]="hasCheckedChild(item)"
+          [(ngModel)]="item.checked"
+          (ngModelChange)="checkChanged()"
+          label-placement="end"
+        >
+          {{ item.text }}
+        </ion-checkbox>
+      </ion-item>
     </ion-grid>
     }
   `,
   styles: `
-    .checkbox {
-    margin: 0px 1.25rem 0px 0px;
-}
+    .noVisibility {
+      visibility: hidden;
+    }
+    ion-button {
+      margin-right: 0.5rem;
+    }
+    ion-checkbox::part(label) {
+      width: 100%;
+    }
 
-.icon {
-    min-width: 2rem; /* 32px */
+    .icon {
+      min-width: 2rem; /* 32px */
+    }
 
-}
-
-.tree-item-row {
-    display: flex;
-    align-items: center !important;
-    flex-wrap:nowrap;
-}
-    `,
+    .tree-item-row {
+      display: flex;
+      align-items: center !important;
+      flex-wrap: nowrap;
+    }
+  `,
   standalone: true,
 })
 export class TreeSelectItemComponent implements OnInit {
@@ -88,8 +107,9 @@ export class TreeSelectItemComponent implements OnInit {
   @Input() public persistedName = '';
   @Input() public treeViewName = '';
   @Input() public childCheked = false;
-  @Input() public iconSize: 'default' | 'large' | 'small' | undefined =
+  @Input() public buttonSize: 'default' | 'large' | 'small' | undefined =
     'default';
+  @Input() public buttonColor: Color = 'medium';
 
   @Output() itemCheckedEvent = new EventEmitter<ITreeItemChecked>();
 

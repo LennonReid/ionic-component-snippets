@@ -25,6 +25,8 @@ import {
   arrowBackOutline,
   arrowDownOutline,
   arrowForwardOutline,
+  caretDownOutline,
+  caretForwardOutline,
   chevronDown,
   chevronDownOutline,
   chevronForwardOutline,
@@ -51,6 +53,8 @@ export class AppComponent implements OnInit {
     'chevron-up': chevronUp,
     'chevron-forward-outline': chevronForwardOutline,
     'chevron-down-outline': chevronDownOutline,
+    'caret-forward-outline': caretForwardOutline,
+    'caret-down-outline': caretDownOutline,
   };
   constructor(private platform: Platform) {
     this.initializeApp();
