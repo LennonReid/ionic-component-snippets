@@ -80,7 +80,7 @@ export class TreeSelectComponent implements OnInit {
     this.itemLevel = 1;
 
     this.items
-      .filter((e: any) => e.parentId === undefined)
+      .filter((e: any) => !e.parentId)
       .forEach((value: any) => {
         treeViewItems.push(
           this.treeViewService.createNewItem(
@@ -100,7 +100,7 @@ export class TreeSelectComponent implements OnInit {
     treeData = this.getItemsToAddInTreeView(treeData, treeViewItems);
 
     treeData
-      .filter((e) => e.parentId !== undefined)
+      .filter((e) => e.parentId)
       .forEach((itemToAdd, ckikey) => {
         treeViewItems.forEach((item, tvikey) => {
           if (itemToAdd.parentId === item.id) {
