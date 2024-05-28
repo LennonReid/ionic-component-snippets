@@ -17,7 +17,6 @@ import { Color } from '@ionic/core';
         [buttonColor]="buttonColor"
         [treeViewName]="treeViewName"
         [persistedName]="persistedName"
-        [childCheked]="anyChildChecked(item)"
         (itemCheckedEvent)="itemChecked($event)"
       ></tree-select-item>
     </div>

@@ -106,7 +106,6 @@ export class TreeSelectItemComponent implements OnInit {
   @Input() public item?: ITreeItem;
   @Input() public persistedName = '';
   @Input() public treeViewName = '';
-  @Input() public childCheked = false;
   @Input() public buttonSize: 'default' | 'large' | 'small' | undefined =
     'default';
   @Input() public buttonColor: Color = 'medium';
@@ -114,7 +113,7 @@ export class TreeSelectItemComponent implements OnInit {
   @Output() itemCheckedEvent = new EventEmitter<ITreeItemChecked>();
 
   constructor(
-    private treeViewService: TreeViewService,
+    public treeViewService: TreeViewService,
     private eventService: TreeViewEventService
   ) {}
 
@@ -150,6 +149,9 @@ export class TreeSelectItemComponent implements OnInit {
     treeItem.items.collapsed !== null &&
     treeItem.items.collapsed !== undefined;
 
-  public hasCheckedChild = (treeItem: ITreeItem): boolean =>
-    !!this.childCheked && !treeItem.checked;
+  public hasCheckedChild = (treeItem: ITreeItem): boolean => {
+    return (
+      this.treeViewService.anyChildChecked(treeItem?.items) && !treeItem.checked
+    );
+  };
 }
