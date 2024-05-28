@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {
   ISegmentButton,
   SlideSegmentsComponent,
@@ -17,7 +16,6 @@ import {
   selector: 'ionic-component-snippets-samples-slide-segments',
   standalone: true,
   imports: [
-    CommonModule,
     IonHeader,
     IonToolbar,
     IonButtons,
@@ -42,7 +40,6 @@ import {
       ></ionic-component-snippets-slide-segments>
     </ion-content>
   `,
-  styles: [],
 })
 export class SamplesSlideSegmentsPage {
   segmentButtons: ISegmentButton[] = [];
