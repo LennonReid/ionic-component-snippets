@@ -1,7 +1,7 @@
 import { addIcons } from 'ionicons';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TreeSelectComponent } from '@cs/components/tree-select';
+import { CdkTreeSelectComponent, TodoItem } from '@cs/components/tree-select';
 import {
   IonBackButton,
   IonButtons,
@@ -11,7 +11,13 @@ import {
   IonToolbar,
 } from '@ionic/angular/standalone';
 
-import { caretDownOutline, caretUpOutline } from 'ionicons/icons';
+import {
+  caretDownOutline,
+  caretUpOutline,
+  chevronDown,
+  chevronForward,
+} from 'ionicons/icons';
+import { DataService } from '../data-service';
 
 @Component({
   selector: 'ionic-component-snippets-samples-tree-select',
@@ -24,7 +30,7 @@ import { caretDownOutline, caretUpOutline } from 'ionicons/icons';
     IonBackButton,
     IonTitle,
     IonContent,
-    TreeSelectComponent,
+    CdkTreeSelectComponent,
   ],
   template: `
     <ion-header>
@@ -36,13 +42,11 @@ import { caretDownOutline, caretUpOutline } from 'ionicons/icons';
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <tree-select
-        [items]="treeviewItems"
-        [persistedName]="'persistedName'"
-        [treeViewName]="'treeViewName'"
-        (itemCheckedEvent)="itemChecked($event)"
+      <cdk-tree-select
+        [data]="treeData"
+        (selectChangeEvent)="selectChangeEvent($event)"
       >
-      </tree-select>
+      </cdk-tree-select>
     </ion-content>
   `,
   styles: [],
@@ -66,12 +70,20 @@ export class SamplesTreeSelectPage {
   readonly iconMaps: any = {
     'caret-down-outline': caretDownOutline,
     'caret-up-outline': caretUpOutline,
+    chevronDown,
+    chevronForward,
   };
-  constructor() {
+  treeData: TodoItem[] = [];
+  constructor(private dataService: DataService) {
     addIcons(this.iconMaps);
+    this.dataService.FakeTreeData.subscribe({
+      next: (data) => {
+        this.treeData = data;
+      },
+    });
   }
 
-  itemChecked(e: any) {
+  selectChangeEvent(e: any) {
     console.log(e);
   }
 }
