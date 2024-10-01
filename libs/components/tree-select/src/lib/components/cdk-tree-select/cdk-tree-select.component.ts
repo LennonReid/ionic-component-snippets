@@ -24,7 +24,7 @@ import { TodoItem } from '../../models/todo-item';
 import { NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'cdk-tree-select',
+  selector: 'ion-cdk-tree-select',
   template: `
     <cdk-tree [dataSource]="treeData" [treeControl]="treeControl">
       <!-- Leaf node template -->
@@ -125,8 +125,7 @@ import { NgStyle } from '@angular/common';
 })
 export class CdkTreeSelectComponent
   extends TreeBase<TodoItem>
-  implements OnChanges
-{
+  implements OnChanges {
   @Input() public buttonSize: 'default' | 'large' | 'small' | undefined =
     'default';
   @Input() public buttonColor: Color = 'medium';
