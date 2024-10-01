@@ -21,17 +21,17 @@ import {
 } from '@ionic/angular/standalone';
 import { TreeBase } from '../../models/tree-base';
 import { TodoItem } from '../../models/todo-item';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'cdk-tree-select',
   template: `
     <cdk-tree [dataSource]="treeData" [treeControl]="treeControl">
-      <!-- This is the tree node template for leaf nodes -->
+      <!-- Leaf node template -->
       <cdk-nested-tree-node
         *cdkTreeNodeDef="let node"
         class="child-node tree-node"
       >
-        <!-- use a disabled button to provide padding for tree leaf -->
         <ion-item lines="none" class="flex items-center tree-node">
           <ion-checkbox
             class="tree-node"
@@ -39,12 +39,14 @@ import { TodoItem } from '../../models/todo-item';
             (ionChange)="clickNode(node)"
             label-placement="end"
             justify="start"
+            [ngStyle]="{ 'font-size': fontSize }"
           >
             {{ node.name }}
           </ion-checkbox>
         </ion-item>
       </cdk-nested-tree-node>
-      <!-- This is the tree node template for expandable nodes -->
+
+      <!-- Expandable node template -->
       <cdk-nested-tree-node
         *cdkTreeNodeDef="let node; when: hasChild"
         class="tree-node"
@@ -62,9 +64,10 @@ import { TodoItem } from '../../models/todo-item';
               slot="icon-only"
               [name]="
                 treeControl.isExpanded(node)
-                  ? 'chevron-down'
-                  : 'chevron-forward'
+                  ? expandedIconName
+                  : collapsedIconName
               "
+              [size]="iconSize"
             >
             </ion-icon>
           </ion-button>
@@ -74,6 +77,7 @@ import { TodoItem } from '../../models/todo-item';
             (ionChange)="parentSelectionToggle(node); clickNode(node)"
             label-placement="end"
             justify="start"
+            [ngStyle]="{ 'font-size': fontSize }"
           >
             {{ node.name }}
           </ion-checkbox>
@@ -86,27 +90,26 @@ import { TodoItem } from '../../models/todo-item';
     </cdk-tree>
   `,
   standalone: true,
-  styles: `
-  ion-item{
-    background:transparent;
-    --background:transpartent;
-  }
-  ion-button{
-    margin:0;
-  }
-  .tree-invisible {
-  display: none;
-}
-
-.tree-node {
-  display: block;
-}
-
-.tree-node .tree-node {
-  padding-left: 40px;
-}
-
-  `,
+  styles: [
+    `
+      ion-item {
+        background: transparent;
+        --background: transparent;
+      }
+      ion-button {
+        margin: 0;
+      }
+      .tree-invisible {
+        display: none;
+      }
+      .tree-node {
+        display: block;
+      }
+      .tree-node .tree-node {
+        padding-left: 40px;
+      }
+    `,
+  ],
   imports: [
     CdkTreeModule,
     FormsModule,
@@ -117,6 +120,7 @@ import { TodoItem } from '../../models/todo-item';
     IonText,
     IonNote,
     IonLabel,
+    NgStyle,
   ],
 })
 export class CdkTreeSelectComponent
@@ -127,6 +131,13 @@ export class CdkTreeSelectComponent
     'default';
   @Input() public buttonColor: Color = 'medium';
   @Input() data: TodoItem[] = [];
+  @Input() public iconSize: 'small' | 'default' | 'large' = 'default';
+  @Input() public fontSize = 'inherit';
+
+  // Add these Input properties
+  @Input() public expandedIconName = 'chevron-down';
+  @Input() public collapsedIconName = 'chevron-forward';
+
   @Output() public selectChangeEvent = new EventEmitter<TodoItem[]>();
 
   constructor() {
@@ -134,7 +145,7 @@ export class CdkTreeSelectComponent
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes && changes['data'] && changes['data'].currentValue) {
+    if (changes['data']?.currentValue) {
       const data = changes['data'].currentValue;
       this.treeData = new ArrayDataSource(data);
       this.treeControl.dataNodes = data;

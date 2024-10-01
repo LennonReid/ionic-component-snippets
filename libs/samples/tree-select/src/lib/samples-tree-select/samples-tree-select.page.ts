@@ -42,11 +42,17 @@ import { DataService } from '../data-service';
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <cdk-tree-select
-        [data]="treeData"
-        (selectChangeEvent)="selectChangeEvent($event)"
-      >
-      </cdk-tree-select>
+      <ion-content>
+        <cdk-tree-select
+          [data]="treeData"
+          [iconSize]="'default'"
+          [fontSize]="'1.25rem'"
+          [expandedIconName]="'caret-down-outline'"
+          [collapsedIconName]="'caret-forward-outline'"
+          (selectChangeEvent)="selectChangeEvent($event)"
+        >
+        </cdk-tree-select>
+      </ion-content>
     </ion-content>
   `,
   styles: [],
