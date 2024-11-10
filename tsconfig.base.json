@@ -32,9 +32,6 @@
       "@cs/components/slide-segments": [
         "libs/components/slide-segments/src/index.ts"
       ],
-      "@cs/components/tree-select": [
-        "libs/components/tree-select/src/index.ts"
-      ],
       "@cs/samples/calendar": ["libs/samples/calendar/src/index.ts"],
       "@cs/samples/code-scanner": ["libs/samples/code-scanner/src/index.ts"],
       "@cs/samples/image-picker": ["libs/samples/image-picker/src/index.ts"],
@@ -42,7 +39,8 @@
       "@cs/samples/slide-segments": [
         "libs/samples/slide-segments/src/index.ts"
       ],
-      "@cs/samples/tree-select": ["libs/samples/tree-select/src/index.ts"]
+      "@cs/samples/tree-select": ["libs/samples/tree-select/src/index.ts"],
+      "ion-cdk-tree-select": ["libs/components/tree-select/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
