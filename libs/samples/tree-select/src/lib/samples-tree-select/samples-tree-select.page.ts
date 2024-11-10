@@ -1,7 +1,7 @@
 import { addIcons } from 'ionicons';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CdkTreeSelectComponent, TodoItem } from '@cs/components/tree-select';
+import { CdkTreeSelectComponent, TodoItem } from 'ion-cdk-tree-select';
 import {
   IonBackButton,
   IonButtons,

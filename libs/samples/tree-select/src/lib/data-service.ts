@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { faker } from '@faker-js/faker';
-import { TodoItem } from '@cs/components/tree-select';
+import { TodoItem } from 'ion-cdk-tree-select';
 
 @Injectable({
   providedIn: 'root',
