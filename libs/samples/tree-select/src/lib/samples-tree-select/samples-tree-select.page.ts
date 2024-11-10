@@ -47,8 +47,8 @@ import { DataService } from '../data-service';
           [data]="treeData"
           [iconSize]="'default'"
           [fontSize]="'1.25rem'"
-          [expandedIconName]="'caret-down-outline'"
-          [collapsedIconName]="'caret-forward-outline'"
+          [expandedIconName]="'caret-forward-outline'"
+          [collapsedIconName]="'caret-down-outline'"
           (selectChangeEvent)="selectChangeEvent($event)"
         >
         </ion-cdk-tree-select>
