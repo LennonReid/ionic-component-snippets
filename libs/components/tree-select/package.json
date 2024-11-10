@@ -1,8 +1,39 @@
 {
   "name": "ion-cdk-tree-select",
-  "version": "0.0.3",
+  "version": "0.0.7",
+  "description": "An Angular component that combines Angular CDK Tree and Ionic components to create a customizable, tree-structured selection list.",
+  "author": "Lennon Reid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LennonReid/ionic-component-snippets.git"
+  },
+  "homepage": "https://github.com/LennonReid/ionic-component-snippets/tree/main/libs/components/tree-select#readme",
+  "keywords": [
+    "angular",
+    "ionic",
+    "cdk",
+    "tree",
+    "component",
+    "tree-select",
+    "ion-cdk-tree-select"
+  ],
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0",
+    "@angular/cdk": ">=14.0.0",
+    "@ionic/angular": ">=6.0.0",
+    "ionicons": ">=6.0.0",
+    "rxjs": ">=7.0.0"
+  },
+  "main": "bundles/ion-cdk-tree-select.umd.js",
+  "module": "fesm2015/ion-cdk-tree-select.js",
+  "es2015": "fesm2015/ion-cdk-tree-select.js",
+  "esm2015": "esm2015/ion-cdk-tree-select.js",
+  "fesm2015": "fesm2015/ion-cdk-tree-select.js",
+  "typings": "ion-cdk-tree-select.d.ts",
   "sideEffects": false
 }
