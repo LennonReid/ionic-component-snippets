@@ -23,23 +23,23 @@ enum CameraChoice {
 }
 
 @Component({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonFab,
-    IonFabButton,
-    IonIcon,
-    IonButton,
-    IonButtons,
-    IonBackButton,
-    CodeScannerComponent,
-  ],
-  selector: 'ionic-component-snippets-samples-code-scanner',
-  template: `
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        IonFab,
+        IonFabButton,
+        IonIcon,
+        IonButton,
+        IonButtons,
+        IonBackButton,
+        CodeScannerComponent,
+    ],
+    selector: 'ionic-component-snippets-samples-code-scanner',
+    template: `
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
@@ -57,8 +57,7 @@ enum CameraChoice {
         (scannedResult)="scannedResult($event)"
       ></ionic-component-snippets-code-scanner>
     </ion-content>
-  `,
-  standalone: true,
+  `
 })
 export class SamplesCodeScannerPage {
   @ViewChild('codeScannerEle') codeScannerEle!: CodeScannerComponent;

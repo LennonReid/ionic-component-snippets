@@ -20,24 +20,24 @@ import { Haptics, ImpactStyle } from '@capacitor/haptics';
 import { ImagePickerComponent } from '@cs/components/image-picker';
 
 @Component({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonIcon,
-    IonText,
-    IonItem,
-    IonLabel,
-    IonButton,
-    IonButtons,
-    IonBackButton,
-    ImagePickerComponent,
-  ],
-  selector: 'ionic-component-snippets-samlpes-image-picker',
-  template: `
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        IonIcon,
+        IonText,
+        IonItem,
+        IonLabel,
+        IonButton,
+        IonButtons,
+        IonBackButton,
+        ImagePickerComponent,
+    ],
+    selector: 'ionic-component-snippets-samlpes-image-picker',
+    template: `
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
@@ -57,8 +57,7 @@ import { ImagePickerComponent } from '@cs/components/image-picker';
         (imagePickResult)="imagePickResult($event)"
       ></ionic-component-snippets-image-picker>
     </ion-content>
-  `,
-  standalone: true,
+  `
 })
 export class SamplesImagePickerPage {
   readonly iconMaps: any = {

@@ -36,19 +36,19 @@ enum CameraChoice {
 }
 
 @Component({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonFab,
-    IonFabButton,
-    IonIcon
-  ],
-  selector: 'ionic-component-snippets-code-scanner',
-  template: `
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        IonFab,
+        IonFabButton,
+        IonIcon
+    ],
+    selector: 'ionic-component-snippets-code-scanner',
+    template: `
     <ion-content color="darker" #content>
       <ng-container *ngIf="cameraActive">
         <div class="guide">
@@ -147,8 +147,8 @@ enum CameraChoice {
       </ng-container>
     </ion-content>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .frame {
         fill: var(--ion-color-success);
         fill-opacity: 0.5;
@@ -169,8 +169,7 @@ enum CameraChoice {
         opacity: 0.7;
       }
     `
-  ],
-  standalone: true
+    ]
 })
 export class CodeScannerComponent implements OnInit, OnDestroy {
   @ViewChild('content') contentEl!: HTMLIonContentElement

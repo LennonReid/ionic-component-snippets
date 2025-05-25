@@ -40,25 +40,25 @@ import { FormsModule } from '@angular/forms';
 const NUM_OF_MONTHS_TO_CREATE = 6;
 
 @Component({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonButtons,
-    IonButton,
-    IonIcon,
-    IonContent,
-    IonInfiniteScroll,
-    IonInfiniteScrollContent,
-    CalendarWeekComponent,
-    MonthComponent,
-  ],
-  providers: [CalendarService],
-  selector: 'ion-calendar-modal',
-  styleUrls: ['./calendar.modal.scss'],
-  template: `
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonButtons,
+        IonButton,
+        IonIcon,
+        IonContent,
+        IonInfiniteScroll,
+        IonInfiniteScrollContent,
+        CalendarWeekComponent,
+        MonthComponent,
+    ],
+    providers: [CalendarService],
+    selector: 'ion-calendar-modal',
+    styleUrls: ['./calendar.modal.scss'],
+    template: `
     <ion-header>
       <ion-toolbar [color]="_d.color || ''">
         <ion-buttons slot="start">
@@ -158,8 +158,7 @@ const NUM_OF_MONTHS_TO_CREATE = 6;
         <ion-infinite-scroll-content></ion-infinite-scroll-content>
       </ion-infinite-scroll>
     </ion-content>
-  `,
-  standalone: true,
+  `
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class CalendarModal implements OnInit, AfterViewInit {

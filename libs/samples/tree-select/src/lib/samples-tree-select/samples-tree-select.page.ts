@@ -20,19 +20,18 @@ import {
 import { DataService } from '../data-service';
 
 @Component({
-  selector: 'ionic-component-snippets-samples-tree-select',
-  standalone: true,
-  imports: [
-    CommonModule,
-    IonHeader,
-    IonToolbar,
-    IonButtons,
-    IonBackButton,
-    IonTitle,
-    IonContent,
-    CdkTreeSelectComponent,
-  ],
-  template: `
+    selector: 'ionic-component-snippets-samples-tree-select',
+    imports: [
+        CommonModule,
+        IonHeader,
+        IonToolbar,
+        IonButtons,
+        IonBackButton,
+        IonTitle,
+        IonContent,
+        CdkTreeSelectComponent,
+    ],
+    template: `
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
@@ -55,7 +54,7 @@ import { DataService } from '../data-service';
       </ion-content>
     </ion-content>
   `,
-  styles: [],
+    styles: []
 })
 export class SamplesTreeSelectPage {
   public treeviewItems = [

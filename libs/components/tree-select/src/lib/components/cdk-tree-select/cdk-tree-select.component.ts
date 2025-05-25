@@ -24,8 +24,8 @@ import { TodoItem } from '../../models/todo-item';
 import { NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'ion-cdk-tree-select',
-  template: `
+    selector: 'ion-cdk-tree-select',
+    template: `
     <cdk-tree [dataSource]="treeData" [treeControl]="treeControl">
       <!-- Leaf node template -->
       <cdk-nested-tree-node
@@ -89,9 +89,8 @@ import { NgStyle } from '@angular/common';
       </cdk-nested-tree-node>
     </cdk-tree>
   `,
-  standalone: true,
-  styles: [
-    `
+    styles: [
+        `
       ion-item {
         background: transparent;
         --background: transparent;
@@ -109,19 +108,19 @@ import { NgStyle } from '@angular/common';
         padding-left: 40px;
       }
     `,
-  ],
-  imports: [
-    CdkTreeModule,
-    FormsModule,
-    IonCheckbox,
-    IonItem,
-    IonButton,
-    IonIcon,
-    IonText,
-    IonNote,
-    IonLabel,
-    NgStyle,
-  ],
+    ],
+    imports: [
+        CdkTreeModule,
+        FormsModule,
+        IonCheckbox,
+        IonItem,
+        IonButton,
+        IonIcon,
+        IonText,
+        IonNote,
+        IonLabel,
+        NgStyle,
+    ]
 })
 export class CdkTreeSelectComponent
   extends TreeBase<TodoItem>

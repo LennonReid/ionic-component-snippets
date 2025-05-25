@@ -24,14 +24,14 @@ export const MONTH_VALUE_ACCESSOR: any = {
 };
 
 @Component({
-  imports: [CommonModule],
-  selector: 'ion-calendar-month',
-  providers: [MONTH_VALUE_ACCESSOR],
-  styleUrls: ['./month.component.scss'],
-  host: {
-    '[class.component-mode]': 'componentMode',
-  },
-  template: `
+    imports: [CommonModule],
+    selector: 'ion-calendar-month',
+    providers: [MONTH_VALUE_ACCESSOR],
+    styleUrls: ['./month.component.scss'],
+    host: {
+        '[class.component-mode]': 'componentMode',
+    },
+    template: `
     <div [class]="color">
       <ng-template [ngIf]="!_isRange" [ngIfElse]="rangeBox">
         <div class="days-box">
@@ -93,8 +93,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
         </div>
       </ng-template>
     </div>
-  `,
-  standalone: true,
+  `
 })
 export class MonthComponent implements ControlValueAccessor, AfterViewInit {
   @Input() componentMode = false;

@@ -6,41 +6,39 @@ import { CommonModule } from '@angular/common';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @Component({
-  selector: 'ionic-selectable-modal',
-  templateUrl: './ionic-selectable-modal.component.html',
-  styles: [
-    `
+    selector: 'ionic-selectable-modal',
+    templateUrl: './ionic-selectable-modal.component.html',
+    styles: [
+        `
       cdk-virtual-scroll-viewport {
         height: 100%;
         width: 100%;
       }
     `,
-  ],
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ScrollingModule,
-    IonHeader,
-    IonToolbar,
-    IonButtons,
-    IonButton,
-    IonTitle,
-    IonContent,
-    IonSpinner,
-    IonList,
-    IonItemGroup,
-    IonItemDivider,
-    IonLabel,
-    IonIcon,
-    IonItem,
-    IonRow,
-    IonCol,
-    IonInfiniteScroll,
-    IonInfiniteScrollContent,
-    IonSearchbar,
-
-  ],
+    ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        ScrollingModule,
+        IonHeader,
+        IonToolbar,
+        IonButtons,
+        IonButton,
+        IonTitle,
+        IonContent,
+        IonSpinner,
+        IonList,
+        IonItemGroup,
+        IonItemDivider,
+        IonLabel,
+        IonIcon,
+        IonItem,
+        IonRow,
+        IonCol,
+        IonInfiniteScroll,
+        IonInfiniteScrollContent,
+        IonSearchbar,
+    ]
 })
 export class IonicSelectableModalComponent implements AfterViewInit {
   @ViewChild(IonContent)

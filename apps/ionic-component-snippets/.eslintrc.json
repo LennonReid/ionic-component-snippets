@@ -34,7 +34,8 @@
           {
             "suffixes": ["Page", "Component"]
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "off"
       }
     },
     {

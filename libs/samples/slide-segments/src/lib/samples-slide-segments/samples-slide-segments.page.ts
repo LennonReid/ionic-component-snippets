@@ -13,18 +13,17 @@ import {
 } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'ionic-component-snippets-samples-slide-segments',
-  standalone: true,
-  imports: [
-    IonHeader,
-    IonToolbar,
-    IonButtons,
-    IonBackButton,
-    IonTitle,
-    IonContent,
-    SlideSegmentsComponent,
-  ],
-  template: `
+    selector: 'ionic-component-snippets-samples-slide-segments',
+    imports: [
+        IonHeader,
+        IonToolbar,
+        IonButtons,
+        IonBackButton,
+        IonTitle,
+        IonContent,
+        SlideSegmentsComponent,
+    ],
+    template: `
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
@@ -39,7 +38,7 @@ import {
         [segmentButtons]="segmentButtons"
       ></ionic-component-snippets-slide-segments>
     </ion-content>
-  `,
+  `
 })
 export class SamplesSlideSegmentsPage {
   segmentButtons: ISegmentButton[] = [];

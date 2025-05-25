@@ -35,15 +35,14 @@ import {
 
 register();
 @Component({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'ionic-component-snippets-root',
-  standalone: true,
-  template: `
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    selector: 'ionic-component-snippets-root',
+    template: `
     <ion-app>
       <ion-router-outlet id="main-content"></ion-router-outlet>
     </ion-app>
   `,
-  imports: [IonApp, IonContent, IonRouterOutlet, IonButton],
+    imports: [IonApp, IonContent, IonRouterOutlet, IonButton]
 })
 export class AppComponent implements OnInit {
   public environmentInjector = inject(EnvironmentInjector);

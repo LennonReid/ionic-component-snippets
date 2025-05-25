@@ -40,19 +40,18 @@ import { IonicSelectableValueTemplateDirective } from './ionic-selectable-value-
 import uniqBy from 'lodash-es/uniqBy'
 
 @Component({
-  selector: 'ionic-selectable',
-  templateUrl: './ionic-selectable.component.html',
-  styleUrls: ['./ionic-selectable.component.scss'],
-  encapsulation: ViewEncapsulation.None,
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => IonicSelectableComponent),
-      multi: true,
-    },
-  ],
-  standalone: true,
-  imports: [NgIf, NgTemplateOutlet, NgFor],
+    selector: 'ionic-selectable',
+    templateUrl: './ionic-selectable.component.html',
+    styleUrls: ['./ionic-selectable.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => IonicSelectableComponent),
+            multi: true,
+        },
+    ],
+    imports: [NgIf, NgTemplateOutlet, NgFor]
 })
 export class IonicSelectableComponent implements ControlValueAccessor, OnInit, DoCheck {
   @HostBinding('class.ionic-selectable')

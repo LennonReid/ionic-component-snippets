@@ -3,10 +3,10 @@ import { defaults } from '../config';
 import { IonToolbar } from '@ionic/angular/standalone';
 import moment from 'moment';
 @Component({
-  imports: [IonToolbar],
-  selector: 'ion-calendar-week',
-  styleUrls: ['./calendar-week.component.scss'],
-  template: `
+    imports: [IonToolbar],
+    selector: 'ion-calendar-week',
+    styleUrls: ['./calendar-week.component.scss'],
+    template: `
     <ion-toolbar [class]="'week-toolbar ' + color" no-border-top>
       <ul [class]="'week-title ' + color">
         @for (w of _displayWeekArray; track $index) {
@@ -14,8 +14,7 @@ import moment from 'moment';
         }
       </ul>
     </ion-toolbar>
-  `,
-  standalone: true,
+  `
 })
 export class CalendarWeekComponent {
   _weekArray: string[] = moment.weekdaysShort() || defaults.WEEKS_FORMAT;

@@ -63,11 +63,13 @@
       },
       "defaultConfiguration": "development",
       "options": {
+        "port": 4202,
         "disableHostCheck": true,
         "host": "0.0.0.0",
         "open": true,
         "buildTarget": "ionic-component-snippets:build"
-      }
+      },
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

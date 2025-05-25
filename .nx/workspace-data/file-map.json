@@ -1,0 +1,1685 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.1.2",
+  "pathMappings": {
+    "@cs/common-ui": [
+      "libs/common/ui/src/index.ts"
+    ],
+    "@cs/common/utils": [
+      "libs/common/utils/src/index.ts"
+    ],
+    "@cs/components/calendar": [
+      "libs/components/calendar/src/index.ts"
+    ],
+    "@cs/components/code-scanner": [
+      "libs/components/code-scanner/src/index.ts"
+    ],
+    "@cs/components/image-picker": [
+      "libs/components/image-picker/src/index.ts"
+    ],
+    "@cs/components/select-search": [
+      "libs/components/select-search/src/index.ts"
+    ],
+    "@cs/components/slide-segments": [
+      "libs/components/slide-segments/src/index.ts"
+    ],
+    "@cs/samples/calendar": [
+      "libs/samples/calendar/src/index.ts"
+    ],
+    "@cs/samples/code-scanner": [
+      "libs/samples/code-scanner/src/index.ts"
+    ],
+    "@cs/samples/image-picker": [
+      "libs/samples/image-picker/src/index.ts"
+    ],
+    "@cs/samples/select-search": [
+      "libs/samples/select-search/src/index.ts"
+    ],
+    "@cs/samples/slide-segments": [
+      "libs/samples/slide-segments/src/index.ts"
+    ],
+    "@cs/samples/tree-select": [
+      "libs/samples/tree-select/src/index.ts"
+    ],
+    "ion-cdk-tree-select": [
+      "libs/components/tree-select/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "pluginsConfig": {},
+  "fileMap": {
+    "projectFileMap": {
+      "slide-segments": [
+        {
+          "file": "libs/components/slide-segments/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/components/slide-segments/README.md",
+          "hash": "2874115409209840775"
+        },
+        {
+          "file": "libs/components/slide-segments/jest.config.ts",
+          "hash": "18225308202006496342"
+        },
+        {
+          "file": "libs/components/slide-segments/ng-package.json",
+          "hash": "2260297089745810377"
+        },
+        {
+          "file": "libs/components/slide-segments/package.json",
+          "hash": "10798266857353715104",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/components/slide-segments/project.json",
+          "hash": "17526363989394003179"
+        },
+        {
+          "file": "libs/components/slide-segments/src/index.ts",
+          "hash": "15657624517892973975"
+        },
+        {
+          "file": "libs/components/slide-segments/src/lib/slide-segments/slide-segments.component.spec.ts",
+          "hash": "18013777581855753670",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/slide-segments/src/lib/slide-segments/slide-segments.component.ts",
+          "hash": "10693170798374343106",
+          "deps": [
+            "npm:rxjs",
+            "npm:@ionic/angular",
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/components/slide-segments/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/components/slide-segments/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/components/slide-segments/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/components/slide-segments/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/components/slide-segments/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "calendar": [
+        {
+          "file": "libs/components/calendar/.eslintrc.json",
+          "hash": "379254226756390101"
+        },
+        {
+          "file": "libs/components/calendar/README.md",
+          "hash": "2754725387526192393"
+        },
+        {
+          "file": "libs/components/calendar/jest.config.ts",
+          "hash": "10443588836972561111"
+        },
+        {
+          "file": "libs/components/calendar/ng-package.json",
+          "hash": "1468746182336816934"
+        },
+        {
+          "file": "libs/components/calendar/package.json",
+          "hash": "15374315209876791835",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/project.json",
+          "hash": "2265490195779967450"
+        },
+        {
+          "file": "libs/components/calendar/src/index.ts",
+          "hash": "8409798954657652158"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/calendar.controller.ts",
+          "hash": "5985869530277003154",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:@ionic/core"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/calendar.model.ts",
+          "hash": "11600917832731984863",
+          "deps": [
+            "npm:@ionic/core"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/calendar.module.ts",
+          "hash": "7164047793553488600",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common",
+            "npm:@ionic/angular"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/calendar-week.component.scss",
+          "hash": "11754147114972501170"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/calendar-week.component.ts",
+          "hash": "1727310626873068004",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:moment"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/calendar.component.scss",
+          "hash": "5756432871044499098"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/calendar.component.ts",
+          "hash": "8216874816060606916",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:moment",
+            "npm:@angular/common",
+            "npm:@ionic/angular"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/calendar.modal.scss",
+          "hash": "8473445049177605396"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/calendar.modal.ts",
+          "hash": "4858147356330001348",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:moment",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/month-picker.component.scss",
+          "hash": "10804289226227254543"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/month-picker.component.ts",
+          "hash": "1209129945871803755",
+          "deps": [
+            "npm:@angular/core",
+            "npm:moment",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/month.component.scss",
+          "hash": "10260705692620775373"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/components/month.component.ts",
+          "hash": "6522506656294133310",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/config.ts",
+          "hash": "10754777694863519464",
+          "deps": [
+            "npm:moment"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/index.scss",
+          "hash": "4459418878762315331"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/index.ts",
+          "hash": "11675151960098502248"
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/services/calendar-options.provider.ts",
+          "hash": "7820574007684731791",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/services/calendar.service.ts",
+          "hash": "18139739520582599072",
+          "deps": [
+            "npm:@angular/core",
+            "npm:moment"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/src/lib/calendar/utils/icons.ts",
+          "hash": "13731585952717341228"
+        },
+        {
+          "file": "libs/components/calendar/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/components/calendar/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/components/calendar/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/components/calendar/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/components/calendar/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "samples-image-picker": [
+        {
+          "file": "libs/samples/image-picker/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/samples/image-picker/README.md",
+          "hash": "14545484942942416673"
+        },
+        {
+          "file": "libs/samples/image-picker/jest.config.ts",
+          "hash": "9298481676017036743"
+        },
+        {
+          "file": "libs/samples/image-picker/ng-package.json",
+          "hash": "12588659246134321646"
+        },
+        {
+          "file": "libs/samples/image-picker/package.json",
+          "hash": "13301256164089907249",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/samples/image-picker/project.json",
+          "hash": "6498368610923722059"
+        },
+        {
+          "file": "libs/samples/image-picker/src/index.ts",
+          "hash": "16482136339247442200"
+        },
+        {
+          "file": "libs/samples/image-picker/src/lib/samples-image-picker/samples-image-picker.page.ts",
+          "hash": "10255964791401765168",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@capacitor/toast",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@ionic/angular",
+            "npm:ionicons",
+            "npm:@capacitor/haptics",
+            "image-picker"
+          ]
+        },
+        {
+          "file": "libs/samples/image-picker/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/samples/image-picker/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/samples/image-picker/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/samples/image-picker/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/samples/image-picker/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "common-ui": [
+        {
+          "file": "libs/common/ui/.eslintrc.json",
+          "hash": "379254226756390101"
+        },
+        {
+          "file": "libs/common/ui/README.md",
+          "hash": "2200719060512274419"
+        },
+        {
+          "file": "libs/common/ui/jest.config.ts",
+          "hash": "9025981817915360046"
+        },
+        {
+          "file": "libs/common/ui/ng-package.json",
+          "hash": "15748256742351201667"
+        },
+        {
+          "file": "libs/common/ui/package.json",
+          "hash": "11557345268042112617",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/common/ui/project.json",
+          "hash": "11034712625835780819"
+        },
+        {
+          "file": "libs/common/ui/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/common/ui/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/common/ui/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/common/ui/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/common/ui/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/common/ui/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "common-utils": [
+        {
+          "file": "libs/common/utils/.eslintrc.json",
+          "hash": "379254226756390101"
+        },
+        {
+          "file": "libs/common/utils/README.md",
+          "hash": "9707041292704867636"
+        },
+        {
+          "file": "libs/common/utils/jest.config.ts",
+          "hash": "12296460064842125716"
+        },
+        {
+          "file": "libs/common/utils/ng-package.json",
+          "hash": "1398541445996182442"
+        },
+        {
+          "file": "libs/common/utils/package.json",
+          "hash": "1524258288386267431",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/common/utils/project.json",
+          "hash": "8039058454647495003"
+        },
+        {
+          "file": "libs/common/utils/src/index.ts",
+          "hash": "9268095460289252755"
+        },
+        {
+          "file": "libs/common/utils/src/lib/functions/moment-util.ts",
+          "hash": "9283796073171007530",
+          "deps": [
+            "npm:moment"
+          ]
+        },
+        {
+          "file": "libs/common/utils/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/common/utils/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/common/utils/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/common/utils/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/common/utils/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "samples-select-search": [
+        {
+          "file": "libs/samples/select-search/.eslintrc.json",
+          "hash": "379254226756390101"
+        },
+        {
+          "file": "libs/samples/select-search/README.md",
+          "hash": "7156837658257669208"
+        },
+        {
+          "file": "libs/samples/select-search/jest.config.ts",
+          "hash": "12755266781319550706"
+        },
+        {
+          "file": "libs/samples/select-search/ng-package.json",
+          "hash": "11174471481686322713"
+        },
+        {
+          "file": "libs/samples/select-search/package.json",
+          "hash": "7109330491989246986",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/samples/select-search/project.json",
+          "hash": "9607942590552463203"
+        },
+        {
+          "file": "libs/samples/select-search/src/index.ts",
+          "hash": "17131461795331746152"
+        },
+        {
+          "file": "libs/samples/select-search/src/lib/samples-select-search/samples-select-search.page.spec.ts",
+          "hash": "1488101675748678466",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/samples/select-search/src/lib/samples-select-search/samples-select-search.page.ts",
+          "hash": "15731717435534008065",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@ionic/angular",
+            "select-search",
+            "npm:ionicons"
+          ]
+        },
+        {
+          "file": "libs/samples/select-search/src/lib/services/select-search.service.ts",
+          "hash": "13552329545378853449",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/samples/select-search/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/samples/select-search/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/samples/select-search/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/samples/select-search/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/samples/select-search/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "image-picker": [
+        {
+          "file": "libs/components/image-picker/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/components/image-picker/README.md",
+          "hash": "9589974148415708536"
+        },
+        {
+          "file": "libs/components/image-picker/jest.config.ts",
+          "hash": "9005034080631380804"
+        },
+        {
+          "file": "libs/components/image-picker/ng-package.json",
+          "hash": "13491605490488978130"
+        },
+        {
+          "file": "libs/components/image-picker/package.json",
+          "hash": "241508719963918762",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/components/image-picker/project.json",
+          "hash": "9372598348228384104"
+        },
+        {
+          "file": "libs/components/image-picker/src/index.ts",
+          "hash": "17733116570642831164"
+        },
+        {
+          "file": "libs/components/image-picker/src/lib/image-picker/image-picker.component.ts",
+          "hash": "592131779577626411",
+          "deps": [
+            "npm:ionicons",
+            "npm:@angular/core",
+            "npm:jsqr",
+            "npm:@capacitor/toast",
+            "npm:@capacitor-community/barcode-scanner",
+            "npm:@capacitor/splash-screen",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@ionic/angular",
+            "npm:@capacitor/camera"
+          ]
+        },
+        {
+          "file": "libs/components/image-picker/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/components/image-picker/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/components/image-picker/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/components/image-picker/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/components/image-picker/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "code-scanner": [
+        {
+          "file": "libs/components/code-scanner/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/components/code-scanner/README.md",
+          "hash": "5585880962327573430"
+        },
+        {
+          "file": "libs/components/code-scanner/jest.config.ts",
+          "hash": "2835417236917135764"
+        },
+        {
+          "file": "libs/components/code-scanner/ng-package.json",
+          "hash": "10058506515742569483"
+        },
+        {
+          "file": "libs/components/code-scanner/package.json",
+          "hash": "11772303888242154964",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/components/code-scanner/project.json",
+          "hash": "13346359711110321966"
+        },
+        {
+          "file": "libs/components/code-scanner/src/index.ts",
+          "hash": "17412076904173320573"
+        },
+        {
+          "file": "libs/components/code-scanner/src/lib/code-scanner/code-scanner.component.ts",
+          "hash": "15425256410897342427",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@capacitor-community/barcode-scanner",
+            "npm:@capacitor/splash-screen",
+            "npm:@capacitor/haptics",
+            "npm:@capacitor/toast",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:ionicons",
+            "npm:@ionic/angular"
+          ]
+        },
+        {
+          "file": "libs/components/code-scanner/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/components/code-scanner/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/components/code-scanner/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/components/code-scanner/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/components/code-scanner/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "samples-code-scanner": [
+        {
+          "file": "libs/samples/code-scanner/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/samples/code-scanner/README.md",
+          "hash": "4026664626522092839"
+        },
+        {
+          "file": "libs/samples/code-scanner/jest.config.ts",
+          "hash": "7789963785589905252"
+        },
+        {
+          "file": "libs/samples/code-scanner/ng-package.json",
+          "hash": "4524243095078338136"
+        },
+        {
+          "file": "libs/samples/code-scanner/package.json",
+          "hash": "12210279704421646506",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/samples/code-scanner/project.json",
+          "hash": "5823556418650225160"
+        },
+        {
+          "file": "libs/samples/code-scanner/src/index.ts",
+          "hash": "13380071435500634473"
+        },
+        {
+          "file": "libs/samples/code-scanner/src/lib/samples-code-scanner/samples-code-scanner.page.ts",
+          "hash": "6371525285918468631",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@capacitor-community/barcode-scanner",
+            "npm:@capacitor/toast",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@ionic/angular",
+            "code-scanner"
+          ]
+        },
+        {
+          "file": "libs/samples/code-scanner/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/samples/code-scanner/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/samples/code-scanner/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/samples/code-scanner/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/samples/code-scanner/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "samples-tree-select": [
+        {
+          "file": "libs/samples/tree-select/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/samples/tree-select/README.md",
+          "hash": "16626385069063717798"
+        },
+        {
+          "file": "libs/samples/tree-select/jest.config.ts",
+          "hash": "11025352065269393576"
+        },
+        {
+          "file": "libs/samples/tree-select/ng-package.json",
+          "hash": "10124737603530055343"
+        },
+        {
+          "file": "libs/samples/tree-select/package.json",
+          "hash": "2276966946969951426",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/samples/tree-select/project.json",
+          "hash": "15846406040241334984"
+        },
+        {
+          "file": "libs/samples/tree-select/src/index.ts",
+          "hash": "16759289016138006598"
+        },
+        {
+          "file": "libs/samples/tree-select/src/lib/data-service.ts",
+          "hash": "6397953413711271024",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@faker-js/faker",
+            "tree-select"
+          ]
+        },
+        {
+          "file": "libs/samples/tree-select/src/lib/samples-tree-select/samples-tree-select.page.ts",
+          "hash": "3200314294974090550",
+          "deps": [
+            "npm:ionicons",
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "tree-select",
+            "npm:@ionic/angular"
+          ]
+        },
+        {
+          "file": "libs/samples/tree-select/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/samples/tree-select/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/samples/tree-select/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/samples/tree-select/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/samples/tree-select/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "tree-select": [
+        {
+          "file": "libs/components/tree-select/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/components/tree-select/README.md",
+          "hash": "11001116560188590072"
+        },
+        {
+          "file": "libs/components/tree-select/jest.config.ts",
+          "hash": "12806320459586210632"
+        },
+        {
+          "file": "libs/components/tree-select/ng-package.json",
+          "hash": "15340877676632832731"
+        },
+        {
+          "file": "libs/components/tree-select/package.json",
+          "hash": "17696411133996729605",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/cdk",
+            "npm:@ionic/angular",
+            "npm:ionicons",
+            "npm:rxjs",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/components/tree-select/project.json",
+          "hash": "8853759150698746837"
+        },
+        {
+          "file": "libs/components/tree-select/src/index.ts",
+          "hash": "3709765265098949967"
+        },
+        {
+          "file": "libs/components/tree-select/src/lib/components/cdk-tree-select/cdk-tree-select.component.ts",
+          "hash": "13771320005798843980",
+          "deps": [
+            "npm:@angular/forms",
+            "npm:@angular/core",
+            "npm:@ionic/core",
+            "npm:@angular/cdk",
+            "npm:@ionic/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/components/tree-select/src/lib/interfaces/tree-node.ts",
+          "hash": "424635976582979626"
+        },
+        {
+          "file": "libs/components/tree-select/src/lib/models/todo-item.ts",
+          "hash": "16164221089487565241"
+        },
+        {
+          "file": "libs/components/tree-select/src/lib/models/tree-base.ts",
+          "hash": "10013224587393426243",
+          "deps": [
+            "npm:@angular/cdk",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/tree-select/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/components/tree-select/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/components/tree-select/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/components/tree-select/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/components/tree-select/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "samples-slide-segments": [
+        {
+          "file": "libs/samples/slide-segments/.eslintrc.json",
+          "hash": "9639401430864477070"
+        },
+        {
+          "file": "libs/samples/slide-segments/README.md",
+          "hash": "1556569270892450714"
+        },
+        {
+          "file": "libs/samples/slide-segments/jest.config.ts",
+          "hash": "251088799089879631"
+        },
+        {
+          "file": "libs/samples/slide-segments/ng-package.json",
+          "hash": "9815778505561710342"
+        },
+        {
+          "file": "libs/samples/slide-segments/package.json",
+          "hash": "13166659727415420209",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/samples/slide-segments/project.json",
+          "hash": "12737277995250151682"
+        },
+        {
+          "file": "libs/samples/slide-segments/src/index.ts",
+          "hash": "1881829687181647751"
+        },
+        {
+          "file": "libs/samples/slide-segments/src/lib/samples-slide-segments/samples-slide-segments.page.spec.ts",
+          "hash": "12279113182339143525",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/samples/slide-segments/src/lib/samples-slide-segments/samples-slide-segments.page.ts",
+          "hash": "6434567262661044807",
+          "deps": [
+            "npm:@angular/core",
+            "slide-segments",
+            "npm:@ionic/angular"
+          ]
+        },
+        {
+          "file": "libs/samples/slide-segments/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/samples/slide-segments/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/samples/slide-segments/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/samples/slide-segments/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/samples/slide-segments/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "samples-calendar": [
+        {
+          "file": "libs/samples/calendar/.eslintrc.json",
+          "hash": "379254226756390101"
+        },
+        {
+          "file": "libs/samples/calendar/README.md",
+          "hash": "2608324688935705796"
+        },
+        {
+          "file": "libs/samples/calendar/jest.config.ts",
+          "hash": "17084430921690713725"
+        },
+        {
+          "file": "libs/samples/calendar/ng-package.json",
+          "hash": "16090509998406358518"
+        },
+        {
+          "file": "libs/samples/calendar/package.json",
+          "hash": "15096245829456318957",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/samples/calendar/project.json",
+          "hash": "8078396390182619440"
+        },
+        {
+          "file": "libs/samples/calendar/src/index.ts",
+          "hash": "18420142011172675434"
+        },
+        {
+          "file": "libs/samples/calendar/src/lib/samples-calendar/samples-calendar.page.spec.ts",
+          "hash": "7818685471001178959",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/samples/calendar/src/lib/samples-calendar/samples-calendar.page.ts",
+          "hash": "18404393353332012233",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:moment",
+            "npm:@angular/forms",
+            "npm:rxjs",
+            "calendar",
+            "npm:ionicons"
+          ]
+        },
+        {
+          "file": "libs/samples/calendar/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/samples/calendar/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/samples/calendar/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/samples/calendar/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/samples/calendar/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "select-search": [
+        {
+          "file": "libs/components/select-search/.eslintrc.json",
+          "hash": "379254226756390101"
+        },
+        {
+          "file": "libs/components/select-search/README.md",
+          "hash": "5343292575944051839"
+        },
+        {
+          "file": "libs/components/select-search/jest.config.ts",
+          "hash": "3416562482125499601"
+        },
+        {
+          "file": "libs/components/select-search/ng-package.json",
+          "hash": "11270525895038959426"
+        },
+        {
+          "file": "libs/components/select-search/package.json",
+          "hash": "8260943477285984912",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/project.json",
+          "hash": "1629446101973920568"
+        },
+        {
+          "file": "libs/components/select-search/src/index.ts",
+          "hash": "9242764240885737216"
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-add-item-template.directive.ts",
+          "hash": "15174207966781645470",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-close-button-template.directive.ts",
+          "hash": "15563417458755878200",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-footer-template.directive.ts",
+          "hash": "1291165499592057774",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-group-end-template.directive.ts",
+          "hash": "18388469792358259031",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-group-template.directive.ts",
+          "hash": "17656499595616850120",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-header-template.directive.ts",
+          "hash": "188469766007555437",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-icon-template.directive.ts",
+          "hash": "15606077637308124585",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-item-end-template.directive.ts",
+          "hash": "4790600775732290778",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-item-icon-template.directive.ts",
+          "hash": "447576403203954566",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-item-template.directive.ts",
+          "hash": "16133364477979555358",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-message-template.directive.ts",
+          "hash": "8840180298472638692",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-modal.component.html",
+          "hash": "15196164689814140638"
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-modal.component.ts",
+          "hash": "480265411603619744",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:@angular/forms",
+            "npm:@angular/common",
+            "npm:@angular/cdk"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-placeholder-template.directive.ts",
+          "hash": "8684523921357307680",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-search-fail-template.directive.ts",
+          "hash": "6622593798873615864",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-title-template.directive.ts",
+          "hash": "5974561198556449325",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable-value-template.directive.ts",
+          "hash": "11897891119613809988",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable.component.html",
+          "hash": "4815639853379101815"
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable.component.scss",
+          "hash": "16450040239225566758"
+        },
+        {
+          "file": "libs/components/select-search/src/lib/components/ionic-selectable/ionic-selectable.component.ts",
+          "hash": "5225126676842377687",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@ionic/angular",
+            "npm:@ionic/core",
+            "npm:rxjs",
+            "npm:lodash-es"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/components/select-search/tsconfig.json",
+          "hash": "8526453262384300416"
+        },
+        {
+          "file": "libs/components/select-search/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/components/select-search/tsconfig.lib.prod.json",
+          "hash": "174503844014784742"
+        },
+        {
+          "file": "libs/components/select-search/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "ionic-component-snippets-e2e": [
+        {
+          "file": "apps/ionic-component-snippets-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/cypress.config.ts",
+          "hash": "15414076024138857470",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/project.json",
+          "hash": "1336498153154394119"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/src/e2e/app.cy.ts",
+          "hash": "17561421327162526694"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/ionic-component-snippets-e2e/tsconfig.json",
+          "hash": "15439127571515986436"
+        }
+      ],
+      "ionic-component-snippets": [
+        {
+          "file": "apps/ionic-component-snippets/.browserslistrc",
+          "hash": "7979060078399394427"
+        },
+        {
+          "file": "apps/ionic-component-snippets/.eslintrc.json",
+          "hash": "14626140937597408971"
+        },
+        {
+          "file": "apps/ionic-component-snippets/.gitignore",
+          "hash": "13537870046176692662"
+        },
+        {
+          "file": "apps/ionic-component-snippets/capacitor.config.json",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "apps/ionic-component-snippets/capacitor.config.ts",
+          "hash": "7009035863649202727",
+          "deps": [
+            "npm:@capacitor/cli"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/ionic.config.json",
+          "hash": "7762957251868248220"
+        },
+        {
+          "file": "apps/ionic-component-snippets/jest.config.ts",
+          "hash": "8485022206648131806"
+        },
+        {
+          "file": "apps/ionic-component-snippets/project.json",
+          "hash": "12835393230051190394"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/app.component.ts",
+          "hash": "15131970642130699338",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:@capacitor/core",
+            "npm:@capacitor/app",
+            "npm:swiper",
+            "npm:ionicons"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/app.routes.ts",
+          "hash": "13226191134468963656",
+          "deps": [
+            "npm:@angular/router",
+            [
+              "samples-calendar",
+              "dynamic"
+            ],
+            [
+              "samples-select-search",
+              "dynamic"
+            ],
+            [
+              "samples-slide-segments",
+              "dynamic"
+            ],
+            [
+              "samples-code-scanner",
+              "dynamic"
+            ],
+            [
+              "samples-image-picker",
+              "dynamic"
+            ],
+            [
+              "samples-tree-select",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/component-test/component-test.page.html",
+          "hash": "2273622228983027360"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/component-test/component-test.page.scss",
+          "hash": "9174009409305206142"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/component-test/component-test.page.ts",
+          "hash": "6147504524127597528",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:@ionic/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/component-test/modal-example/modal-example.component.html",
+          "hash": "17363213740780626200"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/component-test/modal-example/modal-example.component.ts",
+          "hash": "667962412972506244",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ionic/angular",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/app/home/home.page.ts",
+          "hash": "10707158310555080548",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@ionic/angular"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/assets/icon/favicon.png",
+          "hash": "17482944836898362639"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/assets/mocks/data/lists/large_lists_100.json",
+          "hash": "756237242013865790"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/assets/mocks/data/lists/large_lists_10k.json",
+          "hash": "9345733945642546359"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/assets/mocks/data/lists/large_lists_1k.json",
+          "hash": "1082978876210372845"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/assets/shapes.svg",
+          "hash": "4708889011185296100"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/environments/environment.prod.ts",
+          "hash": "5406836414239361753"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/environments/environment.ts",
+          "hash": "16601924456744222477"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/index.html",
+          "hash": "8516618258631443544"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/main.ts",
+          "hash": "2124445290197161865",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/router",
+            "npm:@ionic/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/polyfills.ts",
+          "hash": "12964933842895739350",
+          "deps": [
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/styles.scss",
+          "hash": "13965443521769004127"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/test-setup.ts",
+          "hash": "12935735732682149507",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/theme/variables.scss",
+          "hash": "10020905726241847646"
+        },
+        {
+          "file": "apps/ionic-component-snippets/src/zone-flags.ts",
+          "hash": "3323586086306676158"
+        },
+        {
+          "file": "apps/ionic-component-snippets/tailwind.config.js",
+          "hash": "15221951491472500437",
+          "deps": [
+            "npm:@nx/angular",
+            "npm:tailwindcss"
+          ]
+        },
+        {
+          "file": "apps/ionic-component-snippets/tsconfig.app.json",
+          "hash": "10601296773019136045"
+        },
+        {
+          "file": "apps/ionic-component-snippets/tsconfig.editor.json",
+          "hash": "17511610827034788226"
+        },
+        {
+          "file": "apps/ionic-component-snippets/tsconfig.json",
+          "hash": "12094030803572703611"
+        },
+        {
+          "file": "apps/ionic-component-snippets/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "17629924342925423486"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1880664178033616490"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "14743000810602433389"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "7505926139152980842"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "README.md",
+        "hash": "10251162926332979477"
+      },
+      {
+        "file": "decorate-angular-cli.js",
+        "hash": "12780750159464340130"
+      },
+      {
+        "file": "docs/screenshots/calendar.png",
+        "hash": "16602498678156929619"
+      },
+      {
+        "file": "docs/screenshots/select-search.png",
+        "hash": "12062793467285243871"
+      },
+      {
+        "file": "docs/screenshots/slide-segments.png",
+        "hash": "3297309235589947425"
+      },
+      {
+        "file": "docs/screenshots/tree-select.png",
+        "hash": "13306777114779802238"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "16520735108913998478"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3537255390094605944"
+      },
+      {
+        "file": "package.json",
+        "hash": "3648720869904122086"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "12565224819442776161"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "14040551066114598334"
+      }
+    ]
+  }
+}
