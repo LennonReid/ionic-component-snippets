@@ -36,13 +36,13 @@
         "hash": "sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw=="
       }
     },
-    "npm:@angular-devkit/architect@0.1800.1": {
+    "npm:@angular-devkit/architect@0.1801.4": {
       "type": "npm",
-      "name": "npm:@angular-devkit/architect@0.1800.1",
+      "name": "npm:@angular-devkit/architect@0.1801.4",
       "data": {
-        "version": "0.1800.1",
+        "version": "0.1801.4",
         "packageName": "@angular-devkit/architect",
-        "hash": "sha512-L3n1Rh0NUNTlQZBBuPY8VFc5Skr6Oa6xT821k+XLLZTbz1ci2e3ltINyUhqISeksa3AyyL8e4JR2kCbDli9uJA=="
+        "hash": "sha512-Ch1ZwRh1N/vcCKHm4ErLcgZly3tlwdLUDGBaAIlhE3YFGq543Swv6a5IcDw0veD6iGFceJAmbrp+z5hmzI8p5A=="
       }
     },
     "npm:@angular-devkit/architect@0.1902.9": {
@@ -72,13 +72,13 @@
         "hash": "sha512-iklNoxKgwd54KT5GE0o5SB+0hr6Iu3YSpj9fi23DlLKcWWwFYaKqoRaYcfuL7KdUzunFg7dzB7n6TgYpVHWWJw=="
       }
     },
-    "npm:@angular-devkit/core@18.0.1": {
+    "npm:@angular-devkit/core@18.1.4": {
       "type": "npm",
-      "name": "npm:@angular-devkit/core@18.0.1",
+      "name": "npm:@angular-devkit/core@18.1.4",
       "data": {
-        "version": "18.0.1",
+        "version": "18.1.4",
         "packageName": "@angular-devkit/core",
-        "hash": "sha512-91eKZoObs+wRgwssw81Y/94Nvixj0WqJkNusBAg+gAfZTCEeJoGGZJkRK8wrONbM79C3Bx8lN/TfSIPRbjnfOQ=="
+        "hash": "sha512-lKBsvbqW2QFL8terzNuSDSmKBo8//QNRO4qU5mVJ1fFf4xBJanXKoiAMuADhx+/owVIptnYT59IZ8jUAna+Srg=="
       }
     },
     "npm:@angular-devkit/core": {
@@ -90,13 +90,13 @@
         "hash": "sha512-vbTomKnN7H4jaif0hWAECFU2WvRbhfkYWHdlk/JtJM53iIJVL3mKWBRZ0QXITjmgfdIo3c9RcX+wFI7gGqGd6g=="
       }
     },
-    "npm:@angular-devkit/schematics@18.0.1": {
+    "npm:@angular-devkit/schematics@18.1.4": {
       "type": "npm",
-      "name": "npm:@angular-devkit/schematics@18.0.1",
+      "name": "npm:@angular-devkit/schematics@18.1.4",
       "data": {
-        "version": "18.0.1",
+        "version": "18.1.4",
         "packageName": "@angular-devkit/schematics",
-        "hash": "sha512-AKcEGa3fIgyXT6XTQZWEJZzgmcqlB89fcF7JFOuz4rgQfRmnE2xFw37lKE6ZclCOSiEoffAvgrL8acjdPI1ouw=="
+        "hash": "sha512-0ekArCeYqJngCKWZ9I+RtNObP/33zGkzWdJOmCB6nj9/ZevALZ6F4RDkHp0TqDYhOt+A2muI29ZK/cILmKA+sA=="
       }
     },
     "npm:@angular-devkit/schematics": {
@@ -184,9 +184,9 @@
       "type": "npm",
       "name": "npm:@angular/cli",
       "data": {
-        "version": "18.0.1",
+        "version": "18.1.4",
         "packageName": "@angular/cli",
-        "hash": "sha512-O1kQOxXsfxHgGyqdHc2OTwlUTXLE8O1UcGkWROxvKt4MXccdJLjMjypMiV+jSpzc0FJTV1ihSkCxMtBezF926A=="
+        "hash": "sha512-ppX4iilA6k+sKD6iRMRYnt2bH9Jpik+hJlndRBCjWo2EmEUQ04CBRKYONh8BLbnmwBxPG+/osUpcFrbkPCjQUw=="
       }
     },
     "npm:@angular/common": {
@@ -3276,18 +3276,18 @@
         "hash": "sha512-nOT2vZNw6hJ+z43oP1SPea/G/6AbN6X+bGNhNuq8NtRHy4wsMhw765IKLNmnjek7GvjWBYQ8Q5VBoYTFg9y1UQ=="
       }
     },
-    "npm:@eslint-community/eslint-utils": {
+    "npm:@eslint-community/eslint-utils@4.4.0": {
       "type": "npm",
-      "name": "npm:@eslint-community/eslint-utils",
+      "name": "npm:@eslint-community/eslint-utils@4.4.0",
       "data": {
         "version": "4.4.0",
         "packageName": "@eslint-community/eslint-utils",
         "hash": "sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA=="
       }
     },
-    "npm:@eslint-community/eslint-utils@4.7.0": {
+    "npm:@eslint-community/eslint-utils": {
       "type": "npm",
-      "name": "npm:@eslint-community/eslint-utils@4.7.0",
+      "name": "npm:@eslint-community/eslint-utils",
       "data": {
         "version": "4.7.0",
         "packageName": "@eslint-community/eslint-utils",
@@ -3366,45 +3366,144 @@
         "hash": "sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA=="
       }
     },
-    "npm:@inquirer/confirm": {
+    "npm:@inquirer/checkbox": {
       "type": "npm",
-      "name": "npm:@inquirer/confirm",
+      "name": "npm:@inquirer/checkbox",
+      "data": {
+        "version": "2.5.0",
+        "packageName": "@inquirer/checkbox",
+        "hash": "sha512-sMgdETOfi2dUHT8r7TT1BTKOwNvdDGFDXYWtQ2J69SvlYNntk9I/gJe7r5yvMwwsuKnYbuRs3pNhx4tgNck5aA=="
+      }
+    },
+    "npm:@inquirer/confirm@3.2.0": {
+      "type": "npm",
+      "name": "npm:@inquirer/confirm@3.2.0",
+      "data": {
+        "version": "3.2.0",
+        "packageName": "@inquirer/confirm",
+        "hash": "sha512-oOIwPs0Dvq5220Z8lGL/6LHRTEr9TgLHmiI99Rj1PJ1p1czTys+olrgBqZk4E2qC0YTzeHprxSQmoHioVdJ7Lw=="
+      }
+    },
+    "npm:@inquirer/confirm@5.1.6": {
+      "type": "npm",
+      "name": "npm:@inquirer/confirm@5.1.6",
       "data": {
         "version": "5.1.6",
         "packageName": "@inquirer/confirm",
         "hash": "sha512-6ZXYK3M1XmaVBZX6FCfChgtponnL0R6I7k8Nu+kaoNkT828FVZTcca1MqmWQipaW2oNREQl5AaPCUOOCVNdRMw=="
       }
     },
-    "npm:@inquirer/core": {
+    "npm:@inquirer/core@10.1.12": {
       "type": "npm",
-      "name": "npm:@inquirer/core",
+      "name": "npm:@inquirer/core@10.1.12",
       "data": {
         "version": "10.1.12",
         "packageName": "@inquirer/core",
         "hash": "sha512-uoaDadeJCYSVKYCMPwJi3AjCF9w+l9aWbHYA4iskKX84cVW/A2M6bJlWBoy3k81GpFp6EX3IElV1Z5xKw0g1QQ=="
       }
     },
-    "npm:@inquirer/figures@1.0.12": {
+    "npm:@inquirer/core@9.2.1": {
       "type": "npm",
-      "name": "npm:@inquirer/figures@1.0.12",
+      "name": "npm:@inquirer/core@9.2.1",
+      "data": {
+        "version": "9.2.1",
+        "packageName": "@inquirer/core",
+        "hash": "sha512-F2VBt7W/mwqEU4bL0RnHNZmC/OxzNx9cOYxHqnXX3MP6ruYvZUZAW9imgN9+h/uBT/oP8Gh888J2OZSbjSeWcg=="
+      }
+    },
+    "npm:@inquirer/editor": {
+      "type": "npm",
+      "name": "npm:@inquirer/editor",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "@inquirer/editor",
+        "hash": "sha512-9KHOpJ+dIL5SZli8lJ6xdaYLPPzB8xB9GZItg39MBybzhxA16vxmszmQFrRwbOA918WA2rvu8xhDEg/p6LXKbw=="
+      }
+    },
+    "npm:@inquirer/expand": {
+      "type": "npm",
+      "name": "npm:@inquirer/expand",
+      "data": {
+        "version": "2.3.0",
+        "packageName": "@inquirer/expand",
+        "hash": "sha512-qnJsUcOGCSG1e5DTOErmv2BPQqrtT6uzqn1vI/aYGiPKq+FgslGZmtdnXbhuI7IlT7OByDoEEqdnhUnVR2hhLw=="
+      }
+    },
+    "npm:@inquirer/figures": {
+      "type": "npm",
+      "name": "npm:@inquirer/figures",
       "data": {
         "version": "1.0.12",
         "packageName": "@inquirer/figures",
         "hash": "sha512-MJttijd8rMFcKJC8NYmprWr6hD3r9Gd9qUC0XwPNwoEPWSMVJwA2MlXxF+nhZZNMY+HXsWa+o7KY2emWYIn0jQ=="
       }
     },
-    "npm:@inquirer/figures@1.0.2": {
+    "npm:@inquirer/input": {
       "type": "npm",
-      "name": "npm:@inquirer/figures@1.0.2",
+      "name": "npm:@inquirer/input",
       "data": {
-        "version": "1.0.2",
-        "packageName": "@inquirer/figures",
-        "hash": "sha512-4F1MBwVr3c/m4bAUef6LgkvBfSjzwH+OfldgHqcuacWwSUetFebM2wi58WfG9uk1rR98U6GwLed4asLJbwdV5w=="
+        "version": "2.3.0",
+        "packageName": "@inquirer/input",
+        "hash": "sha512-XfnpCStx2xgh1LIRqPXrTNEEByqQWoxsWYzNRSEUxJ5c6EQlhMogJ3vHKu8aXuTacebtaZzMAHwEL0kAflKOBw=="
       }
     },
-    "npm:@inquirer/type": {
+    "npm:@inquirer/password": {
       "type": "npm",
-      "name": "npm:@inquirer/type",
+      "name": "npm:@inquirer/password",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "@inquirer/password",
+        "hash": "sha512-5otqIpgsPYIshqhgtEwSspBQE40etouR8VIxzpJkv9i0dVHIpyhiivbkH9/dGiMLdyamT54YRdGJLfl8TFnLHg=="
+      }
+    },
+    "npm:@inquirer/prompts": {
+      "type": "npm",
+      "name": "npm:@inquirer/prompts",
+      "data": {
+        "version": "5.0.7",
+        "packageName": "@inquirer/prompts",
+        "hash": "sha512-GFcigCxJTKCH3aECzMIu4FhgLJWnFvMXzpI4CCSoELWFtkOOU2P+goYA61+OKpGrB8fPE7q6n8zAXBSlZRrHjQ=="
+      }
+    },
+    "npm:@inquirer/rawlist": {
+      "type": "npm",
+      "name": "npm:@inquirer/rawlist",
+      "data": {
+        "version": "2.3.0",
+        "packageName": "@inquirer/rawlist",
+        "hash": "sha512-zzfNuINhFF7OLAtGHfhwOW2TlYJyli7lOUoJUXw/uyklcwalV6WRXBXtFIicN8rTRK1XTiPWB4UY+YuW8dsnLQ=="
+      }
+    },
+    "npm:@inquirer/select": {
+      "type": "npm",
+      "name": "npm:@inquirer/select",
+      "data": {
+        "version": "2.5.0",
+        "packageName": "@inquirer/select",
+        "hash": "sha512-YmDobTItPP3WcEI86GvPo+T2sRHkxxOq/kXmsBjHS5BVXUgvgZ5AfJjkvQvZr03T81NnI3KrrRuMzeuYUQRFOA=="
+      }
+    },
+    "npm:@inquirer/type@1.5.5": {
+      "type": "npm",
+      "name": "npm:@inquirer/type@1.5.5",
+      "data": {
+        "version": "1.5.5",
+        "packageName": "@inquirer/type",
+        "hash": "sha512-MzICLu4yS7V8AA61sANROZ9vT1H3ooca5dSmI1FjZkzq7o/koMsRfQSzRtFo+F3Ao4Sf1C0bpLKejpKB/+j6MA=="
+      }
+    },
+    "npm:@inquirer/type@2.0.0": {
+      "type": "npm",
+      "name": "npm:@inquirer/type@2.0.0",
+      "data": {
+        "version": "2.0.0",
+        "packageName": "@inquirer/type",
+        "hash": "sha512-XvJRx+2KR3YXyYtPUUy+qd9i7p+GO9Ko6VIIpWlBrpWwXDv8WLFeHTxz35CfQFUiBMLXlGHhGzys7lqit9gWag=="
+      }
+    },
+    "npm:@inquirer/type@3.0.7": {
+      "type": "npm",
+      "name": "npm:@inquirer/type@3.0.7",
       "data": {
         "version": "3.0.7",
         "packageName": "@inquirer/type",
@@ -3834,13 +3933,13 @@
         "hash": "sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A=="
       }
     },
-    "npm:@ljharb/through": {
+    "npm:@listr2/prompt-adapter-inquirer": {
       "type": "npm",
-      "name": "npm:@ljharb/through",
+      "name": "npm:@listr2/prompt-adapter-inquirer",
       "data": {
-        "version": "2.3.13",
-        "packageName": "@ljharb/through",
-        "hash": "sha512-/gKJun8NNiWGZJkGzI/Ragc53cOdcLNdzjLaIa+GEjguQs0ulsurx8WN0jijdK9yPqDvziX995sMRLyLt1uZMQ=="
+        "version": "2.0.13",
+        "packageName": "@listr2/prompt-adapter-inquirer",
+        "hash": "sha512-nAl6teTt7EWSjttNavAnv3uFR3w3vPP3OTYmHyPNHzKhAj2NoBDHmbS3MGpvvO8KXXPASnHjEGrrKrdKTMKPnQ=="
       }
     },
     "npm:@lmdb/lmdb-darwin-arm64": {
@@ -5724,13 +5823,13 @@
         "hash": "sha512-wZx4vWgy5oMEvgyNGd/oUKcdnKaccYWHCRkOqTdAPJC3WcytxhTX+Kady8ERurSBiLyQpoMiU3Iyd+F1Y2Arbw=="
       }
     },
-    "npm:@schematics/angular@18.0.1": {
+    "npm:@schematics/angular@18.1.4": {
       "type": "npm",
-      "name": "npm:@schematics/angular@18.0.1",
+      "name": "npm:@schematics/angular@18.1.4",
       "data": {
-        "version": "18.0.1",
+        "version": "18.1.4",
         "packageName": "@schematics/angular",
-        "hash": "sha512-ho9QOUiS4wqKRzbKFWUGU8iecfcdrjnrjBXbzJEQ6GNIOz7iDniLMNXYRP7P+xanWQGLPDIOVR2lGaryPdTXDw=="
+        "hash": "sha512-M3edVYKiAGWAAKs7XDLpz1OKUy4STVMT+46Y44ydYz06hI8m/dJfS8ZHTvXPl7JhkrIrSDEMed+WidZtGPIxMg=="
       }
     },
     "npm:@schematics/angular": {
@@ -6219,6 +6318,15 @@
         "hash": "sha512-Ys+/St+2VF4+xuY6+kDIXGxbNRO0mesVg0bbxEfB97Od1Vjpjx9KD1qxs64Gcb3CWPirk9Xe+PT4YiiHQ9T+eg=="
       }
     },
+    "npm:@types/mute-stream": {
+      "type": "npm",
+      "name": "npm:@types/mute-stream",
+      "data": {
+        "version": "0.0.4",
+        "packageName": "@types/mute-stream",
+        "hash": "sha512-CPM9nzrCPPJHQNA9keH9CVkVI+WR5kMa+7XEs5jcGQ0VoAGnLv242w8lIVgwAEfmE4oufJRaTc9PNLQl0ioAow=="
+      }
+    },
     "npm:@types/node-forge": {
       "type": "npm",
       "name": "npm:@types/node-forge",
@@ -6235,6 +6343,15 @@
         "version": "18.16.9",
         "packageName": "@types/node",
         "hash": "sha512-IeB32oIV4oGArLrd7znD2rkHQ6EDCM+2Sr76dJnrHwv9OHBTTM6nuDLK9bmikXzPa0ZlWMWtRGo/Uw4mrzQedA=="
+      }
+    },
+    "npm:@types/node@22.15.21": {
+      "type": "npm",
+      "name": "npm:@types/node@22.15.21",
+      "data": {
+        "version": "22.15.21",
+        "packageName": "@types/node",
+        "hash": "sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ=="
       }
     },
     "npm:@types/parse-json": {
@@ -6363,6 +6480,15 @@
         "hash": "sha512-THo502dA5PzG/sfQH+42Lw3fvmYkceefOspdCwpHRul8ik2Jv1K8I5OZz1AT3/rs46kwgMCe9bSBmDLYkkOMGg=="
       }
     },
+    "npm:@types/wrap-ansi": {
+      "type": "npm",
+      "name": "npm:@types/wrap-ansi",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "@types/wrap-ansi",
+        "hash": "sha512-ltIpx+kM7g/MLRZfkbL7EsCEjfzCcScLpkg37eXEtx5kmrAKBkTJwd1GIAjDSL8wTpM6Hzn5YO4pSb91BEwu1g=="
+      }
+    },
     "npm:@types/ws": {
       "type": "npm",
       "name": "npm:@types/ws",
@@ -6489,18 +6615,18 @@
         "hash": "sha512-Y3AP9EIfYwBb4kWGb+simvPaqQoT5oJuzzj9m0i6FCY6SPvlomY2Ei4UEMm7+FXtlNJbor80ximyslzaQF6xhg=="
       }
     },
-    "npm:@typescript-eslint/utils@7.18.0": {
+    "npm:@typescript-eslint/utils": {
       "type": "npm",
-      "name": "npm:@typescript-eslint/utils@7.18.0",
+      "name": "npm:@typescript-eslint/utils",
       "data": {
         "version": "7.18.0",
         "packageName": "@typescript-eslint/utils",
         "hash": "sha512-kK0/rNa2j74XuHVcoCZxdFBMF+aq/vH83CXAOHieC+2Gis4mF8jJXT5eAfyD3K0sAxtPuwxaIOIOvhwzVDt/kw=="
       }
     },
-    "npm:@typescript-eslint/utils": {
+    "npm:@typescript-eslint/utils@8.32.1": {
       "type": "npm",
-      "name": "npm:@typescript-eslint/utils",
+      "name": "npm:@typescript-eslint/utils@8.32.1",
       "data": {
         "version": "8.32.1",
         "packageName": "@typescript-eslint/utils",
@@ -7029,15 +7155,6 @@
         "hash": "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ=="
       }
     },
-    "npm:agent-base@7.1.0": {
-      "type": "npm",
-      "name": "npm:agent-base@7.1.0",
-      "data": {
-        "version": "7.1.0",
-        "packageName": "agent-base",
-        "hash": "sha512-o/zjMZRhJxny7OyEF+Op8X+efiELC7k7yOjMzgfzVqOzXqkBkWI79YoTdOtsuWd5BWhAGAuOY/Xa6xpiaWXiNg=="
-      }
-    },
     "npm:agent-base@7.1.3": {
       "type": "npm",
       "name": "npm:agent-base@7.1.3",
@@ -7108,6 +7225,15 @@
         "version": "8.13.0",
         "packageName": "ajv",
         "hash": "sha512-PRA911Blj99jR5RMeTunVbNXMF6Lp4vZXnk5GQjcnUWUTsrXtekg/pnmFFI2u/I36Y/2bITGS30GZCXei6uNkA=="
+      }
+    },
+    "npm:ajv@8.16.0": {
+      "type": "npm",
+      "name": "npm:ajv@8.16.0",
+      "data": {
+        "version": "8.16.0",
+        "packageName": "ajv",
+        "hash": "sha512-F0twR8U1ZU67JIEtekUcLkXkoO5mMMmgGD8sK/xUFzJ805jxHQl92hImFAqqXMyMYjSPOyUPAwHYhB72g5sTXw=="
       }
     },
     "npm:ajv@8.17.1": {
@@ -8062,15 +8188,6 @@
         "version": "4.1.2",
         "packageName": "chalk",
         "hash": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA=="
-      }
-    },
-    "npm:chalk@5.3.0": {
-      "type": "npm",
-      "name": "npm:chalk@5.3.0",
-      "data": {
-        "version": "5.3.0",
-        "packageName": "chalk",
-        "hash": "sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w=="
       }
     },
     "npm:char-regex": {
@@ -10791,15 +10908,6 @@
         "hash": "sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw=="
       }
     },
-    "npm:glob@10.3.10": {
-      "type": "npm",
-      "name": "npm:glob@10.3.10",
-      "data": {
-        "version": "10.3.10",
-        "packageName": "glob",
-        "hash": "sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g=="
-      }
-    },
     "npm:glob@10.4.5": {
       "type": "npm",
       "name": "npm:glob@10.4.5",
@@ -11304,15 +11412,6 @@
         "hash": "sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA=="
       }
     },
-    "npm:https-proxy-agent@7.0.4": {
-      "type": "npm",
-      "name": "npm:https-proxy-agent@7.0.4",
-      "data": {
-        "version": "7.0.4",
-        "packageName": "https-proxy-agent",
-        "hash": "sha512-wlwpilI7YdjSkWaQ/7omYBMTliDcmCN8OLihO6I9B86g06lMyAoqgoDpV0XqoaPOKj+0DIdAvnsWfyAAhmimcg=="
-      }
-    },
     "npm:https-proxy-agent@7.0.6": {
       "type": "npm",
       "name": "npm:https-proxy-agent@7.0.6",
@@ -11538,13 +11637,13 @@
         "hash": "sha512-it4HyVAUTKBc6m8e1iXWvXSTdndF7HbdN713+kvLrymxTaU4AUBWrJ4vEooP+V7fexnVD3LKcBshjGGPefSMUQ=="
       }
     },
-    "npm:ini@4.1.2": {
+    "npm:ini@4.1.3": {
       "type": "npm",
-      "name": "npm:ini@4.1.2",
+      "name": "npm:ini@4.1.3",
       "data": {
-        "version": "4.1.2",
+        "version": "4.1.3",
         "packageName": "ini",
-        "hash": "sha512-AMB1mvwR1pyBFY/nSevUX6y8nJWS63/SzUKD3JyQn97s4xgIdgQPT75IRouIiBAN4yLQBUShNYVW0+UG25daCw=="
+        "hash": "sha512-X7rqawQBvfdjS10YU1y1YVreA3SsLrW9dX2CewP2EbBJM4ypVNLDkO5y04gejPwKIY9lR+7r9gn3rFPt/kmWFg=="
       }
     },
     "npm:injection-js": {
@@ -11556,22 +11655,13 @@
         "hash": "sha512-6jiJt0tCAo9zjHbcwLiPL+IuNe9SQ6a9g0PEzafThW3fOQi0mrmiJGBJvDD6tmhPh8cQHIQtCOrJuBfQME4kPA=="
       }
     },
-    "npm:inquirer@7.3.3": {
+    "npm:inquirer": {
       "type": "npm",
-      "name": "npm:inquirer@7.3.3",
+      "name": "npm:inquirer",
       "data": {
         "version": "7.3.3",
         "packageName": "inquirer",
         "hash": "sha512-JG3eIAj5V9CwcGvuOmoo6LB9kbAYT8HXffUl6memuszlwDC/qvFAJw49XJ5NROSFNPxp3iQg1GqkFhaY/CR0IA=="
-      }
-    },
-    "npm:inquirer@9.2.22": {
-      "type": "npm",
-      "name": "npm:inquirer@9.2.22",
-      "data": {
-        "version": "9.2.22",
-        "packageName": "inquirer",
-        "hash": "sha512-SqLLa/Oe5rZUagTR9z+Zd6izyatHglbmbvVofo1KzuVB54YHleWzeHNLoR7FOICGOeQSqeLh1cordb3MzhGcEw=="
       }
     },
     "npm:ionicons": {
@@ -12024,18 +12114,9 @@
         "hash": "sha512-TLgnMkKg3iTDsQ9PbPTdpfAK2DzjF9mqUG7RMgcQl8oFjad8ob4laGxv5XV5U9MAfx8D6tSJiUyuAwzLicaxlg=="
       }
     },
-    "npm:jackspeak@2.3.6": {
+    "npm:jackspeak": {
       "type": "npm",
-      "name": "npm:jackspeak@2.3.6",
-      "data": {
-        "version": "2.3.6",
-        "packageName": "jackspeak",
-        "hash": "sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ=="
-      }
-    },
-    "npm:jackspeak@3.4.3": {
-      "type": "npm",
-      "name": "npm:jackspeak@3.4.3",
+      "name": "npm:jackspeak",
       "data": {
         "version": "3.4.3",
         "packageName": "jackspeak",
@@ -12501,15 +12582,6 @@
         "hash": "sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w=="
       }
     },
-    "npm:jsonc-parser@3.2.1": {
-      "type": "npm",
-      "name": "npm:jsonc-parser@3.2.1",
-      "data": {
-        "version": "3.2.1",
-        "packageName": "jsonc-parser",
-        "hash": "sha512-AilxAyFOAcK5wA1+LeaySVBrHsGQvUFCDWXKpZjzaL0PqW+xfBOttn8GNtWKFWqneyMZj41MWF9Kl6iPWLwgOA=="
-      }
-    },
     "npm:jsonc-parser@3.3.1": {
       "type": "npm",
       "name": "npm:jsonc-parser@3.3.1",
@@ -12805,6 +12877,15 @@
         "version": "3.14.0",
         "packageName": "listr2",
         "hash": "sha512-TyWI8G99GX9GjE54cJ+RrNMcIFBfwMPxc3XTFiAYGN4s10hWROGtOg7+O6u6LE3mNkyld7RSLE6nrKBvTfcs3g=="
+      }
+    },
+    "npm:listr2@8.2.3": {
+      "type": "npm",
+      "name": "npm:listr2@8.2.3",
+      "data": {
+        "version": "8.2.3",
+        "packageName": "listr2",
+        "hash": "sha512-Lllokma2mtoniUOS94CcOErHWAug5iu7HOmDrvWgpw8jyQH2fomgB+7lZS4HWZxytUuQwkGOwe49FvwVaA85Xw=="
       }
     },
     "npm:listr2@8.2.5": {
@@ -16173,22 +16254,13 @@
         "hash": "sha512-9by4Ij99JUr/MCFBUkDKLWK3G9HVXmabKz9U5MlIAIuvuzkiOicRYs8XJLxX+xahD+mLiiCYDqF9dKAgtzKP1A=="
       }
     },
-    "npm:run-async@2.4.1": {
+    "npm:run-async": {
       "type": "npm",
-      "name": "npm:run-async@2.4.1",
+      "name": "npm:run-async",
       "data": {
         "version": "2.4.1",
         "packageName": "run-async",
         "hash": "sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ=="
-      }
-    },
-    "npm:run-async@3.0.0": {
-      "type": "npm",
-      "name": "npm:run-async@3.0.0",
-      "data": {
-        "version": "3.0.0",
-        "packageName": "run-async",
-        "hash": "sha512-540WwVDOMxA6dN6We19EcT9sc3hkXPw5mzRNGM3FkdN/vtE9NFvj5lFAPNwUDmJjXidm3v7TC1cTE7t17Ulm1Q=="
       }
     },
     "npm:run-parallel": {
@@ -18036,6 +18108,15 @@
         "hash": "sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw=="
       }
     },
+    "npm:undici-types": {
+      "type": "npm",
+      "name": "npm:undici-types",
+      "data": {
+        "version": "6.21.0",
+        "packageName": "undici-types",
+        "hash": "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ=="
+      }
+    },
     "npm:unicode-canonical-property-names-ecmascript": {
       "type": "npm",
       "name": "npm:unicode-canonical-property-names-ecmascript",
@@ -18913,12 +18994,12 @@
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/architect@0.1800.1",
-      "target": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@angular-devkit/architect@0.1801.4",
+      "target": "npm:@angular-devkit/core@18.1.4",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/architect@0.1800.1",
+      "source": "npm:@angular-devkit/architect@0.1801.4",
       "target": "npm:rxjs",
       "type": "static"
     },
@@ -19263,32 +19344,32 @@
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/core@18.0.1",
-      "target": "npm:ajv@8.13.0",
+      "source": "npm:@angular-devkit/core@18.1.4",
+      "target": "npm:ajv@8.16.0",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@angular-devkit/core@18.1.4",
       "target": "npm:ajv-formats@3.0.1",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/core@18.0.1",
-      "target": "npm:jsonc-parser@3.2.1",
+      "source": "npm:@angular-devkit/core@18.1.4",
+      "target": "npm:jsonc-parser@3.3.1",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@angular-devkit/core@18.1.4",
       "target": "npm:picomatch@4.0.2",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@angular-devkit/core@18.1.4",
       "target": "npm:rxjs",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@angular-devkit/core@18.1.4",
       "target": "npm:source-map@0.7.4",
       "type": "static"
     },
@@ -19323,27 +19404,27 @@
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/schematics@18.0.1",
-      "target": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@angular-devkit/schematics@18.1.4",
+      "target": "npm:@angular-devkit/core@18.1.4",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/schematics@18.0.1",
-      "target": "npm:jsonc-parser@3.2.1",
+      "source": "npm:@angular-devkit/schematics@18.1.4",
+      "target": "npm:jsonc-parser@3.3.1",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/schematics@18.0.1",
+      "source": "npm:@angular-devkit/schematics@18.1.4",
       "target": "npm:magic-string@0.30.10",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/schematics@18.0.1",
+      "source": "npm:@angular-devkit/schematics@18.1.4",
       "target": "npm:ora@5.4.1",
       "type": "static"
     },
     {
-      "source": "npm:@angular-devkit/schematics@18.0.1",
+      "source": "npm:@angular-devkit/schematics@18.1.4",
       "target": "npm:rxjs",
       "type": "static"
     },
@@ -19534,7 +19615,7 @@
     },
     {
       "source": "npm:@angular/build",
-      "target": "npm:@inquirer/confirm",
+      "target": "npm:@inquirer/confirm@5.1.6",
       "type": "static"
     },
     {
@@ -19689,22 +19770,32 @@
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:@angular-devkit/architect@0.1800.1",
+      "target": "npm:@angular-devkit/architect@0.1801.4",
       "type": "static"
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:@angular-devkit/core@18.0.1",
+      "target": "npm:@angular-devkit/core@18.1.4",
       "type": "static"
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:@angular-devkit/schematics@18.0.1",
+      "target": "npm:@angular-devkit/schematics@18.1.4",
       "type": "static"
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:@schematics/angular@18.0.1",
+      "target": "npm:@inquirer/prompts",
+      "type": "static"
+    },
+    {
+      "source": "npm:@angular/cli",
+      "target": "npm:@listr2/prompt-adapter-inquirer",
+      "type": "static"
+    },
+    {
+      "source": "npm:@angular/cli",
+      "target": "npm:@schematics/angular@18.1.4",
       "type": "static"
     },
     {
@@ -19714,22 +19805,17 @@
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:ansi-colors",
+      "target": "npm:ini@4.1.3",
       "type": "static"
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:ini@4.1.2",
+      "target": "npm:jsonc-parser@3.3.1",
       "type": "static"
     },
     {
       "source": "npm:@angular/cli",
-      "target": "npm:inquirer@9.2.22",
-      "type": "static"
-    },
-    {
-      "source": "npm:@angular/cli",
-      "target": "npm:jsonc-parser@3.2.1",
+      "target": "npm:listr2@8.2.3",
       "type": "static"
     },
     {
@@ -19740,11 +19826,6 @@
     {
       "source": "npm:@angular/cli",
       "target": "npm:npm-pick-manifest",
-      "type": "static"
-    },
-    {
-      "source": "npm:@angular/cli",
-      "target": "npm:ora@5.4.1",
       "type": "static"
     },
     {
@@ -24228,22 +24309,22 @@
       "type": "static"
     },
     {
-      "source": "npm:@eslint-community/eslint-utils",
+      "source": "npm:@eslint-community/eslint-utils@4.4.0",
       "target": "npm:eslint",
       "type": "static"
     },
     {
-      "source": "npm:@eslint-community/eslint-utils",
+      "source": "npm:@eslint-community/eslint-utils@4.4.0",
       "target": "npm:eslint-visitor-keys",
       "type": "static"
     },
     {
-      "source": "npm:@eslint-community/eslint-utils@4.7.0",
+      "source": "npm:@eslint-community/eslint-utils",
       "target": "npm:eslint",
       "type": "static"
     },
     {
-      "source": "npm:@eslint-community/eslint-utils@4.7.0",
+      "source": "npm:@eslint-community/eslint-utils",
       "target": "npm:eslint-visitor-keys",
       "type": "static"
     },
@@ -24308,67 +24389,307 @@
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/confirm",
-      "target": "npm:@inquirer/core",
+      "source": "npm:@inquirer/checkbox",
+      "target": "npm:@inquirer/core@9.2.1",
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/confirm",
-      "target": "npm:@inquirer/type",
+      "source": "npm:@inquirer/checkbox",
+      "target": "npm:@inquirer/figures",
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/confirm",
-      "target": "npm:@types/node",
+      "source": "npm:@inquirer/checkbox",
+      "target": "npm:@inquirer/type@1.5.5",
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/core",
-      "target": "npm:@inquirer/figures@1.0.12",
-      "type": "static"
-    },
-    {
-      "source": "npm:@inquirer/core",
-      "target": "npm:@inquirer/type",
-      "type": "static"
-    },
-    {
-      "source": "npm:@inquirer/core",
+      "source": "npm:@inquirer/checkbox",
       "target": "npm:ansi-escapes@4.3.2",
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/core",
-      "target": "npm:cli-width@4.1.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:@inquirer/core",
-      "target": "npm:mute-stream@2.0.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:@inquirer/core",
-      "target": "npm:signal-exit@4.1.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:@inquirer/core",
-      "target": "npm:wrap-ansi@6.2.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:@inquirer/core",
+      "source": "npm:@inquirer/checkbox",
       "target": "npm:yoctocolors-cjs",
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/core",
+      "source": "npm:@inquirer/confirm@3.2.0",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/confirm@3.2.0",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/confirm@5.1.6",
+      "target": "npm:@inquirer/core@10.1.12",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/confirm@5.1.6",
+      "target": "npm:@inquirer/type@3.0.7",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/confirm@5.1.6",
       "target": "npm:@types/node",
       "type": "static"
     },
     {
-      "source": "npm:@inquirer/type",
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:@inquirer/figures",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:@inquirer/type@3.0.7",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:ansi-escapes@4.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:cli-width@4.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:mute-stream@2.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:signal-exit@4.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:wrap-ansi@6.2.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:yoctocolors-cjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@10.1.12",
+      "target": "npm:@types/node",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:@inquirer/figures",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:@inquirer/type@2.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:@types/mute-stream",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:@types/node@22.15.21",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:@types/wrap-ansi",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:ansi-escapes@4.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:cli-width@4.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:mute-stream@1.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:signal-exit@4.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:strip-ansi@6.0.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:wrap-ansi@6.2.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/core@9.2.1",
+      "target": "npm:yoctocolors-cjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/editor",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/editor",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/editor",
+      "target": "npm:external-editor",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/expand",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/expand",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/expand",
+      "target": "npm:yoctocolors-cjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/input",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/input",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/password",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/password",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/password",
+      "target": "npm:ansi-escapes@4.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/checkbox",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/confirm@3.2.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/editor",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/expand",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/input",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/password",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/rawlist",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/prompts",
+      "target": "npm:@inquirer/select",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/rawlist",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/rawlist",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/rawlist",
+      "target": "npm:yoctocolors-cjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/select",
+      "target": "npm:@inquirer/core@9.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/select",
+      "target": "npm:@inquirer/figures",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/select",
+      "target": "npm:@inquirer/type@1.5.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/select",
+      "target": "npm:ansi-escapes@4.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/select",
+      "target": "npm:yoctocolors-cjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/type@1.5.5",
+      "target": "npm:mute-stream@1.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/type@2.0.0",
+      "target": "npm:mute-stream@1.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@inquirer/type@3.0.7",
       "target": "npm:@types/node",
       "type": "static"
     },
@@ -24444,7 +24765,7 @@
     },
     {
       "source": "npm:@ionic/cli-framework-prompts",
-      "target": "npm:inquirer@7.3.3",
+      "target": "npm:inquirer",
       "type": "static"
     },
     {
@@ -25588,8 +25909,13 @@
       "type": "static"
     },
     {
-      "source": "npm:@ljharb/through",
-      "target": "npm:call-bind",
+      "source": "npm:@listr2/prompt-adapter-inquirer",
+      "target": "npm:@inquirer/prompts",
+      "type": "static"
+    },
+    {
+      "source": "npm:@listr2/prompt-adapter-inquirer",
+      "target": "npm:@inquirer/type@1.5.5",
       "type": "static"
     },
     {
@@ -26579,7 +26905,7 @@
     },
     {
       "source": "npm:@npmcli/agent",
-      "target": "npm:agent-base@7.1.0",
+      "target": "npm:agent-base@7.1.3",
       "type": "static"
     },
     {
@@ -26589,12 +26915,12 @@
     },
     {
       "source": "npm:@npmcli/agent",
-      "target": "npm:https-proxy-agent@7.0.4",
+      "target": "npm:https-proxy-agent@7.0.6",
       "type": "static"
     },
     {
       "source": "npm:@npmcli/agent",
-      "target": "npm:lru-cache@10.0.1",
+      "target": "npm:lru-cache@10.4.3",
       "type": "static"
     },
     {
@@ -26604,7 +26930,7 @@
     },
     {
       "source": "npm:@npmcli/fs",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -26614,7 +26940,7 @@
     },
     {
       "source": "npm:@npmcli/git",
-      "target": "npm:lru-cache@10.0.1",
+      "target": "npm:lru-cache@10.4.3",
       "type": "static"
     },
     {
@@ -26639,7 +26965,7 @@
     },
     {
       "source": "npm:@npmcli/git",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -26664,7 +26990,7 @@
     },
     {
       "source": "npm:@npmcli/package-json",
-      "target": "npm:glob@10.3.10",
+      "target": "npm:glob@10.4.5",
       "type": "static"
     },
     {
@@ -26689,7 +27015,7 @@
     },
     {
       "source": "npm:@npmcli/package-json",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -26730,6 +27056,11 @@
     {
       "source": "npm:@nrwl/devkit@17.1.1",
       "target": "npm:@nx/devkit@17.1.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nrwl/devkit@17.1.3",
+      "target": "npm:@nx/devkit@17.1.3",
       "type": "static"
     },
     {
@@ -27154,7 +27485,7 @@
     },
     {
       "source": "npm:@nx/eslint-plugin",
-      "target": "npm:@typescript-eslint/utils",
+      "target": "npm:@typescript-eslint/utils@8.32.1",
       "type": "static"
     },
     {
@@ -28443,18 +28774,18 @@
       "type": "static"
     },
     {
-      "source": "npm:@schematics/angular@18.0.1",
-      "target": "npm:@angular-devkit/core@18.0.1",
+      "source": "npm:@schematics/angular@18.1.4",
+      "target": "npm:@angular-devkit/core@18.1.4",
       "type": "static"
     },
     {
-      "source": "npm:@schematics/angular@18.0.1",
-      "target": "npm:@angular-devkit/schematics@18.0.1",
+      "source": "npm:@schematics/angular@18.1.4",
+      "target": "npm:@angular-devkit/schematics@18.1.4",
       "type": "static"
     },
     {
-      "source": "npm:@schematics/angular@18.0.1",
-      "target": "npm:jsonc-parser@3.2.1",
+      "source": "npm:@schematics/angular@18.1.4",
+      "target": "npm:jsonc-parser@3.3.1",
       "type": "static"
     },
     {
@@ -28554,7 +28885,7 @@
     },
     {
       "source": "npm:@tufjs/models",
-      "target": "npm:minimatch@9.0.4",
+      "target": "npm:minimatch@9.0.5",
       "type": "static"
     },
     {
@@ -28768,8 +29099,18 @@
       "type": "static"
     },
     {
+      "source": "npm:@types/mute-stream",
+      "target": "npm:@types/node",
+      "type": "static"
+    },
+    {
       "source": "npm:@types/node-forge",
       "target": "npm:@types/node",
+      "type": "static"
+    },
+    {
+      "source": "npm:@types/node@22.15.21",
+      "target": "npm:undici-types",
       "type": "static"
     },
     {
@@ -28844,7 +29185,7 @@
     },
     {
       "source": "npm:@typescript-eslint/eslint-plugin",
-      "target": "npm:@typescript-eslint/utils@7.18.0",
+      "target": "npm:@typescript-eslint/utils",
       "type": "static"
     },
     {
@@ -28944,7 +29285,7 @@
     },
     {
       "source": "npm:@typescript-eslint/type-utils@7.18.0",
-      "target": "npm:@typescript-eslint/utils@7.18.0",
+      "target": "npm:@typescript-eslint/utils",
       "type": "static"
     },
     {
@@ -28974,7 +29315,7 @@
     },
     {
       "source": "npm:@typescript-eslint/type-utils",
-      "target": "npm:@typescript-eslint/utils",
+      "target": "npm:@typescript-eslint/utils@8.32.1",
       "type": "static"
     },
     {
@@ -29009,7 +29350,7 @@
     },
     {
       "source": "npm:@typescript-eslint/typescript-estree",
-      "target": "npm:debug@4.3.4",
+      "target": "npm:debug@4.4.1",
       "type": "static"
     },
     {
@@ -29024,12 +29365,12 @@
     },
     {
       "source": "npm:@typescript-eslint/typescript-estree",
-      "target": "npm:minimatch@9.0.4",
+      "target": "npm:minimatch@9.0.5",
       "type": "static"
     },
     {
       "source": "npm:@typescript-eslint/typescript-estree",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -29088,57 +29429,57 @@
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils@7.18.0",
+      "source": "npm:@typescript-eslint/utils",
       "target": "npm:@eslint-community/eslint-utils",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils@7.18.0",
+      "source": "npm:@typescript-eslint/utils",
       "target": "npm:@typescript-eslint/scope-manager",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils@7.18.0",
+      "source": "npm:@typescript-eslint/utils",
       "target": "npm:@typescript-eslint/types@7.18.0",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils@7.18.0",
+      "source": "npm:@typescript-eslint/utils",
       "target": "npm:@typescript-eslint/typescript-estree",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils@7.18.0",
+      "source": "npm:@typescript-eslint/utils",
       "target": "npm:eslint",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils",
-      "target": "npm:@eslint-community/eslint-utils@4.7.0",
+      "source": "npm:@typescript-eslint/utils@8.32.1",
+      "target": "npm:@eslint-community/eslint-utils",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils",
+      "source": "npm:@typescript-eslint/utils@8.32.1",
       "target": "npm:@typescript-eslint/scope-manager@8.32.1",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils",
+      "source": "npm:@typescript-eslint/utils@8.32.1",
       "target": "npm:@typescript-eslint/types",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils",
+      "source": "npm:@typescript-eslint/utils@8.32.1",
       "target": "npm:@typescript-eslint/typescript-estree@8.32.1",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils",
+      "source": "npm:@typescript-eslint/utils@8.32.1",
       "target": "npm:eslint",
       "type": "static"
     },
     {
-      "source": "npm:@typescript-eslint/utils",
+      "source": "npm:@typescript-eslint/utils@8.32.1",
       "target": "npm:typescript",
       "type": "static"
     },
@@ -29623,11 +29964,6 @@
       "type": "static"
     },
     {
-      "source": "npm:agent-base@7.1.0",
-      "target": "npm:debug@4.3.4",
-      "type": "static"
-    },
-    {
       "source": "npm:aggregate-error",
       "target": "npm:clean-stack",
       "type": "static"
@@ -29644,7 +29980,7 @@
     },
     {
       "source": "npm:ajv-formats@3.0.1",
-      "target": "npm:ajv@8.13.0",
+      "target": "npm:ajv@8.16.0",
       "type": "static"
     },
     {
@@ -29704,6 +30040,26 @@
     },
     {
       "source": "npm:ajv@8.13.0",
+      "target": "npm:uri-js",
+      "type": "static"
+    },
+    {
+      "source": "npm:ajv@8.16.0",
+      "target": "npm:fast-deep-equal",
+      "type": "static"
+    },
+    {
+      "source": "npm:ajv@8.16.0",
+      "target": "npm:json-schema-traverse@1.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:ajv@8.16.0",
+      "target": "npm:require-from-string",
+      "type": "static"
+    },
+    {
+      "source": "npm:ajv@8.16.0",
       "target": "npm:uri-js",
       "type": "static"
     },
@@ -30539,17 +30895,17 @@
     },
     {
       "source": "npm:cacache",
-      "target": "npm:glob@10.3.10",
+      "target": "npm:glob@10.4.5",
       "type": "static"
     },
     {
       "source": "npm:cacache",
-      "target": "npm:lru-cache@10.0.1",
+      "target": "npm:lru-cache@10.4.3",
       "type": "static"
     },
     {
       "source": "npm:cacache",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -32699,7 +33055,7 @@
     },
     {
       "source": "npm:eslint",
-      "target": "npm:@eslint-community/eslint-utils",
+      "target": "npm:@eslint-community/eslint-utils@4.4.0",
       "type": "static"
     },
     {
@@ -33689,7 +34045,7 @@
     },
     {
       "source": "npm:fs-minipass@3.0.3",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -33843,38 +34199,13 @@
       "type": "static"
     },
     {
-      "source": "npm:glob@10.3.10",
-      "target": "npm:foreground-child",
-      "type": "static"
-    },
-    {
-      "source": "npm:glob@10.3.10",
-      "target": "npm:jackspeak@2.3.6",
-      "type": "static"
-    },
-    {
-      "source": "npm:glob@10.3.10",
-      "target": "npm:minimatch@9.0.4",
-      "type": "static"
-    },
-    {
-      "source": "npm:glob@10.3.10",
-      "target": "npm:minipass@7.0.4",
-      "type": "static"
-    },
-    {
-      "source": "npm:glob@10.3.10",
-      "target": "npm:path-scurry@1.10.1",
-      "type": "static"
-    },
-    {
       "source": "npm:glob@10.4.5",
       "target": "npm:foreground-child",
       "type": "static"
     },
     {
       "source": "npm:glob@10.4.5",
-      "target": "npm:jackspeak@3.4.3",
+      "target": "npm:jackspeak",
       "type": "static"
     },
     {
@@ -34074,7 +34405,7 @@
     },
     {
       "source": "npm:globby@11.1.0",
-      "target": "npm:fast-glob@3.3.2",
+      "target": "npm:fast-glob@3.3.3",
       "type": "static"
     },
     {
@@ -34344,12 +34675,12 @@
     },
     {
       "source": "npm:http-proxy-agent@7.0.0",
-      "target": "npm:agent-base@7.1.0",
+      "target": "npm:agent-base@7.1.3",
       "type": "static"
     },
     {
       "source": "npm:http-proxy-agent@7.0.0",
-      "target": "npm:debug@4.3.4",
+      "target": "npm:debug@4.4.1",
       "type": "static"
     },
     {
@@ -34518,16 +34849,6 @@
       "type": "static"
     },
     {
-      "source": "npm:https-proxy-agent@7.0.4",
-      "target": "npm:agent-base@7.1.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:https-proxy-agent@7.0.4",
-      "target": "npm:debug@4.3.4",
-      "type": "static"
-    },
-    {
       "source": "npm:https-proxy-agent@7.0.6",
       "target": "npm:agent-base@7.1.3",
       "type": "static"
@@ -34564,7 +34885,7 @@
     },
     {
       "source": "npm:ignore-walk",
-      "target": "npm:minimatch@9.0.4",
+      "target": "npm:minimatch@9.0.5",
       "type": "static"
     },
     {
@@ -34603,143 +34924,68 @@
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:ansi-escapes@4.3.2",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:chalk@4.1.2",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:cli-cursor@3.1.0",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:cli-width@3.0.0",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:external-editor",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:figures",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:lodash",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:mute-stream@0.0.8",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
-      "target": "npm:run-async@2.4.1",
+      "source": "npm:inquirer",
+      "target": "npm:run-async",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:rxjs@6.6.7",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:string-width@4.2.3",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:strip-ansi@6.0.1",
       "type": "static"
     },
     {
-      "source": "npm:inquirer@7.3.3",
+      "source": "npm:inquirer",
       "target": "npm:through",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:@inquirer/figures@1.0.2",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:@ljharb/through",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:ansi-escapes@4.3.2",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:chalk@5.3.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:cli-cursor@3.1.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:cli-width@4.1.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:external-editor",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:lodash",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:mute-stream@1.0.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:ora@5.4.1",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:run-async@3.0.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:rxjs",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:string-width@4.2.3",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:strip-ansi@6.0.1",
-      "type": "static"
-    },
-    {
-      "source": "npm:inquirer@9.2.22",
-      "target": "npm:wrap-ansi@6.2.0",
       "type": "static"
     },
     {
@@ -34958,22 +35204,12 @@
       "type": "static"
     },
     {
-      "source": "npm:jackspeak@2.3.6",
+      "source": "npm:jackspeak",
       "target": "npm:@isaacs/cliui",
       "type": "static"
     },
     {
-      "source": "npm:jackspeak@2.3.6",
-      "target": "npm:@pkgjs/parseargs",
-      "type": "static"
-    },
-    {
-      "source": "npm:jackspeak@3.4.3",
-      "target": "npm:@isaacs/cliui",
-      "type": "static"
-    },
-    {
-      "source": "npm:jackspeak@3.4.3",
+      "source": "npm:jackspeak",
       "target": "npm:@pkgjs/parseargs",
       "type": "static"
     },
@@ -36918,6 +37154,36 @@
       "type": "static"
     },
     {
+      "source": "npm:listr2@8.2.3",
+      "target": "npm:cli-truncate@4.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:listr2@8.2.3",
+      "target": "npm:colorette",
+      "type": "static"
+    },
+    {
+      "source": "npm:listr2@8.2.3",
+      "target": "npm:eventemitter3@5.0.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:listr2@8.2.3",
+      "target": "npm:log-update@6.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:listr2@8.2.3",
+      "target": "npm:rfdc@1.4.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:listr2@8.2.3",
+      "target": "npm:wrap-ansi@9.0.0",
+      "type": "static"
+    },
+    {
       "source": "npm:listr2@8.2.5",
       "target": "npm:cli-truncate@4.0.0",
       "type": "static"
@@ -37229,7 +37495,7 @@
     },
     {
       "source": "npm:make-fetch-happen",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -37409,7 +37675,7 @@
     },
     {
       "source": "npm:minipass-fetch",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -37769,7 +38035,7 @@
     },
     {
       "source": "npm:node-gyp",
-      "target": "npm:glob@10.3.10",
+      "target": "npm:glob@10.4.5",
       "type": "static"
     },
     {
@@ -37794,7 +38060,7 @@
     },
     {
       "source": "npm:node-gyp",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -37839,7 +38105,7 @@
     },
     {
       "source": "npm:normalize-package-data",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -37854,7 +38120,7 @@
     },
     {
       "source": "npm:npm-install-checks",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -37889,7 +38155,7 @@
     },
     {
       "source": "npm:npm-package-arg@11.0.2",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -37919,7 +38185,7 @@
     },
     {
       "source": "npm:npm-pick-manifest",
-      "target": "npm:semver@7.6.2",
+      "target": "npm:semver@7.7.2",
       "type": "static"
     },
     {
@@ -37934,7 +38200,7 @@
     },
     {
       "source": "npm:npm-registry-fetch",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -39014,7 +39280,7 @@
     },
     {
       "source": "npm:pacote",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -41764,12 +42030,12 @@
     },
     {
       "source": "npm:socks-proxy-agent@8.0.2",
-      "target": "npm:agent-base@7.1.0",
+      "target": "npm:agent-base@7.1.3",
       "type": "static"
     },
     {
       "source": "npm:socks-proxy-agent@8.0.2",
-      "target": "npm:debug@4.3.4",
+      "target": "npm:debug@4.4.1",
       "type": "static"
     },
     {
@@ -41999,7 +42265,7 @@
     },
     {
       "source": "npm:ssri",
-      "target": "npm:minipass@7.0.4",
+      "target": "npm:minipass@7.1.2",
       "type": "static"
     },
     {
@@ -43149,7 +43415,7 @@
     },
     {
       "source": "npm:tuf-js",
-      "target": "npm:debug@4.3.4",
+      "target": "npm:debug@4.4.1",
       "type": "static"
     },
     {
@@ -44399,7 +44665,7 @@
     },
     {
       "source": "npm:yargs",
-      "target": "npm:escalade@3.1.1",
+      "target": "npm:escalade@3.2.0",
       "type": "static"
     },
     {
