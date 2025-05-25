@@ -44,3 +44,4 @@ Thumbs.db
 **/ios
 
 .nx/cache
+.nx/workspace-data
