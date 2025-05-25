@@ -15,18 +15,18 @@ export interface ISampleItem {
   label: string;
 }
 @Component({
-  imports: [
-    CommonModule,
-    RouterModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonList,
-    IonLabel,
-  ],
-  selector: 'ionic-component-snippets-home',
-  template: `
+    imports: [
+        CommonModule,
+        RouterModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        IonList,
+        IonLabel,
+    ],
+    selector: 'ionic-component-snippets-home',
+    template: `
     <ion-header [translucent]="true">
       <ion-toolbar>
         <ion-title> Samples </ion-title>
@@ -50,8 +50,7 @@ export interface ISampleItem {
       </ion-list>
     </ion-content>
   `,
-  styles: [``],
-  standalone: true,
+    styles: [``]
 })
 export default class HomePage {
   samples: ISampleItem[] = [

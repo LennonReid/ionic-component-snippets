@@ -63,6 +63,7 @@
       },
       "defaultConfiguration": "development",
       "options": {
+        "port": 4202,
         "disableHostCheck": true,
         "host": "0.0.0.0",
         "open": true,

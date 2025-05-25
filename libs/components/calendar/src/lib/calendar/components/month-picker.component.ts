@@ -5,10 +5,10 @@ import moment from 'moment';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  imports: [DatePipe],
-  selector: 'ion-calendar-month-picker',
-  styleUrls: ['./month-picker.component.scss'],
-  template: `
+    imports: [DatePipe],
+    selector: 'ion-calendar-month-picker',
+    styleUrls: ['./month-picker.component.scss'],
+    template: `
     <div [class]="'month-picker ' + color">
       @for (item of _monthFormat; track i; let i = $index) {
       <div
@@ -28,8 +28,7 @@ import { DatePipe } from '@angular/common';
       </div>
       }
     </div>
-  `,
-  standalone: true,
+  `
 })
 export class MonthPickerComponent {
   @Input()

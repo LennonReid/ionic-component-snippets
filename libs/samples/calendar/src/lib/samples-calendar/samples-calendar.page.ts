@@ -32,9 +32,8 @@ import {
 import { addIcons } from 'ionicons';
 
 @Component({
-  selector: 'ionic-component-snippets-samples-calendar',
-  standalone: true,
-  template: `
+    selector: 'ionic-component-snippets-samples-calendar',
+    template: `
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
@@ -84,22 +83,22 @@ import { addIcons } from 'ionicons';
       </ion-card>
     </ion-content>
   `,
-  imports: [
-    FormsModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonButtons,
-    IonButton,
-    IonCard,
-    IonCardContent,
-    IonCardHeader,
-    IonItem,
-    IonContent,
-    IonBackButton,
-    IonLabel,
-    CalendarComponent,
-  ],
+    imports: [
+        FormsModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonButtons,
+        IonButton,
+        IonCard,
+        IonCardContent,
+        IonCardHeader,
+        IonItem,
+        IonContent,
+        IonBackButton,
+        IonLabel,
+        CalendarComponent,
+    ]
 })
 export class SamplesCalendarPage implements OnInit {
   startDate = moment().subtract(4, 'day').format('YYYY-MM-DD');

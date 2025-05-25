@@ -36,20 +36,19 @@ export interface ISegmentButton {
   value: string;
 }
 @Component({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  selector: "ionic-component-snippets-slide-segments",
-  standalone: true,
-  imports: [
-    CommonModule,
-    IonContent,
-    IonItem,
-    IonIcon,
-    IonToggle,
-    IonSegment,
-    IonSegmentButton,
-    IonLabel,
-  ],
-  template: `
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    selector: "ionic-component-snippets-slide-segments",
+    imports: [
+        CommonModule,
+        IonContent,
+        IonItem,
+        IonIcon,
+        IonToggle,
+        IonSegment,
+        IonSegmentButton,
+        IonLabel,
+    ],
+    template: `
   <ion-content>
     <ion-segment
       #mySegment
@@ -82,8 +81,8 @@ export interface ISegmentButton {
     </swiper-container>
   </ion-content>
   `,
-  styles: [
-    `
+    styles: [
+        `
       swiper-container {
         height: 300px;
 
@@ -95,7 +94,7 @@ export interface ISegmentButton {
         --swiper-scrollbar-bg-color: var(--ion-color-light);
       }
     `,
-  ],
+    ]
 })
 export class SlideSegmentsComponent implements OnChanges, OnInit, OnDestroy {
   swiperModules = [IonicSlides];

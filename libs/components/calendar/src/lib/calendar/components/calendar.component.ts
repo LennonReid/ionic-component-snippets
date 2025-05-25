@@ -52,10 +52,10 @@ interface CompatibleIcons {
 }
 
 @Component({
-  selector: 'ion-calendar',
-  providers: [ION_CAL_VALUE_ACCESSOR, CalendarService],
-  styleUrls: ['./calendar.component.scss'],
-  template: `
+    selector: 'ion-calendar',
+    providers: [ION_CAL_VALUE_ACCESSOR, CalendarService],
+    styleUrls: ['./calendar.component.scss'],
+    template: `
     <ion-item>
       <ng-template [ngIf]="_showMonthPicker" [ngIfElse]="title">
         <ion-button
@@ -153,18 +153,17 @@ interface CompatibleIcons {
       </ion-calendar-month-picker>
     </ng-template>
   `,
-  standalone: true,
-  imports: [
-    CommonModule,
-    IonItem,
-    IonLabel,
-    IonButton,
-    IonIcon,
-    FormsModule,
-    CalendarWeekComponent,
-    MonthComponent,
-    MonthPickerComponent,
-  ],
+    imports: [
+        CommonModule,
+        IonItem,
+        IonLabel,
+        IonButton,
+        IonIcon,
+        FormsModule,
+        CalendarWeekComponent,
+        MonthComponent,
+        MonthPickerComponent,
+    ]
 })
 export class CalendarComponent implements ControlValueAccessor, OnInit {
   _d!: InternalCalendarModalOptions;

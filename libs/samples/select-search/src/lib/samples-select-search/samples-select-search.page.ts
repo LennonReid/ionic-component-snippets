@@ -30,9 +30,8 @@ export enum ESelectDataMode {
   'large' = 'large',
 }
 @Component({
-  selector: 'ionic-component-snippets-samples-select-search',
-  standalone: true,
-  template: `
+    selector: 'ionic-component-snippets-samples-select-search',
+    template: `
     <ion-header>
       <ion-toolbar color="primary">
         <ion-buttons slot="start">
@@ -90,23 +89,23 @@ export enum ESelectDataMode {
       </ion-card>
     </ion-content>
   `,
-  imports: [
-    IonHeader,
-    IonToolbar,
-    IonButtons,
-    IonBackButton,
-    IonTitle,
-    IonContent,
-    IonCard,
-    IonCardHeader,
-    IonCardContent,
-    IonItem,
-    IonToggle,
-    IonSelect,
-    IonSelectOption,
-    IonLabel,
-    IonicSelectableComponent,
-  ],
+    imports: [
+        IonHeader,
+        IonToolbar,
+        IonButtons,
+        IonBackButton,
+        IonTitle,
+        IonContent,
+        IonCard,
+        IonCardHeader,
+        IonCardContent,
+        IonItem,
+        IonToggle,
+        IonSelect,
+        IonSelectOption,
+        IonLabel,
+        IonicSelectableComponent,
+    ]
 })
 export class SamplesSelectSearchPage implements OnInit, OnDestroy {
   selectSearchService = this.injector.get(SelectSearchService);

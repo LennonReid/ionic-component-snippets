@@ -23,22 +23,21 @@ import { image } from 'ionicons/icons';
 import { Camera, CameraResultType, CameraSource, ImageOptions, Photo } from '@capacitor/camera';
 
 @Component({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonIcon,
-    IonText,
-    IonItem,
-    IonLabel,
-    IonButton,
-  ],
-  selector: 'ionic-component-snippets-image-picker',
-  template: ``,
-  standalone: true,
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        IonIcon,
+        IonText,
+        IonItem,
+        IonLabel,
+        IonButton,
+    ],
+    selector: 'ionic-component-snippets-image-picker',
+    template: ``
 })
 export class ImagePickerComponent implements OnInit {
   readonly iconMaps: any = {
