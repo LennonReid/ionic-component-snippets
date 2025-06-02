@@ -237,6 +237,7 @@
               "open": true,
               "buildTarget": "ionic-component-snippets:build"
             },
+            "continuous": true,
             "parallelism": true
           },
           "extract-i18n": {
@@ -48856,5 +48857,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1748182015281
+  "computedAt": 1748875549765
 }

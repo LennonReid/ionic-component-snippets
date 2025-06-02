@@ -22,3 +22,39 @@
 [NX v21.1.2 Daemon Server] - 2025-05-25T14:03:46.625Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (sources)
 [NX v21.1.2 Daemon Server] - 2025-05-25T14:03:46.626Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (outputs)
 [NX v21.1.2 Daemon Server] - 2025-05-25T14:03:46.627Z - Server stopped because: "Request to shutdown"
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.262Z - Started listening on: /var/folders/k0/l3wybq2x537_f_zyk2_s0pt40000gn/T/5fcc89946deedd5357f0/d.sock
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.265Z - [WATCHER]: Subscribed to changes within: /Users/mac/lennon/repositories/ionic-component-snippets (native)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.266Z - Established a connection. Number of open connections: 1
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.269Z - Closed a connection. Number of open connections: 0
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.269Z - Established a connection. Number of open connections: 1
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.270Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.270Z - Done responding to the client Shutdown initiated
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.270Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.271Z - Closed a connection. Number of open connections: 0
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.271Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (sources)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.271Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (outputs)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:41:45.271Z - Server stopped because: "Request to shutdown"
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.894Z - Started listening on: /var/folders/k0/l3wybq2x537_f_zyk2_s0pt40000gn/T/5fcc89946deedd5357f0/d.sock
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.897Z - [WATCHER]: Subscribed to changes within: /Users/mac/lennon/repositories/ionic-component-snippets (native)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.903Z - Established a connection. Number of open connections: 1
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.904Z - Established a connection. Number of open connections: 2
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.905Z - Closed a connection. Number of open connections: 1
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.905Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.906Z - Done responding to the client Shutdown initiated
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.906Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.907Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (sources)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.907Z - Closed a connection. Number of open connections: 0
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.908Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (outputs)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:10.908Z - Server stopped because: "Request to shutdown"
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.122Z - Started listening on: /var/folders/k0/l3wybq2x537_f_zyk2_s0pt40000gn/T/5fcc89946deedd5357f0/d.sock
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.124Z - [WATCHER]: Subscribed to changes within: /Users/mac/lennon/repositories/ionic-component-snippets (native)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.126Z - Established a connection. Number of open connections: 1
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.126Z - Established a connection. Number of open connections: 2
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.128Z - Closed a connection. Number of open connections: 1
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.129Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.129Z - Done responding to the client Shutdown initiated
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.129Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.130Z - Closed a connection. Number of open connections: 0
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.131Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (sources)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.131Z - [WATCHER]: Stopping the watcher for /Users/mac/lennon/repositories/ionic-component-snippets (outputs)
+[NX v21.1.2 Daemon Server] - 2025-06-02T14:45:25.131Z - Server stopped because: "Request to shutdown"

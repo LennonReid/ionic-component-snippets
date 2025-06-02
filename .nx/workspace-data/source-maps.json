@@ -2956,6 +2956,10 @@
       "apps/ionic-component-snippets/project.json",
       "nx/core/project-json"
     ],
+    "targets.serve.continuous": [
+      "apps/ionic-component-snippets/project.json",
+      "nx/core/project-json"
+    ],
     "targets.serve.options.port": [
       "apps/ionic-component-snippets/project.json",
       "nx/core/project-json"
